@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3CC4E4FD21B3600500E78906 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC4E4FC21B3600500E78906 /* AppDelegate.swift */; };
-		3CC4E4FF21B3600500E78906 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC4E4FE21B3600500E78906 /* ViewController.swift */; };
-		3CC4E50221B3600500E78906 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC4E50021B3600500E78906 /* Main.storyboard */; };
-		3CC4E50521B3600500E78906 /* PocketMoney.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CC4E50321B3600500E78906 /* PocketMoney.xcdatamodeld */; };
-		3CC4E50721B3600700E78906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC4E50621B3600700E78906 /* Assets.xcassets */; };
-		3CC4E50A21B3600700E78906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC4E50821B3600700E78906 /* LaunchScreen.storyboard */; };
+		3C3D331221BCA41600E132DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D331121BCA41600E132DE /* AppDelegate.swift */; };
+		3C3D331421BCA41600E132DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D331321BCA41600E132DE /* ViewController.swift */; };
+		3C3D331721BCA41600E132DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3D331521BCA41600E132DE /* Main.storyboard */; };
+		3C3D331A21BCA41600E132DE /* Pocket_Money.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D331821BCA41600E132DE /* Pocket_Money.xcdatamodeld */; };
+		3C3D331C21BCA41800E132DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C3D331B21BCA41800E132DE /* Assets.xcassets */; };
+		3C3D331F21BCA41800E132DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3D331D21BCA41800E132DE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3CC4E4F921B3600500E78906 /* PocketMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CC4E4FC21B3600500E78906 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3CC4E4FE21B3600500E78906 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3CC4E50121B3600500E78906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3CC4E50421B3600500E78906 /* PocketMoney.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PocketMoney.xcdatamodel; sourceTree = "<group>"; };
-		3CC4E50621B3600700E78906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3CC4E50921B3600700E78906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3CC4E50B21B3600700E78906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C3D330E21BCA41600E132DE /* Pocket Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Money.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C3D331121BCA41600E132DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C3D331321BCA41600E132DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C3D331621BCA41600E132DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C3D331921BCA41600E132DE /* Pocket_Money.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pocket_Money.xcdatamodel; sourceTree = "<group>"; };
+		3C3D331B21BCA41800E132DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C3D331E21BCA41800E132DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C3D332021BCA41800E132DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3CC4E4F621B3600500E78906 /* Frameworks */ = {
+		3C3D330B21BCA41600E132DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3CC4E4F021B3600500E78906 = {
+		3C3D330521BCA41600E132DE = {
 			isa = PBXGroup;
 			children = (
-				3CC4E4FB21B3600500E78906 /* PocketMoney */,
-				3CC4E4FA21B3600500E78906 /* Products */,
+				3C3D331021BCA41600E132DE /* Pocket Money */,
+				3C3D330F21BCA41600E132DE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3CC4E4FA21B3600500E78906 /* Products */ = {
+		3C3D330F21BCA41600E132DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3CC4E4F921B3600500E78906 /* PocketMoney.app */,
+				3C3D330E21BCA41600E132DE /* Pocket Money.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3CC4E4FB21B3600500E78906 /* PocketMoney */ = {
+		3C3D331021BCA41600E132DE /* Pocket Money */ = {
 			isa = PBXGroup;
 			children = (
-				3CC4E4FC21B3600500E78906 /* AppDelegate.swift */,
-				3CC4E4FE21B3600500E78906 /* ViewController.swift */,
-				3CC4E50021B3600500E78906 /* Main.storyboard */,
-				3CC4E50621B3600700E78906 /* Assets.xcassets */,
-				3CC4E50821B3600700E78906 /* LaunchScreen.storyboard */,
-				3CC4E50B21B3600700E78906 /* Info.plist */,
-				3CC4E50321B3600500E78906 /* PocketMoney.xcdatamodeld */,
+				3C3D331121BCA41600E132DE /* AppDelegate.swift */,
+				3C3D331321BCA41600E132DE /* ViewController.swift */,
+				3C3D331521BCA41600E132DE /* Main.storyboard */,
+				3C3D331B21BCA41800E132DE /* Assets.xcassets */,
+				3C3D331D21BCA41800E132DE /* LaunchScreen.storyboard */,
+				3C3D332021BCA41800E132DE /* Info.plist */,
+				3C3D331821BCA41600E132DE /* Pocket_Money.xcdatamodeld */,
 			);
-			path = PocketMoney;
+			path = "Pocket Money";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3CC4E4F821B3600500E78906 /* PocketMoney */ = {
+		3C3D330D21BCA41600E132DE /* Pocket Money */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3CC4E50E21B3600700E78906 /* Build configuration list for PBXNativeTarget "PocketMoney" */;
+			buildConfigurationList = 3C3D332321BCA41800E132DE /* Build configuration list for PBXNativeTarget "Pocket Money" */;
 			buildPhases = (
-				3CC4E4F521B3600500E78906 /* Sources */,
-				3CC4E4F621B3600500E78906 /* Frameworks */,
-				3CC4E4F721B3600500E78906 /* Resources */,
+				3C3D330A21BCA41600E132DE /* Sources */,
+				3C3D330B21BCA41600E132DE /* Frameworks */,
+				3C3D330C21BCA41600E132DE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PocketMoney;
-			productName = PocketMoney;
-			productReference = 3CC4E4F921B3600500E78906 /* PocketMoney.app */;
+			name = "Pocket Money";
+			productName = "Pocket Money";
+			productReference = 3C3D330E21BCA41600E132DE /* Pocket Money.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3CC4E4F121B3600500E78906 /* Project object */ = {
+		3C3D330621BCA41600E132DE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Ayeeshi Poosarla";
 				TargetAttributes = {
-					3CC4E4F821B3600500E78906 = {
+					3C3D330D21BCA41600E132DE = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 3CC4E4F421B3600500E78906 /* Build configuration list for PBXProject "PocketMoney" */;
+			buildConfigurationList = 3C3D330921BCA41600E132DE /* Build configuration list for PBXProject "Pocket Money" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 3CC4E4F021B3600500E78906;
-			productRefGroup = 3CC4E4FA21B3600500E78906 /* Products */;
+			mainGroup = 3C3D330521BCA41600E132DE;
+			productRefGroup = 3C3D330F21BCA41600E132DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3CC4E4F821B3600500E78906 /* PocketMoney */,
+				3C3D330D21BCA41600E132DE /* Pocket Money */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3CC4E4F721B3600500E78906 /* Resources */ = {
+		3C3D330C21BCA41600E132DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CC4E50A21B3600700E78906 /* LaunchScreen.storyboard in Resources */,
-				3CC4E50721B3600700E78906 /* Assets.xcassets in Resources */,
-				3CC4E50221B3600500E78906 /* Main.storyboard in Resources */,
+				3C3D331F21BCA41800E132DE /* LaunchScreen.storyboard in Resources */,
+				3C3D331C21BCA41800E132DE /* Assets.xcassets in Resources */,
+				3C3D331721BCA41600E132DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3CC4E4F521B3600500E78906 /* Sources */ = {
+		3C3D330A21BCA41600E132DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CC4E4FF21B3600500E78906 /* ViewController.swift in Sources */,
-				3CC4E50521B3600500E78906 /* PocketMoney.xcdatamodeld in Sources */,
-				3CC4E4FD21B3600500E78906 /* AppDelegate.swift in Sources */,
+				3C3D331421BCA41600E132DE /* ViewController.swift in Sources */,
+				3C3D331A21BCA41600E132DE /* Pocket_Money.xcdatamodeld in Sources */,
+				3C3D331221BCA41600E132DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3CC4E50021B3600500E78906 /* Main.storyboard */ = {
+		3C3D331521BCA41600E132DE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3CC4E50121B3600500E78906 /* Base */,
+				3C3D331621BCA41600E132DE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3CC4E50821B3600700E78906 /* LaunchScreen.storyboard */ = {
+		3C3D331D21BCA41800E132DE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3CC4E50921B3600700E78906 /* Base */,
+				3C3D331E21BCA41800E132DE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3CC4E50C21B3600700E78906 /* Debug */ = {
+		3C3D332121BCA41800E132DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		3CC4E50D21B3600700E78906 /* Release */ = {
+		3C3D332221BCA41800E132DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,36 +282,36 @@
 			};
 			name = Release;
 		};
-		3CC4E50F21B3600700E78906 /* Debug */ = {
+		3C3D332421BCA41800E132DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GUW8DFVVA6;
-				INFOPLIST_FILE = PocketMoney/Info.plist;
+				INFOPLIST_FILE = "Pocket Money/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ayeeshipoosarla.PocketMoney;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ayeeshipoosarla.Pocket-Money";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		3CC4E51021B3600700E78906 /* Release */ = {
+		3C3D332521BCA41800E132DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GUW8DFVVA6;
-				INFOPLIST_FILE = PocketMoney/Info.plist;
+				INFOPLIST_FILE = "Pocket Money/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ayeeshipoosarla.PocketMoney;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ayeeshipoosarla.Pocket-Money";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,20 +321,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3CC4E4F421B3600500E78906 /* Build configuration list for PBXProject "PocketMoney" */ = {
+		3C3D330921BCA41600E132DE /* Build configuration list for PBXProject "Pocket Money" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3CC4E50C21B3600700E78906 /* Debug */,
-				3CC4E50D21B3600700E78906 /* Release */,
+				3C3D332121BCA41800E132DE /* Debug */,
+				3C3D332221BCA41800E132DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3CC4E50E21B3600700E78906 /* Build configuration list for PBXNativeTarget "PocketMoney" */ = {
+		3C3D332321BCA41800E132DE /* Build configuration list for PBXNativeTarget "Pocket Money" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3CC4E50F21B3600700E78906 /* Debug */,
-				3CC4E51021B3600700E78906 /* Release */,
+				3C3D332421BCA41800E132DE /* Debug */,
+				3C3D332521BCA41800E132DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -342,17 +342,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3CC4E50321B3600500E78906 /* PocketMoney.xcdatamodeld */ = {
+		3C3D331821BCA41600E132DE /* Pocket_Money.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3CC4E50421B3600500E78906 /* PocketMoney.xcdatamodel */,
+				3C3D331921BCA41600E132DE /* Pocket_Money.xcdatamodel */,
 			);
-			currentVersion = 3CC4E50421B3600500E78906 /* PocketMoney.xcdatamodel */;
-			path = PocketMoney.xcdatamodeld;
+			currentVersion = 3C3D331921BCA41600E132DE /* Pocket_Money.xcdatamodel */;
+			path = Pocket_Money.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 3CC4E4F121B3600500E78906 /* Project object */;
+	rootObject = 3C3D330621BCA41600E132DE /* Project object */;
 }

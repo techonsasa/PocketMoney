@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  PocketMoney
+//  Pocket Money
 //
-//  Created by Ayeeshi Poosarla on 12/1/18.
+//  Created by Ayeeshi Poosarla on 12/8/18.
 //  Copyright © 2018 Ayeeshi Poosarla. All rights reserved.
 //
 

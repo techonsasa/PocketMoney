@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:PocketMoney.xcodeproj">
+      location = "self:Pocket Money.xcodeproj">
    </FileRef>
 </Workspace>

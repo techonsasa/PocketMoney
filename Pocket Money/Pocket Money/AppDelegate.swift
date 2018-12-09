@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  PocketMoney
+//  Pocket Money
 //
-//  Created by Ayeeshi Poosarla on 12/1/18.
+//  Created by Ayeeshi Poosarla on 12/8/18.
 //  Copyright © 2018 Ayeeshi Poosarla. All rights reserved.
 //
 
@@ -53,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "PocketMoney")
+        let container = NSPersistentContainer(name: "Pocket_Money")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
