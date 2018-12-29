@@ -17,8 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // TODO: Initialise and Configure Firebase
         FirebaseApp.configure()
+        
+        let myDatabase = Database.database().reference()
+        
+        myDatabase.setValue("We've got data!")
+        
         return true
     }
 

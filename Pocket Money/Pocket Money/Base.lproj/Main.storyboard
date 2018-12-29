@@ -27,7 +27,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TvF-Gt-FXq" kind="show" id="jt3-fk-0sk"/>
+                                    <segue destination="TvF-Gt-FXq" kind="show" identifier="goToLogin" id="jt3-fk-0sk"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PFP-X9-0bM">
@@ -43,7 +43,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="69s-e5-DAF" kind="show" id="6C1-FM-q3i"/>
+                                    <segue destination="69s-e5-DAF" kind="show" identifier="goToSignup" id="6C1-FM-q3i"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -93,7 +93,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="&lt; back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="skd-8t-LEx"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="pressBackFromLogin" id="skd-8t-LEx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -185,7 +185,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="&lt; back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="X1v-eC-JPw"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="pressBackFromSignUp" id="X1v-eC-JPw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -287,14 +287,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gkR-QQ-Rqo">
                                 <rect key="frame" x="185" y="152" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EwE-Ql-q3J">
                                 <rect key="frame" x="185" y="100" width="97" height="30"/>
@@ -326,7 +326,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="&lt; back"/>
                                 <connections>
-                                    <segue destination="69s-e5-DAF" kind="show" id="aI7-cc-7y6"/>
+                                    <segue destination="69s-e5-DAF" kind="show" identifier="pressBackFromTaskeeVC" id="aI7-cc-7y6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYa-ao-gdG">
@@ -379,7 +379,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Mc-N0-IRP">
                                 <rect key="frame" x="185" y="422" width="97" height="30"/>
@@ -460,6 +460,9 @@
                                 <state key="normal" title="Done">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="JHw-Pn-4Fu" eventType="touchUpInside" id="miU-K5-OU6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbB-Oi-M1k">
                                 <rect key="frame" x="29" y="35" width="77" height="45"/>
@@ -467,7 +470,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="&lt; back"/>
                                 <connections>
-                                    <segue destination="69s-e5-DAF" kind="show" id="k9E-gs-bA2"/>
+                                    <segue destination="69s-e5-DAF" kind="show" identifier="pressBackFromTaskerVC" id="k9E-gs-bA2"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sx-to-tVx">
@@ -475,7 +478,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWr-kE-kf8">
                                 <rect key="frame" x="88" y="152" width="73" height="21"/>
@@ -488,14 +491,41 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="SwM-IN-IKd"/>
                     </view>
+                    <connections>
+                        <outlet property="agePicker" destination="H2f-oo-kNc" id="ULv-kp-6zD"/>
+                        <outlet property="emailTextField" destination="9Mc-N0-IRP" id="8n5-bR-p56"/>
+                        <outlet property="firstNameTextField" destination="IeY-c8-fIr" id="tcG-D8-ame"/>
+                        <outlet property="genderPicker" destination="fVw-ck-HUB" id="aC4-Xt-YyV"/>
+                        <outlet property="lastNameTextField" destination="QRs-Qq-2lM" id="tLH-6o-Ae1"/>
+                        <outlet property="passwordCheckTextField" destination="ezv-TD-VNA" id="dYY-JK-RyH"/>
+                        <outlet property="passwordTextField" destination="4sx-to-tVx" id="ODD-ZU-yoe"/>
+                        <outlet property="phoneTextField" destination="eeP-oW-rGZ" id="R1a-lk-5Jz"/>
+                        <outlet property="usernameTextField" destination="dub-RK-Dta" id="esU-rx-dhO"/>
+                        <segue destination="IQ9-dc-1Q4" kind="show" identifier="goToTaskerHome" id="Cdc-Nv-eRr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ljm-iC-58K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1200.8" y="-824.43778110944538"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="cgd-8y-Uw9">
+            <objects>
+                <viewController id="IQ9-dc-1Q4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W2d-xw-Qpw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Fjr-Oc-F7S"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6XC-9c-Ivy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913" y="-826"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aI7-cc-7y6"/>
+        <segue reference="k9E-gs-bA2"/>
         <segue reference="X1v-eC-JPw"/>
     </inferredMetricsTieBreakers>
 </document>

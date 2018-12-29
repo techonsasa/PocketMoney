@@ -7,13 +7,48 @@
 //
 
 import UIKit
+import Firebase
 
 class SignupTaskerViewController: UIViewController {
-
+    
+// IBOutlets
+   
+    @IBOutlet var usernameTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+    @IBOutlet var passwordCheckTextField: UITextField!
+    @IBOutlet var firstNameTextField: UITextField!
+    @IBOutlet var lastNameTextField: UITextField!
+    @IBOutlet var emailTextField: UITextField!
+    @IBOutlet var phoneTextField: UITextField!
+    @IBOutlet var agePicker: UIPickerView!
+    @IBOutlet var genderPicker: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    
+    @IBAction func donePressed(_ sender: AnyObject) {
+        
+        //Set up new user on app
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            
+            if error != nil {
+                print(error!)
+            } else {
+                //success
+                print("Registration Succesful!")
+                
+                self.performSegue(withIdentifier: "goToTaskerHome", sender: self)
+            }
+        }
+        
+        
     }
     
 

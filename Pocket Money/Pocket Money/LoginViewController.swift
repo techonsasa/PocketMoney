@@ -9,9 +9,6 @@
 import UIKit
 
 
-var username = "username"
-var password = "password"
-
 class LoginViewController: UIViewController {
     
 
