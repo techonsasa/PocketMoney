@@ -501,7 +501,7 @@
                         <outlet property="passwordTextField" destination="4sx-to-tVx" id="ODD-ZU-yoe"/>
                         <outlet property="phoneTextField" destination="eeP-oW-rGZ" id="R1a-lk-5Jz"/>
                         <outlet property="usernameTextField" destination="dub-RK-Dta" id="esU-rx-dhO"/>
-                        <segue destination="kMZ-gw-M0G" kind="show" id="auq-Je-e23"/>
+                        <segue destination="kMZ-gw-M0G" kind="show" identifier="goToTnC" id="auq-Je-e23"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ljm-iC-58K" userLabel="First Responder" sceneMemberID="firstResponder"/>
