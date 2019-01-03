@@ -43,7 +43,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="69s-e5-DAF" kind="show" identifier="goToSignup" id="6C1-FM-q3i"/>
+                                    <segue destination="69s-e5-DAF" kind="show" identifier="goToTasker/Taskee" id="6C1-FM-q3i"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -93,7 +93,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="&lt; back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="pressBackFromLogin" id="skd-8t-LEx"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="backToInitial" id="skd-8t-LEx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="416.80000000000001" y="318.89055472263868"/>
         </scene>
-        <!--C3-Sign Up-->
+        <!--C3-Tasker/Taskee-->
         <scene sceneID="ePW-Wu-Hxr">
             <objects>
-                <viewController title="C3-Sign Up" id="69s-e5-DAF" customClass="SignUpViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="C3-Tasker/Taskee" id="69s-e5-DAF" customClass="SignUpViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EHo-Ua-2Wd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,7 +122,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="JHw-Pn-4Fu" kind="show" id="SXe-iS-vs9"/>
+                                    <segue destination="JHw-Pn-4Fu" kind="show" identifier="goToTaskerSignup" id="SXe-iS-vs9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFN-zS-yh7">
@@ -134,7 +134,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gK9-jy-x8j" kind="show" id="yK4-C7-NwV"/>
+                                    <segue destination="gK9-jy-x8j" kind="show" identifier="goToTaskeeSignup" id="yK4-C7-NwV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you want a task to be done? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuH-1Q-nqr">
@@ -180,12 +180,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8NC-hj-hOD">
-                                <rect key="frame" x="29" y="35" width="77" height="45"/>
+                                <rect key="frame" x="16" y="20" width="77" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="&lt; back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="pressBackFromSignUp" id="X1v-eC-JPw"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="backToInitial" id="X1v-eC-JPw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -326,7 +326,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="&lt; back"/>
                                 <connections>
-                                    <segue destination="69s-e5-DAF" kind="show" identifier="pressBackFromTaskeeVC" id="aI7-cc-7y6"/>
+                                    <segue destination="69s-e5-DAF" kind="show" identifier="backToTasker/Taskee" id="aI7-cc-7y6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYa-ao-gdG">
@@ -470,7 +470,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="&lt; back"/>
                                 <connections>
-                                    <segue destination="69s-e5-DAF" kind="show" identifier="pressBackFromTaskerVC" id="k9E-gs-bA2"/>
+                                    <segue destination="69s-e5-DAF" kind="show" identifier="backToTasker/Taskee" id="k9E-gs-bA2"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sx-to-tVx">
@@ -509,7 +509,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="k9E-gs-bA2"/>
-        <segue reference="skd-8t-LEx"/>
+        <segue reference="6C1-FM-q3i"/>
+        <segue reference="X1v-eC-JPw"/>
     </inferredMetricsTieBreakers>
 </document>
