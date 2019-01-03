@@ -39,7 +39,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="SIGN-UP">
+                                <state key="normal" title="SIGN UP AVISHI">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -525,7 +525,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="k9E-gs-bA2"/>
+        <segue reference="6C1-FM-q3i"/>
         <segue reference="X1v-eC-JPw"/>
     </inferredMetricsTieBreakers>
 </document>
