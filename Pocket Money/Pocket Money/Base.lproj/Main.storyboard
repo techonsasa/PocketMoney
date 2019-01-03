@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--C1-Initial Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="C1-Initial Page" id="BYZ-38-t0r" customClass="ViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="-380" y="-65"/>
         </scene>
-        <!--Login View Controller-->
+        <!--C2-Login-->
         <scene sceneID="opn-bf-Gu1">
             <objects>
-                <viewController id="TvF-Gt-FXq" customClass="LoginViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="C2-Login" id="TvF-Gt-FXq" customClass="LoginViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eiy-3K-WQO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="416.80000000000001" y="318.89055472263868"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--C3-Sign Up-->
         <scene sceneID="ePW-Wu-Hxr">
             <objects>
-                <viewController id="69s-e5-DAF" customClass="SignUpViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="C3-Sign Up" id="69s-e5-DAF" customClass="SignUpViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EHo-Ua-2Wd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="416.80000000000001" y="-340.47976011994007"/>
         </scene>
-        <!--Signup Taskee View Controller-->
+        <!--C4A-Signup Taskee-->
         <scene sceneID="bOY-Yu-09i">
             <objects>
-                <viewController id="gK9-jy-x8j" customClass="SignupTaskeeViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="C4A-Signup Taskee" id="gK9-jy-x8j" customClass="SignupTaskeeViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GGn-bt-KrG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -345,10 +345,10 @@
             </objects>
             <point key="canvasLocation" x="1200.8" y="-134.48275862068968"/>
         </scene>
-        <!--Signup Tasker View Controller-->
+        <!--C4B-Signup Tasker-->
         <scene sceneID="J1d-sY-OAf">
             <objects>
-                <viewController id="JHw-Pn-4Fu" customClass="SignupTaskerViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="C4B-Signup Tasker" id="JHw-Pn-4Fu" customClass="SignupTaskerViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dbd-TG-b7G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -501,31 +501,15 @@
                         <outlet property="passwordTextField" destination="4sx-to-tVx" id="ODD-ZU-yoe"/>
                         <outlet property="phoneTextField" destination="eeP-oW-rGZ" id="R1a-lk-5Jz"/>
                         <outlet property="usernameTextField" destination="dub-RK-Dta" id="esU-rx-dhO"/>
-                        <segue destination="IQ9-dc-1Q4" kind="show" identifier="goToTaskerHome" id="Cdc-Nv-eRr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ljm-iC-58K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1200.8" y="-824.43778110944538"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="cgd-8y-Uw9">
-            <objects>
-                <viewController id="IQ9-dc-1Q4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="W2d-xw-Qpw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Fjr-Oc-F7S"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6XC-9c-Ivy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1913" y="-826"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6C1-FM-q3i"/>
-        <segue reference="X1v-eC-JPw"/>
+        <segue reference="k9E-gs-bA2"/>
+        <segue reference="skd-8t-LEx"/>
     </inferredMetricsTieBreakers>
 </document>
