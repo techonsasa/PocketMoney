@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26594726340000002" green="0.69089579010000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="LOGIN Smrithi">
+                                <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -39,7 +39,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="SIGN UP AVISHI">
+                                <state key="normal" title="SIGN UP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -319,6 +319,9 @@
                                 <state key="normal" title="Done">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="JUE-Cc-Xdr" kind="show" identifier="goToTnCTaskee" id="VKQ-gx-eZN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JJ-aM-a17">
                                 <rect key="frame" x="29" y="35" width="77" height="45"/>
@@ -340,9 +343,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ckm-vS-AJl"/>
                     </view>
-                    <connections>
-                        <segue destination="JUE-Cc-Xdr" kind="show" identifier="goToTnCL" id="tUT-nH-ehN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKm-AN-ghb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -465,6 +465,7 @@
                                 </state>
                                 <connections>
                                     <action selector="donePressed:" destination="JHw-Pn-4Fu" eventType="touchUpInside" id="miU-K5-OU6"/>
+                                    <segue destination="kMZ-gw-M0G" kind="show" identifier="goToTnCTasker" id="QA8-Uj-bbJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbB-Oi-M1k">
@@ -504,7 +505,6 @@
                         <outlet property="passwordTextField" destination="4sx-to-tVx" id="ODD-ZU-yoe"/>
                         <outlet property="phoneTextField" destination="eeP-oW-rGZ" id="R1a-lk-5Jz"/>
                         <outlet property="usernameTextField" destination="dub-RK-Dta" id="esU-rx-dhO"/>
-                        <segue destination="kMZ-gw-M0G" kind="show" identifier="goToTnCSU" id="auq-Je-e23"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ljm-iC-58K" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -669,6 +669,7 @@
                                 </state>
                                 <connections>
                                     <action selector="donePressed:" destination="JHw-Pn-4Fu" eventType="touchUpInside" id="yL6-ZW-ZbQ"/>
+                                    <segue destination="BVN-oO-tBp" kind="show" identifier="goToHomeTaskee" id="F9B-Lp-LRF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Terms and Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="316" translatesAutoresizingMaskIntoConstraints="NO" id="3Gu-9L-9kJ">
@@ -691,9 +692,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DnN-lD-ZU8"/>
                     </view>
-                    <connections>
-                        <segue destination="BVN-oO-tBp" kind="show" identifier="goToHomePgTaskee" id="X0B-Qe-6rd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K97-TP-m8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -701,7 +699,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aI7-cc-7y6"/>
+        <segue reference="6C1-FM-q3i"/>
         <segue reference="X1v-eC-JPw"/>
     </inferredMetricsTieBreakers>
 </document>
