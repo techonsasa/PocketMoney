@@ -340,6 +340,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ckm-vS-AJl"/>
                     </view>
+                    <connections>
+                        <segue destination="JUE-Cc-Xdr" kind="show" identifier="goToTnCL" id="tUT-nH-ehN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKm-AN-ghb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -501,7 +504,7 @@
                         <outlet property="passwordTextField" destination="4sx-to-tVx" id="ODD-ZU-yoe"/>
                         <outlet property="phoneTextField" destination="eeP-oW-rGZ" id="R1a-lk-5Jz"/>
                         <outlet property="usernameTextField" destination="dub-RK-Dta" id="esU-rx-dhO"/>
-                        <segue destination="kMZ-gw-M0G" kind="show" id="auq-Je-e23"/>
+                        <segue destination="kMZ-gw-M0G" kind="show" identifier="goToTnCSU" id="auq-Je-e23"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ljm-iC-58K" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -539,8 +542,8 @@
                                 <rect key="frame" x="19" y="114" width="336" height="439"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Please read these Terms and Conditions carefully before using our Pocket Money App mobile application operated by TechnoSASA. Your access to any use of this app is conditioned on your acceptance and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the app. By accessing or using this app you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access this app. If user agrees to these Terms and Conditions, they are liable to their own safety. Pictures shared on this application can be seen by other users, it’s their decision to share images over our app. The strength of your password correlates with how secure your account is from hackers. We are not liable for anything the user does to themselves or others, through our app. We are not liable if user’s account is taken over by another user.
-</mutableString>
+                                <string key="text">Please read these Terms and Conditions carefully before using our Pocket Money App mobile application operated by TechnoSASA. Your access to any use of this app is conditioned on your acceptance and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the app. By accessing or using this app you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access this app. If user agrees to these Terms and Conditions, they are liable to their own safety. Pictures shared on this application can be seen by other users, it’s their decision to share images over our app. The strength of your password correlates with how secure your account is from hackers. We are not liable for anything the user does to themselves or others, through our app. We are not liable if user’s account is taken over by another user.
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -577,9 +580,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6V-Gg-Xbv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3280.8000000000002" y="-1009.7451274362819"/>
+            <point key="canvasLocation" x="2782" y="770"/>
         </scene>
-        <!--Trasaction-->
+        <!--Transaction-->
         <scene sceneID="ykJ-BK-3wC">
             <objects>
                 <viewController id="diy-Ks-qEi" sceneMemberID="viewController">
@@ -589,26 +592,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FMY-af-a4h"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Trasaction" id="Gqx-xk-xZ7"/>
+                    <tabBarItem key="tabBarItem" title="Transaction" id="Gqx-xk-xZ7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gU-OD-cI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3281" y="-359"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="39F-b2-49E">
-            <objects>
-                <viewController id="4Gq-aB-KCE" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PDP-va-82s">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="ggG-tN-GfH"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LOp-Jj-zfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1584" y="139"/>
+            <point key="canvasLocation" x="2110" y="770"/>
         </scene>
         <!--Profile-->
         <scene sceneID="O6C-EB-xy8">
@@ -624,7 +612,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAx-Zn-r5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2596" y="157"/>
+            <point key="canvasLocation" x="1444" y="770"/>
         </scene>
         <!--Home-->
         <scene sceneID="ke5-Do-eKT">
@@ -640,7 +628,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eez-lV-jaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3281" y="-1676"/>
+            <point key="canvasLocation" x="2820" y="54"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MoC-kb-hi7">
@@ -661,11 +649,59 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hb0-3j-XF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2516" y="-748"/>
+            <point key="canvasLocation" x="2074" y="54"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gX4-PG-1vg">
+            <objects>
+                <viewController id="JUE-Cc-Xdr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D4t-Oj-yhP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEO-PH-vcP">
+                                <rect key="frame" x="146" y="560" width="83" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.77857014499999999" green="0.66658174469999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="I accept">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="JHw-Pn-4Fu" eventType="touchUpInside" id="yL6-ZW-ZbQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Terms and Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="316" translatesAutoresizingMaskIntoConstraints="NO" id="3Gu-9L-9kJ">
+                                <rect key="frame" x="32" y="78" width="316" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zaM-2h-uvc">
+                                <rect key="frame" x="19" y="114" width="336" height="439"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Please read these Terms and Conditions carefully before using our Pocket Money App mobile application operated by TechnoSASA. Your access to any use of this app is conditioned on your acceptance and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the app. By accessing or using this app you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access this app. If user agrees to these Terms and Conditions, they are liable to their own safety. Pictures shared on this application can be seen by other users, it’s their decision to share images over our app. The strength of your password correlates with how secure your account is from hackers. We are not liable for anything the user does to themselves or others, through our app. We are not liable if user’s account is taken over by another user.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DnN-lD-ZU8"/>
+                    </view>
+                    <connections>
+                        <segue destination="BVN-oO-tBp" kind="show" identifier="goToHomePgTaskee" id="X0B-Qe-6rd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K97-TP-m8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="54"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="k9E-gs-bA2"/>
+        <segue reference="aI7-cc-7y6"/>
         <segue reference="X1v-eC-JPw"/>
     </inferredMetricsTieBreakers>
 </document>
