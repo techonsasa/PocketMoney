@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="diy-Ks-qEi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BVN-oO-tBp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -542,8 +542,8 @@
                                 <rect key="frame" x="19" y="114" width="336" height="439"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Please read these Terms and Conditions carefully before using our Pocket Money App mobile application operated by TechnoSASA. Your access to any use of this app is conditioned on your acceptance and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the app. By accessing or using this app you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access this app. If user agrees to these Terms and Conditions, they are liable to their own safety. Pictures shared on this application can be seen by other users, it’s their decision to share images over our app. The strength of your password correlates with how secure your account is from hackers. We are not liable for anything the user does to themselves or others, through our app. We are not liable if user’s account is taken over by another user.
-</mutableString>
+                                <string key="text">Please read these Terms and Conditions carefully before using our Pocket Money App mobile application operated by TechnoSASA. Your access to any use of this app is conditioned on your acceptance and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the app. By accessing or using this app you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access this app. If user agrees to these Terms and Conditions, they are liable to their own safety. Pictures shared on this application can be seen by other users, it’s their decision to share images over our app. The strength of your password correlates with how secure your account is from hackers. We are not liable for anything the user does to themselves or others, through our app. We are not liable if user’s account is taken over by another user.
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
