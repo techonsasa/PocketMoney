@@ -7,12 +7,14 @@
 //
 
 import UIKit
-import Firebase
+import firebase
 
 class SignupTaskerViewController: UIViewController {
+    var genders: [String] = ["Male", "Female"]
+    var ref: DatabaseReference?
     
-// IBOutlets
-   
+    // IBOutlets
+    
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var passwordCheckTextField: UITextField!
@@ -25,7 +27,10 @@ class SignupTaskerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        agePicker.delegate = self
+        genderPicker.delegate = self
+        
+        ref = Database.database().reference()
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,32 +39,36 @@ class SignupTaskerViewController: UIViewController {
     
     
     @IBAction func donePressed(_ sender: AnyObject) {
+        ref?.child("users").setValue(["username" : usernameTextField.text])
+        ref?.child("users").child("username").setValue(["password" : passwordTextField.text])
         
-        //Set up new user on app
-        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
-            
-            if error != nil {
-                print(error!)
-            } else {
-                //success
-                print("Registration Succesful!")
-                
-                self.performSegue(withIdentifier: "goToTaskerHome", sender: self)
-            }
-        }
+        //        ref?.child("users").setValue(["password" : passwordTextField.text])
+        //        ref?.child("users").setValue(["firstName" : firstNameTextField.text])
+        //        ref?.child("users").setValue(["lastName" : lastNameTextField.text])
+        //        ref?.child("users").setValue(["email" : emailTextField.text])
+        //        ref?.child("users").setValue(["phoneNumber" : phoneTextField.text])
         
-        
+    }
+}
+
+//Picker Views
+
+extension SignupTaskerViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 2
     }
-    */
-
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return genders[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print(genders[row])
+    }
 }
+
