@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+import firebase
 
 class SignupTaskerViewController: UIViewController {
     var genders: [String] = ["Male", "Female"]

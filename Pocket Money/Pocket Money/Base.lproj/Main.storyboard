@@ -857,6 +857,19 @@
                     <view key="view" contentMode="scaleToFill" id="qDp-1l-eHh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DTl-PH-OWO">
+                                <rect key="frame" x="16" y="40" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Applied"/>
+                                    <segment title="Accepted"/>
+                                </segments>
+                                <connections>
+                                    <segue destination="zB5-Fw-3IR" kind="show" id="IDz-1P-gXt"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9j7-AS-yTX"/>
                     </view>
@@ -864,7 +877,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLq-83-J58" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2735" y="-1337"/>
+            <point key="canvasLocation" x="2733.5999999999999" y="-1337.1814092953525"/>
+        </scene>
+        <!--Applied/Accepted:Accepted-->
+        <scene sceneID="ZTf-1D-hOJ">
+            <objects>
+                <viewController title="Applied/Accepted:Accepted" id="zB5-Fw-3IR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NPB-0V-Af8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="R8p-Lw-00M">
+                                <rect key="frame" x="16" y="41" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Applied"/>
+                                    <segment title="Accepted"/>
+                                </segments>
+                                <connections>
+                                    <segue destination="fcf-Cy-ZNA" kind="show" id="h7C-o7-JUf"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="PMJ-0f-I8p"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WRy-vF-hlc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3448.8000000000002" y="-1337.1814092953525"/>
         </scene>
         <!--Tasker-->
         <scene sceneID="K53-da-aQX">
@@ -927,10 +968,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="IDz-1P-gXt"/>
+        <segue reference="h7C-o7-JUf"/>
         <segue reference="K3G-tr-NQU"/>
         <segue reference="nu7-eZ-lfr"/>
         <segue reference="7SH-ZA-eOu"/>
-        <segue reference="k9E-gs-bA2"/>
+        <segue reference="6C1-FM-q3i"/>
         <segue reference="X1v-eC-JPw"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
