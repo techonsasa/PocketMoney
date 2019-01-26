@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BVN-oO-tBp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -511,10 +511,10 @@
             </objects>
             <point key="canvasLocation" x="511" y="-663"/>
         </scene>
-        <!--View Controller-->
+        <!--Tasker Terms and Conditions-->
         <scene sceneID="g6H-aR-y7s">
             <objects>
-                <viewController id="kMZ-gw-M0G" sceneMemberID="viewController">
+                <viewController title="Tasker Terms and Conditions" id="kMZ-gw-M0G" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cxs-Wv-3Yj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -602,7 +602,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6V-Gg-Xbv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2781.5999999999999" y="769.56521739130437"/>
+            <point key="canvasLocation" x="2734" y="751"/>
         </scene>
         <!--Transaction-->
         <scene sceneID="ykJ-BK-3wC">
@@ -632,7 +632,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gU-OD-cI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2109.5999999999999" y="769.56521739130437"/>
+            <point key="canvasLocation" x="1990" y="751"/>
         </scene>
         <!--Profile-->
         <scene sceneID="O6C-EB-xy8">
@@ -648,7 +648,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAx-Zn-r5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444" y="770"/>
+            <point key="canvasLocation" x="1260" y="751"/>
         </scene>
         <!--Taskee Home-->
         <scene sceneID="ke5-Do-eKT">
@@ -705,12 +705,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eez-lV-jaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2821.5999999999999" y="53.523238380809602"/>
+            <point key="canvasLocation" x="2734" y="54"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Taskee Tab Bar-->
         <scene sceneID="MoC-kb-hi7">
             <objects>
-                <tabBarController id="BVN-oO-tBp" sceneMemberID="viewController">
+                <tabBarController title="Taskee Tab Bar" id="BVN-oO-tBp" sceneMemberID="viewController">
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uwI-sO-Hqz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -726,12 +726,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hb0-3j-XF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2074" y="54"/>
+            <point key="canvasLocation" x="1990" y="54"/>
         </scene>
-        <!--View Controller-->
+        <!--Taskee Terms and Conditions-->
         <scene sceneID="gX4-PG-1vg">
             <objects>
-                <viewController id="JUE-Cc-Xdr" sceneMemberID="viewController">
+                <viewController title="Taskee Terms and Conditions" id="JUE-Cc-Xdr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D4t-Oj-yhP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -881,8 +881,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="nu7-eZ-lfr"/>
-        <segue reference="yK4-C7-NwV"/>
-        <segue reference="aI7-cc-7y6"/>
+        <segue reference="7SH-ZA-eOu"/>
+        <segue reference="k9E-gs-bA2"/>
         <segue reference="X1v-eC-JPw"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
