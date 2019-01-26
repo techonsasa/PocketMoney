@@ -959,6 +959,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="iWT-cM-S26"/>
         <segue reference="h7C-o7-JUf"/>
         <segue reference="K3G-tr-NQU"/>
         <segue reference="nu7-eZ-lfr"/>
