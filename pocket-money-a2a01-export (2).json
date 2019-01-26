@@ -1,0 +1,45 @@
+{
+  
+  "users" : {
+    "apoosarla" : { 
+
+  "email" : "a@p.com",
+  "firstName" : "Ayeeshi",
+  "lastName" : "Poosarla",
+  "password" : 1234,
+  "phoneNumber" : "1234567890",
+  "username" : "apoosarla"  
+      
+    },
+ "sharra" : { 
+
+  "email" : "s@k.com",
+  "firstName" : "Sharra",
+  "lastName" : "Kutty",
+  "password" : 12345,
+  "phoneNumber" : "5105105105",
+  "username" : "skutty"  
+  },
+  
+   "smrithi" : { 
+
+  "email" : "s@p.com",
+  "firstName" : "Smrithi",
+  "lastName" : "Panuganti",
+  "password" : "abc12345",
+  "phoneNumber" : "0987654321",
+  "username" : "smismip"  
+  },
+    
+  "avishi" : { 
+
+  "email" : "a@g.com",
+  "firstName" : "Avishi",
+  "lastName" : "Goyal",
+  "password" : "unicorn",
+  "phoneNumber" : "4084084084",
+  "username" : "agoyal"  
+  }
+    
+  }
+}
