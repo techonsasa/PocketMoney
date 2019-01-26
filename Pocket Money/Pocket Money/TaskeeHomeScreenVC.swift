@@ -9,21 +9,14 @@
 import Foundation
 import UIKit
 
-class TaskeeHomeScreenVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TaskeeHomeScreenVC : UIViewController, UITableViewDelegate {
     
     @IBOutlet weak var btnMessage: UIButton!
     
 
     let job = {}
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
+   
     
     
     
