@@ -628,7 +628,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eez-lV-jaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2820" y="54"/>
+            <point key="canvasLocation" x="2820" y="98"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MoC-kb-hi7">
@@ -696,6 +696,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K97-TP-m8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1260" y="54"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ZVR-6r-bU6">
+            <objects>
+                <tabBarController id="oaq-NZ-bly" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ncF-1M-vie">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ASZ-xi-A16" kind="relationship" relationship="viewControllers" id="urI-CD-0di"/>
+                        <segue destination="fcf-Cy-ZNA" kind="relationship" relationship="viewControllers" id="D4s-VD-kw9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRn-XW-Hbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1990" y="-649"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="LZo-FK-3SV">
+            <objects>
+                <viewController id="fcf-Cy-ZNA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qDp-1l-eHh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9j7-AS-yTX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="JfE-Aa-XQF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLq-83-J58" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2735" y="-1337"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="K53-da-aQX">
+            <objects>
+                <viewController id="ASZ-xi-A16" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hO5-VP-iMH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lbS-nu-GTh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="8Zx-pR-wtm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="paT-Cs-Jg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2734" y="-649"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
