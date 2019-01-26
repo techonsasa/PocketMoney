@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E458C6C21FCD061009126E6 /* TaskeeMoneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E458C6B21FCD061009126E6 /* TaskeeMoneyTableViewCell.swift */; };
 		3C3D331221BCA41600E132DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D331121BCA41600E132DE /* AppDelegate.swift */; };
 		3C3D331421BCA41600E132DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D331321BCA41600E132DE /* ViewController.swift */; };
 		3C3D331721BCA41600E132DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3D331521BCA41600E132DE /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		0BBD5C152A6B4CEA7FD9A89E /* Pods-Pocket Money.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket Money.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket Money/Pods-Pocket Money.debug.xcconfig"; sourceTree = "<group>"; };
+		2E458C6B21FCD061009126E6 /* TaskeeMoneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeMoneyTableViewCell.swift; sourceTree = "<group>"; };
 		3C3D330E21BCA41600E132DE /* Pocket Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Money.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3D331121BCA41600E132DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C3D331321BCA41600E132DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				3C3D331121BCA41600E132DE /* AppDelegate.swift */,
 				3C3D331321BCA41600E132DE /* ViewController.swift */,
 				3C3D331521BCA41600E132DE /* Main.storyboard */,
+				2E458C6B21FCD061009126E6 /* TaskeeMoneyTableViewCell.swift */,
 				58F6D21221FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift */,
 				3CE5832B21CDC2F10022505E /* SignupTaskerViewController.swift */,
 				3CE5832921CDC2AE0022505E /* SignupTaskeeViewController.swift */,
@@ -228,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E458C6C21FCD061009126E6 /* TaskeeMoneyTableViewCell.swift in Sources */,
 				3CE5832621CDB7410022505E /* LoginViewController.swift in Sources */,
 				3C3D331421BCA41600E132DE /* ViewController.swift in Sources */,
 				58F6D21321FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift in Sources */,

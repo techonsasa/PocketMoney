@@ -9,20 +9,7 @@
 import Foundation
 import UIKit
 
-class TaskeeHomeScreenVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
-    let job = {}
-    
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
-    
-    
+class TaskeeHomeScreenVC: UIViewController {
     
 
     override func viewDidLoad() {
