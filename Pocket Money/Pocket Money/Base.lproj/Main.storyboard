@@ -519,16 +519,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qal-yH-OBE">
-                                <rect key="frame" x="146" y="560" width="83" height="59"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hH-7W-vZs">
+                                <rect key="frame" x="32" y="560" width="83" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77857014499999999" green="0.66658174469999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="I accept">
+                                <state key="normal" title="&lt; Back">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="donePressed:" destination="JHw-Pn-4Fu" eventType="touchUpInside" id="GKr-RP-l7L"/>
+                                    <action selector="donePressed:" destination="JHw-Pn-4Fu" eventType="touchUpInside" id="QeW-Fc-X8W"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Terms and Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="316" translatesAutoresizingMaskIntoConstraints="NO" id="yCt-Ba-DHX">
@@ -542,11 +542,23 @@
                                 <rect key="frame" x="19" y="114" width="336" height="439"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Please read these Terms and Conditions carefully before using our Pocket Money App mobile application operated by TechnoSASA. Your access to any use of this app is conditioned on your acceptance and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the app. By accessing or using this app you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access this app. If user agrees to these Terms and Conditions, they are liable to their own safety. Pictures shared on this application can be seen by other users, it’s their decision to share images over our app. The strength of your password correlates with how secure your account is from hackers. We are not liable for anything the user does to themselves or others, through our app. We are not liable if user’s account is taken over by another user.
-</string>
+                                <mutableString key="text">Please read these Terms and Conditions carefully before using our Pocket Money App mobile application operated by TechnoSASA. Your access to any use of this app is conditioned on your acceptance and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the app. By accessing or using this app you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access this app. If user agrees to these Terms and Conditions, they are liable to their own safety. Pictures shared on this application can be seen by other users, it’s their decision to share images over our app. The strength of your password correlates with how secure your account is from hackers. We are not liable for anything the user does to themselves or others, through our app. We are not liable if user’s account is taken over by another user.
+</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qal-yH-OBE">
+                                <rect key="frame" x="254" y="560" width="83" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.77857014499999999" green="0.66658174469999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="I accept">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="JHw-Pn-4Fu" eventType="touchUpInside" id="GKr-RP-l7L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="MCJ-sD-kHf"/>
@@ -673,7 +685,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eez-lV-jaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2820" y="54"/>
+            <point key="canvasLocation" x="2820" y="98"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MoC-kb-hi7">
@@ -705,7 +717,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEO-PH-vcP">
-                                <rect key="frame" x="146" y="560" width="83" height="59"/>
+                                <rect key="frame" x="252" y="553" width="83" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77857014499999999" green="0.66658174469999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
@@ -733,6 +745,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTL-Ql-BR2">
+                                <rect key="frame" x="38" y="553" width="83" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.77857014499999999" green="0.66658174469999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="JHw-Pn-4Fu" eventType="touchUpInside" id="Ue6-8O-vA2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DnN-lD-ZU8"/>
@@ -742,9 +766,93 @@
             </objects>
             <point key="canvasLocation" x="1260" y="54"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ZVR-6r-bU6">
+            <objects>
+                <tabBarController id="oaq-NZ-bly" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ncF-1M-vie">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ASZ-xi-A16" kind="relationship" relationship="viewControllers" id="urI-CD-0di"/>
+                        <segue destination="fcf-Cy-ZNA" kind="relationship" relationship="viewControllers" id="D4s-VD-kw9"/>
+                        <segue destination="UqM-jR-CVn" kind="relationship" relationship="viewControllers" id="6es-Er-uqR"/>
+                        <segue destination="hdB-lY-Sse" kind="relationship" relationship="viewControllers" id="Zyb-BN-jQ6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRn-XW-Hbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1990" y="-649"/>
+        </scene>
+        <!--Applied/Accepted-->
+        <scene sceneID="LZo-FK-3SV">
+            <objects>
+                <viewController id="fcf-Cy-ZNA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qDp-1l-eHh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9j7-AS-yTX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Applied/Accepted" id="JfE-Aa-XQF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLq-83-J58" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2735" y="-1337"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="K53-da-aQX">
+            <objects>
+                <viewController id="ASZ-xi-A16" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hO5-VP-iMH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lbS-nu-GTh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="8Zx-pR-wtm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="paT-Cs-Jg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2782" y="-649"/>
+        </scene>
+        <!--Transaction-->
+        <scene sceneID="DjM-MB-d4v">
+            <objects>
+                <viewController id="UqM-jR-CVn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BC5-Zp-FLz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ibm-fp-sew"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Transaction" id="aej-uF-53l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZ6-uu-9jj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1990" y="-1337"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="Zpp-XX-Ekr">
+            <objects>
+                <viewController id="hdB-lY-Sse" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Qe-5B-s75">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="FeR-Tu-s54"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="eQh-rg-p0O"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HN3-Yp-sHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="-1337"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aI7-cc-7y6"/>
+        <segue reference="k9E-gs-bA2"/>
         <segue reference="X1v-eC-JPw"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
