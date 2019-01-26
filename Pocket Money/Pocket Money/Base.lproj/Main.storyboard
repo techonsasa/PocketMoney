@@ -53,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1026" y="-143"/>
+            <point key="canvasLocation" x="-1177" y="-10"/>
         </scene>
         <!--C2-Login-->
         <scene sceneID="opn-bf-Gu1">
@@ -671,9 +671,8 @@
                                 <rect key="frame" x="16" y="104" width="146" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1TS-s3-sRs">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1TS-s3-sRs">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PocketMoney" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVZ-wd-go5">
                                         <rect key="frame" x="117" y="17" width="140" height="36"/>
@@ -696,6 +695,10 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1TS-s3-sRs" firstAttribute="trailing" secondItem="szZ-RL-TYE" secondAttribute="trailing" id="Mip-Oi-fTe"/>
+                            <constraint firstItem="1TS-s3-sRs" firstAttribute="leading" secondItem="szZ-RL-TYE" secondAttribute="leading" id="VXw-9g-CXS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="szZ-RL-TYE"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="rob-0H-8hd" userLabel="Home"/>
@@ -880,9 +883,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nu7-eZ-lfr"/>
+        <segue reference="SXe-iS-vs9"/>
         <segue reference="yK4-C7-NwV"/>
-        <segue reference="aI7-cc-7y6"/>
+        <segue reference="6C1-FM-q3i"/>
         <segue reference="X1v-eC-JPw"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
