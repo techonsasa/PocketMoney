@@ -821,7 +821,6 @@
         <!--Tasker-->
         <scene sceneID="K53-da-aQX">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="paT-Cs-Jg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Tasker" id="ASZ-xi-A16" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hO5-VP-iMH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -842,6 +841,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="8Zx-pR-wtm"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="paT-Cs-Jg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2733.5999999999999" y="-663.41829085457277"/>
         </scene>
