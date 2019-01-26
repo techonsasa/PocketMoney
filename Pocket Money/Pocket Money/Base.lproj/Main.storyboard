@@ -542,8 +542,8 @@
                                 <rect key="frame" x="19" y="114" width="336" height="439"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Please read these Terms and Conditions carefully before using our Pocket Money App mobile application operated by TechnoSASA. Your access to any use of this app is conditioned on your acceptance and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the app. By accessing or using this app you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access this app. If user agrees to these Terms and Conditions, they are liable to their own safety. Pictures shared on this application can be seen by other users, it’s their decision to share images over our app. The strength of your password correlates with how secure your account is from hackers. We are not liable for anything the user does to themselves or others, through our app. We are not liable if user’s account is taken over by another user.
-</mutableString>
+                                <string key="text">Please read these Terms and Conditions carefully before using our Pocket Money App mobile application operated by TechnoSASA. Your access to any use of this app is conditioned on your acceptance and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the app. By accessing or using this app you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access this app. If user agrees to these Terms and Conditions, they are liable to their own safety. Pictures shared on this application can be seen by other users, it’s their decision to share images over our app. The strength of your password correlates with how secure your account is from hackers. We are not liable for anything the user does to themselves or others, through our app. We are not liable if user’s account is taken over by another user.
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -557,6 +557,7 @@
                                 </state>
                                 <connections>
                                     <action selector="donePressed:" destination="JHw-Pn-4Fu" eventType="touchUpInside" id="GKr-RP-l7L"/>
+                                    <segue destination="oaq-NZ-bly" kind="show" id="fEg-lr-eYc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -657,13 +658,28 @@
             </objects>
             <point key="canvasLocation" x="1444" y="770"/>
         </scene>
-        <!--Home-->
+        <!--Taskee Home-->
         <scene sceneID="ke5-Do-eKT">
             <objects>
-                <viewController id="FSP-5R-hT5" sceneMemberID="viewController">
+                <viewController title="Taskee Home" id="FSP-5R-hT5" customClass="TaskeeHomeScreenVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YBX-T5-vlO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bXd-35-Aap">
+                                <rect key="frame" x="0.0" y="191" width="375" height="427"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="FSP-5R-hT5" id="WCA-B3-Ehl"/>
+                                    <outlet property="delegate" destination="FSP-5R-hT5" id="yYr-qr-d6b"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vW-6U-BeR">
+                                <rect key="frame" x="16" y="44" width="146" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="szZ-RL-TYE"/>
                     </view>
@@ -671,7 +687,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eez-lV-jaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2820" y="98"/>
+            <point key="canvasLocation" x="2821.5999999999999" y="53.523238380809602"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MoC-kb-hi7">
@@ -770,7 +786,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRn-XW-Hbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1990" y="-649"/>
+            <point key="canvasLocation" x="1990" y="-663"/>
         </scene>
         <!--Applied/Accepted-->
         <scene sceneID="LZo-FK-3SV">
@@ -788,21 +804,32 @@
             </objects>
             <point key="canvasLocation" x="2735" y="-1337"/>
         </scene>
-        <!--Home-->
+        <!--Tasker-->
         <scene sceneID="K53-da-aQX">
             <objects>
-                <viewController id="ASZ-xi-A16" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="paT-Cs-Jg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Tasker" id="ASZ-xi-A16" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hO5-VP-iMH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u6j-53-MGe">
+                                <rect key="frame" x="0.0" y="20" width="375" height="580"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ASZ-xi-A16" id="iRb-yo-y5v"/>
+                                    <outlet property="delegate" destination="ASZ-xi-A16" id="ZXH-u3-RMx"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lbS-nu-GTh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="8Zx-pR-wtm"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="paT-Cs-Jg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2782" y="-649"/>
+            <point key="canvasLocation" x="2733.5999999999999" y="-663.41829085457277"/>
         </scene>
         <!--Transaction-->
         <scene sceneID="DjM-MB-d4v">
