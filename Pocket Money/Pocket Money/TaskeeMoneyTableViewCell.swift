@@ -10,6 +10,10 @@ import UIKit
 
 class TaskeeMoneyTableViewCell: UITableViewCell {
     
+    //MARK: Properties
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
