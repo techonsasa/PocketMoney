@@ -617,7 +617,7 @@
             </objects>
             <point key="canvasLocation" x="2734" y="751"/>
         </scene>
-        <!--Applied/Accepted-->
+        <!--View Controller-->
         <scene sceneID="itN-pb-ZNT">
             <objects>
                 <viewController id="J7x-2u-rkx" sceneMemberID="viewController">
@@ -636,16 +636,20 @@
                                     <segue destination="8eN-yK-5Pm" kind="show" id="K3G-tr-NQU"/>
                                 </connections>
                             </segmentedControl>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cKq-8M-tXc">
+                                <rect key="frame" x="16" y="95" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="w9T-kD-GqD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Applied/Accepted" id="JOT-Xe-mjW"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3q-5H-NeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2782" y="1452"/>
+            <point key="canvasLocation" x="2781.5999999999999" y="1451.4242878560722"/>
         </scene>
         <!--Transaction-->
         <scene sceneID="ykJ-BK-3wC">
@@ -923,7 +927,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iWT-cM-S26"/>
         <segue reference="K3G-tr-NQU"/>
         <segue reference="nu7-eZ-lfr"/>
         <segue reference="7SH-ZA-eOu"/>
