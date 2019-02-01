@@ -102,7 +102,7 @@ extension SignupTaskerViewController: UIPickerViewDelegate, UIPickerViewDataSour
         if (pickerView.accessibilityIdentifier == "genderPickerView") {
             return genders[row]
         } else {
-            return ages [row]
+            return ages[row]
         }
     }
 }
