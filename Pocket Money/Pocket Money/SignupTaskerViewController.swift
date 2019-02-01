@@ -11,9 +11,10 @@ import Firebase
 
 class SignupTaskerViewController: UIViewController {
     var genders: [String] = ["Male", "Female"]
+    var ages: [String] = ["13", "14", "15"]
     var ref: DatabaseReference?
     
-    // IBOutlets
+// IBOutlets
     
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -37,16 +38,46 @@ class SignupTaskerViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+//Saving to Firebase
     
     @IBAction func donePressed(_ sender: AnyObject) {
-        ref?.child("users").setValue(["username" : usernameTextField.text])
-        ref?.child("users").child("username").setValue(["password" : passwordTextField.text])
+        let username = usernameTextField.text
+        let password = passwordTextField.text
+        let checkpass = passwordCheckTextField.text
+        let firstName = firstNameTextField.text
+        let lastName = lastNameTextField.text
+        let email = emailTextField.text
+        let phoneNumber = phoneTextField.text
+        let age = ages[agePicker.selectedRow(inComponent: 0)]
+        let gender = genders[genderPicker.selectedRow(inComponent: 0)]
         
-        //        ref?.child("users").setValue(["password" : passwordTextField.text])
-        //        ref?.child("users").setValue(["firstName" : firstNameTextField.text])
-        //        ref?.child("users").setValue(["lastName" : lastNameTextField.text])
-        //        ref?.child("users").setValue(["email" : emailTextField.text])
-        //        ref?.child("users").setValue(["phoneNumber" : phoneTextField.text])
+        if (password != checkpass) {
+            return
+        }
+        
+        let data =
+            [username:
+                ["username" : username,
+                "password" : password,
+                "firstName" : firstName,
+                "lastName" : lastName,
+                "email" : email,
+                "phoneNumber" : phoneNumber,
+                "age" : age,
+                "gender" : gender
+                ]
+        ]
+        
+        ref?.child("users").setValue(data)
+        
+//        ref?.child("users").setValue(["username" : usernameTextField.text])
+//        ref?.child("users").child("username").setValue(["password" : passwordTextField.text])
+//        
+//        ref?.child("users").setValue(["password" : passwordTextField.text])
+//        ref?.child("users").setValue(["firstName" : firstNameTextField.text])
+//        ref?.child("users").setValue(["lastName" : lastNameTextField.text])
+//        ref?.child("users").setValue(["email" : emailTextField.text])
+//        ref?.child("users").setValue(["phoneNumber" : phoneTextField.text])
         
     }
 }
@@ -60,15 +91,19 @@ extension SignupTaskerViewController: UIPickerViewDelegate, UIPickerViewDataSour
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 2
+        if (pickerView.accessibilityIdentifier == "genderPickerView") {
+            return genders.count
+        } else {
+            return ages.count
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return genders[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print(genders[row])
+        if (pickerView.accessibilityIdentifier == "genderPickerView") {
+            return genders[row]
+        } else {
+            return ages [row]
+        }
     }
 }
 
