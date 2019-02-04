@@ -43,7 +43,7 @@ class SignupTaskerViewController: UIViewController {
     @IBAction func donePressed(_ sender: AnyObject) {
         let username = usernameTextField.text
         let password = passwordTextField.text
-        let checkpass = passwordCheckTextField.text
+//        let checkpass = passwordCheckTextField.text
         let firstName = firstNameTextField.text
         let lastName = lastNameTextField.text
         let email = emailTextField.text
@@ -51,10 +51,10 @@ class SignupTaskerViewController: UIViewController {
         let age = ages[agePicker.selectedRow(inComponent: 0)]
         let gender = genders[genderPicker.selectedRow(inComponent: 0)]
         
-        if (password != checkpass) {
-            return
-        }
-        
+//        if (password != checkpass) {
+//            return print("did not go through")
+//        }
+//
         let data =
             [username:
                 ["username" : username,
