@@ -30,10 +30,6 @@
                                     <segue destination="TvF-Gt-FXq" kind="show" identifier="goToLogin" id="jt3-fk-0sk"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PFP-X9-0bM">
-                                <rect key="frame" x="67" y="121" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JH3-Ly-odj">
                                 <rect key="frame" x="0.0" y="622" width="375" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -46,6 +42,10 @@
                                     <segue destination="69s-e5-DAF" kind="show" identifier="goToTasker/Taskee" id="6C1-FM-q3i"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo 2" translatesAutoresizingMaskIntoConstraints="NO" id="IRQ-gS-liJ">
+                                <rect key="frame" x="56" y="167" width="263" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -53,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1026" y="-143"/>
+            <point key="canvasLocation" x="-1026.4000000000001" y="-143.47826086956522"/>
         </scene>
         <!--C2-Login-->
         <scene sceneID="opn-bf-Gu1">
@@ -996,14 +996,15 @@
             <point key="canvasLocation" x="1260" y="-1337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo 2" width="832" height="688"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VKQ-gx-eZN"/>
-        <segue reference="YhL-rE-LyE"/>
         <segue reference="h7C-o7-JUf"/>
         <segue reference="K3G-tr-NQU"/>
         <segue reference="nu7-eZ-lfr"/>
         <segue reference="7SH-ZA-eOu"/>
-        <segue reference="k9E-gs-bA2"/>
+        <segue reference="6C1-FM-q3i"/>
         <segue reference="skd-8t-LEx"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
