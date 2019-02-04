@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--C1-Initial Page-->
+        <!--C1 Initial Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="C1-Initial Page" id="BYZ-38-t0r" customClass="ViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="C1 Initial Page" id="BYZ-38-t0r" customClass="ViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="-1026.4000000000001" y="-143.47826086956522"/>
         </scene>
-        <!--C2-Login-->
+        <!--C2 Login-->
         <scene sceneID="opn-bf-Gu1">
             <objects>
-                <viewController title="C2-Login" id="TvF-Gt-FXq" customClass="LoginViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="C2 Login" id="TvF-Gt-FXq" customClass="LoginViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eiy-3K-WQO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="-255" y="245"/>
         </scene>
-        <!--C3-Tasker/Taskee-->
+        <!--C3 Tasker/Taskee-->
         <scene sceneID="ePW-Wu-Hxr">
             <objects>
-                <viewController title="C3-Tasker/Taskee" id="69s-e5-DAF" customClass="SignUpViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="C3 Tasker/Taskee" id="69s-e5-DAF" customClass="SignUpViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EHo-Ua-2Wd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="-255" y="-418"/>
         </scene>
-        <!--C4A-Signup Taskee-->
+        <!--C4A Signup Taskee-->
         <scene sceneID="bOY-Yu-09i">
             <objects>
-                <viewController title="C4A-Signup Taskee" id="gK9-jy-x8j" customClass="SignupTaskeeViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="C4A Signup Taskee" id="gK9-jy-x8j" customClass="SignupTaskeeViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GGn-bt-KrG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -348,10 +348,10 @@
             </objects>
             <point key="canvasLocation" x="510" y="55"/>
         </scene>
-        <!--C4B-Signup Tasker-->
+        <!--C4B Signup Tasker-->
         <scene sceneID="J1d-sY-OAf">
             <objects>
-                <viewController title="C4B-Signup Tasker" id="JHw-Pn-4Fu" customClass="SignupTaskerViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="C4B Signup Tasker" id="JHw-Pn-4Fu" customClass="SignupTaskerViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dbd-TG-b7G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -512,10 +512,10 @@
             </objects>
             <point key="canvasLocation" x="511" y="-663"/>
         </scene>
-        <!--Tasker Terms and Conditions-->
+        <!--B1 Tasker Terms and Conditions-->
         <scene sceneID="g6H-aR-y7s">
             <objects>
-                <viewController title="Tasker Terms and Conditions" id="kMZ-gw-M0G" sceneMemberID="viewController">
+                <viewController title="B1 Tasker Terms and Conditions" id="kMZ-gw-M0G" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cxs-Wv-3Yj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -567,10 +567,10 @@
             </objects>
             <point key="canvasLocation" x="1260" y="-663.41829085457277"/>
         </scene>
-        <!--Applied/Accepted-->
+        <!--A6-1 Taskee Applied-->
         <scene sceneID="NuR-Vv-WGb">
             <objects>
-                <viewController id="8eN-yK-5Pm" sceneMemberID="viewController">
+                <viewController title="A6-1 Taskee Applied" id="8eN-yK-5Pm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AZn-y0-bNX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -692,10 +692,10 @@
             </objects>
             <point key="canvasLocation" x="2733.5999999999999" y="750.67466266866575"/>
         </scene>
-        <!--Applied/Accepted-->
+        <!--A6-2 Taskee Accepted-->
         <scene sceneID="itN-pb-ZNT">
             <objects>
-                <viewController id="J7x-2u-rkx" sceneMemberID="viewController">
+                <viewController title="A6-2 Taskee Accepted" id="J7x-2u-rkx" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qwF-4Z-Dvt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -814,10 +814,10 @@
             </objects>
             <point key="canvasLocation" x="2734" y="1448"/>
         </scene>
-        <!--Transaction-->
+        <!--A7 Taskee Transcation-->
         <scene sceneID="ykJ-BK-3wC">
             <objects>
-                <viewController id="diy-Ks-qEi" sceneMemberID="viewController">
+                <viewController title="A7 Taskee Transcation" id="diy-Ks-qEi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pOS-sQ-NZc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -892,10 +892,10 @@
             </objects>
             <point key="canvasLocation" x="1990" y="751"/>
         </scene>
-        <!--Profile-->
+        <!--A8 Taskee Profile-->
         <scene sceneID="O6C-EB-xy8">
             <objects>
-                <viewController id="Nib-Cb-1vf" sceneMemberID="viewController">
+                <viewController title="A8 Taskee Profile" id="Nib-Cb-1vf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dfU-8S-4SD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -908,10 +908,10 @@
             </objects>
             <point key="canvasLocation" x="1260" y="751"/>
         </scene>
-        <!--Taskee Home-->
+        <!--A2 Taskee Home-->
         <scene sceneID="ke5-Do-eKT">
             <objects>
-                <viewController title="Taskee Home" id="FSP-5R-hT5" customClass="TaskeeHomeScreenVC" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="A2 Taskee Home" id="FSP-5R-hT5" customClass="TaskeeHomeScreenVC" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YBX-T5-vlO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -977,10 +977,10 @@
             </objects>
             <point key="canvasLocation" x="1990" y="54"/>
         </scene>
-        <!--Taskee Terms and Conditions-->
+        <!--A1 Taskee Terms and Conditions-->
         <scene sceneID="gX4-PG-1vg">
             <objects>
-                <viewController title="Taskee Terms and Conditions" id="JUE-Cc-Xdr" sceneMemberID="viewController">
+                <viewController title="A1 Taskee Terms and Conditions" id="JUE-Cc-Xdr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D4t-Oj-yhP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1032,10 +1032,10 @@
             </objects>
             <point key="canvasLocation" x="1260" y="53.523238380809602"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tasker Tab Bar Controller-->
         <scene sceneID="ZVR-6r-bU6">
             <objects>
-                <tabBarController id="oaq-NZ-bly" sceneMemberID="viewController">
+                <tabBarController title="Tasker Tab Bar Controller" id="oaq-NZ-bly" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ncF-1M-vie">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1052,10 +1052,10 @@
             </objects>
             <point key="canvasLocation" x="1990" y="-663"/>
         </scene>
-        <!--View Controller-->
+        <!--B3 Tasker Add an Event-->
         <scene sceneID="DW5-FW-qIo">
             <objects>
-                <viewController id="YmR-Ab-RZ4" sceneMemberID="viewController">
+                <viewController title="B3 Tasker Add an Event" id="YmR-Ab-RZ4" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nLa-JU-FAA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1134,10 +1134,10 @@
             </objects>
             <point key="canvasLocation" x="2733.5999999999999" y="-2081.1094452773614"/>
         </scene>
-        <!--Applied/Accepted-->
+        <!--B4 Tasker Applied -->
         <scene sceneID="LZo-FK-3SV">
             <objects>
-                <viewController id="fcf-Cy-ZNA" sceneMemberID="viewController">
+                <viewController title="B4 Tasker Applied " id="fcf-Cy-ZNA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qDp-1l-eHh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1238,10 +1238,10 @@
             </objects>
             <point key="canvasLocation" x="2733.5999999999999" y="-1337.1814092953525"/>
         </scene>
-        <!--Applied/Accepted:Accepted-->
+        <!--B6 Tasker Accepted-->
         <scene sceneID="ZTf-1D-hOJ">
             <objects>
-                <viewController title="Applied/Accepted:Accepted" id="zB5-Fw-3IR" sceneMemberID="viewController">
+                <viewController title="B6 Tasker Accepted" id="zB5-Fw-3IR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NPB-0V-Af8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1338,10 +1338,10 @@
             </objects>
             <point key="canvasLocation" x="3448.8000000000002" y="-1337.1814092953525"/>
         </scene>
-        <!--Tasker-->
+        <!--B2 Tasker Home-->
         <scene sceneID="K53-da-aQX">
             <objects>
-                <viewController title="Tasker" id="ASZ-xi-A16" sceneMemberID="viewController">
+                <viewController title="B2 Tasker Home" id="ASZ-xi-A16" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hO5-VP-iMH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1376,10 +1376,10 @@
             </objects>
             <point key="canvasLocation" x="2733.5999999999999" y="-663.41829085457277"/>
         </scene>
-        <!--Transaction-->
+        <!--B7 Tasker Transaction-->
         <scene sceneID="DjM-MB-d4v">
             <objects>
-                <viewController id="UqM-jR-CVn" sceneMemberID="viewController">
+                <viewController title="B7 Tasker Transaction" id="UqM-jR-CVn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BC5-Zp-FLz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1392,10 +1392,10 @@
             </objects>
             <point key="canvasLocation" x="1990" y="-1337"/>
         </scene>
-        <!--Profile-->
+        <!--B8 Tasker Profile-->
         <scene sceneID="Zpp-XX-Ekr">
             <objects>
-                <viewController id="hdB-lY-Sse" sceneMemberID="viewController">
+                <viewController title="B8 Tasker Profile" id="hdB-lY-Sse" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Qe-5B-s75">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1414,11 +1414,11 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="GOp-U7-dzy"/>
-        <segue reference="D4s-VD-kw9"/>
+        <segue reference="h7C-o7-JUf"/>
         <segue reference="aMS-yr-QV2"/>
         <segue reference="RUZ-zc-IMo"/>
-        <segue reference="nu7-eZ-lfr"/>
-        <segue reference="7SH-ZA-eOu"/>
+        <segue reference="SXe-iS-vs9"/>
+        <segue reference="yK4-C7-NwV"/>
         <segue reference="k9E-gs-bA2"/>
         <segue reference="X1v-eC-JPw"/>
     </inferredMetricsTieBreakers>
