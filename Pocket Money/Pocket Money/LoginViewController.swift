@@ -11,14 +11,12 @@ import Firebase
 
 
 class LoginViewController: UIViewController {
-
+    var data: NSDictionary?
     var ref = Database.database().reference()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-    
     
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -26,21 +24,27 @@ class LoginViewController: UIViewController {
         
         if let username = usernameTextField.text {
             ref.child("users").child(username).observeSingleEvent(of: .value, with: { (snapshot) in
-                let value = snapshot.value as? NSDictionary ?? [:]
-                print(value)
-                self.checkPassword(value: value)
+                self.data = snapshot.value as? NSDictionary ?? [:]
+                print(self.data)
+                self.checkPassword(value: self.data!)
                 })
         }
-        
     }
-    
     
     func checkPassword (value: NSDictionary) {
         let password = value["password"] as? String ?? ""
         let group = value["group"] as? String ?? ""
         if (passwordTextField.text == password && group == "Tasker") {
             performSegue(withIdentifier: "Login to Tasker Home", sender: self)
+        } else if (passwordTextField.text == password && group == "Tasker") {
+            performSegue(withIdentifier: "Login to Tasker Home", sender: self)
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "Login to Tasker Home"){
+//            var vc = segue.destination as! ViewController
+//            vc.data =
+        }
+    }
 }

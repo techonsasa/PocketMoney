@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class SignupTaskeeViewController: UIViewController {
 
+//IBOutlets
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
