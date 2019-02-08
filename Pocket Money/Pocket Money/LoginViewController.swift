@@ -36,8 +36,8 @@ class LoginViewController: UIViewController {
         let group = value["group"] as? String ?? ""
         if (passwordTextField.text == password && group == "Tasker") {
             performSegue(withIdentifier: "Login to Tasker Home", sender: self)
-        } else if (passwordTextField.text == password && group == "Tasker") {
-            performSegue(withIdentifier: "Login to Tasker Home", sender: self)
+        } else if (passwordTextField.text == password && group == "Taskee") {
+            performSegue(withIdentifier: "Login to Taskee Home", sender: self)
         }
     }
     
