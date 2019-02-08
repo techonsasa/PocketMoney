@@ -78,15 +78,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8K-Hh-Ypf">
-                                <rect key="frame" x="144" y="321" width="83" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.9882352941176471" green="0.6705882352941176" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwB-Oq-BF5">
                                 <rect key="frame" x="29" y="35" width="77" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -96,10 +87,28 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="backToInitial" id="skd-8t-LEx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8K-Hh-Ypf">
+                                <rect key="frame" x="146" y="326" width="83" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.6705882352941176" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInButton:" destination="TvF-Gt-FXq" eventType="touchUpInside" id="EbW-Uw-MJn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wBa-E2-Ho6"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="Qnf-Lg-7rG" id="P6h-cA-VtE"/>
+                        <outlet property="usernameTextField" destination="0A8-py-j4n" id="ZUP-pa-eQA"/>
+                        <segue destination="FSP-5R-hT5" kind="show" identifier="Login to Taskee Home" id="LTf-Hp-ui4"/>
+                        <segue destination="ASZ-xi-A16" kind="show" identifier="Login to Tasker Home" id="hm4-Um-y9v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1uT-1l-Xd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1682,15 +1691,16 @@
         <image name="Logo 2" width="832" height="688"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="A8H-c5-tKd"/>
+        <segue reference="hm4-Um-y9v"/>
         <segue reference="GOp-U7-dzy"/>
         <segue reference="h7C-o7-JUf"/>
+        <segue reference="LTf-Hp-ui4"/>
         <segue reference="aMS-yr-QV2"/>
         <segue reference="RUZ-zc-IMo"/>
         <segue reference="nu7-eZ-lfr"/>
         <segue reference="7SH-ZA-eOu"/>
         <segue reference="6C1-FM-q3i"/>
-        <segue reference="X1v-eC-JPw"/>
+        <segue reference="skd-8t-LEx"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

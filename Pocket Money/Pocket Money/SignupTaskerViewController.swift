@@ -64,11 +64,12 @@ class SignupTaskerViewController: UIViewController {
                 "email" : email,
                 "phoneNumber" : phoneNumber,
                 "age" : age,
-                "gender" : gender
+                "gender" : gender,
+                "tasker" : "tasker"
                 ]
         ]
         
-        ref?.child("users").setValue(data)
+        ref?.child("users").updateChildValues(data)
         
 //        ref?.child("users").setValue(["username" : usernameTextField.text])
 //        ref?.child("users").child("username").setValue(["password" : passwordTextField.text])
