@@ -1019,7 +1019,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="167" id="NUz-SK-MjO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="jobPostingCell" rowHeight="167" id="NUz-SK-MjO" customClass="JobPostingCell" customModule="Pocket_Money" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="167"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NUz-SK-MjO" id="R6o-12-IO2">
@@ -1081,6 +1081,9 @@
                                                 </datePicker>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameInputText" destination="64F-im-ptx" id="iPk-kA-kF9"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1091,6 +1094,7 @@
                     <tabBarItem key="tabBarItem" title="Home" id="rob-0H-8hd" userLabel="Home"/>
                     <connections>
                         <outlet property="btnMessage" destination="XTM-1e-Jbm" id="ITy-l6-ZuE"/>
+                        <outlet property="jobPostingTableView" destination="U7X-Ri-im0" id="Fb5-Ay-rAS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eez-lV-jaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
