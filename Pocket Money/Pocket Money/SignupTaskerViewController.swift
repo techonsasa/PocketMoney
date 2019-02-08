@@ -65,7 +65,7 @@ class SignupTaskerViewController: UIViewController {
                 "phoneNumber" : phoneNumber,
                 "age" : age,
                 "gender" : gender,
-                "tasker" : "tasker"
+                "group" : "tasker"
                 ]
             ]
         
