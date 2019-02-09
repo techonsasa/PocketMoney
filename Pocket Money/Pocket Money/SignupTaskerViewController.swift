@@ -11,7 +11,7 @@ import Firebase
 
 class SignupTaskerViewController: UIViewController {
     var genders: [String] = ["Male", "Female"]
-    var ages: [String] = ["13", "14", "15"]
+    var ages: [String] = ["13", "14", "15", "16", "17", "18"]
     var ref: DatabaseReference?
     
 // IBOutlets
@@ -65,20 +65,11 @@ class SignupTaskerViewController: UIViewController {
                 "phoneNumber" : phoneNumber,
                 "age" : age,
                 "gender" : gender,
-                "tasker" : "tasker"
+                "group" : "tasker"
                 ]
-        ]
+            ]
         
         ref?.child("users").updateChildValues(data)
-        
-//        ref?.child("users").setValue(["username" : usernameTextField.text])
-//        ref?.child("users").child("username").setValue(["password" : passwordTextField.text])
-//        
-//        ref?.child("users").setValue(["password" : passwordTextField.text])
-//        ref?.child("users").setValue(["firstName" : firstNameTextField.text])
-//        ref?.child("users").setValue(["lastName" : lastNameTextField.text])
-//        ref?.child("users").setValue(["email" : emailTextField.text])
-//        ref?.child("users").setValue(["phoneNumber" : phoneTextField.text])
         
     }
 }
