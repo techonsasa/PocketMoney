@@ -10,6 +10,9 @@ import UIKit
 
 class JobPostingCell: UITableViewCell{
     
-    @IBOutlet weak var nameInputText: UITextField!
-    
+   
+    @IBOutlet weak var nameOfTask: UILabel!
+    @IBOutlet weak var nameOfTasker: UILabel!
+    @IBOutlet weak var timeOfTask: UILabel!
+
 }
