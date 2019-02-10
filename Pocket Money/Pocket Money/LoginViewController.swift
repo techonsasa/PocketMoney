@@ -26,12 +26,13 @@ class LoginViewController: UIViewController {
             ref.child("users").child(username).observeSingleEvent(of: .value, with: { (snapshot) in
                 self.data = snapshot.value as? NSDictionary ?? [:]
                 print(self.data)
-                self.checkPassword(value: self.data!)
+             
+                self.loginCheck(value: self.data!)
                 })
         }
     }
     
-    func checkPassword (value: NSDictionary) {
+    func loginCheck (value: NSDictionary) {
         let password = value["password"] as? String ?? ""
         let group = value["group"] as? String ?? ""
         if (passwordTextField.text == password && group == "Tasker") {
