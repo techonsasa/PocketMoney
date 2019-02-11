@@ -15,4 +15,5 @@ class JobPostingCell: UITableViewCell{
     @IBOutlet weak var nameOfTasker: UILabel!
     @IBOutlet weak var timeOfTask: UILabel!
 
+    @IBOutlet weak var dateOfTask: UILabel!
 }
