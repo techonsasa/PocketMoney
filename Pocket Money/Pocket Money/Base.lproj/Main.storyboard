@@ -1279,6 +1279,9 @@
                                 <rect key="frame" x="133" y="364" width="83" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Event"/>
+                                <connections>
+                                    <action selector="addEvent:" destination="YmR-Ab-RZ4" eventType="touchUpInside" id="1W5-uP-wn8"/>
+                                </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="yrG-Gh-vyx">
                                 <rect key="frame" x="10" y="265" width="365" height="91"/>
@@ -1291,6 +1294,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xVG-n8-LZJ"/>
                     </view>
+                    <connections>
+                        <outlet property="description" destination="J8G-9u-Qyp" id="Krn-Go-nYa"/>
+                        <outlet property="jobDate" destination="yrG-Gh-vyx" id="c5X-JP-ih5"/>
+                        <outlet property="jobName" destination="Xdk-Ng-MWb" id="VVD-fr-mnV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhV-pb-fGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
