@@ -1841,6 +1841,7 @@
         <image name="Logo 2" width="832" height="688"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="QA8-Uj-bbJ"/>
         <segue reference="hm4-Um-y9v"/>
         <segue reference="GOp-U7-dzy"/>
         <segue reference="h7C-o7-JUf"/>
@@ -1849,7 +1850,7 @@
         <segue reference="RUZ-zc-IMo"/>
         <segue reference="nu7-eZ-lfr"/>
         <segue reference="yK4-C7-NwV"/>
-        <segue reference="aI7-cc-7y6"/>
+        <segue reference="k9E-gs-bA2"/>
         <segue reference="skd-8t-LEx"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

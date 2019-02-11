@@ -35,9 +35,9 @@ class LoginViewController: UIViewController {
     func loginCheck (value: NSDictionary) {
         let password = value["password"] as? String ?? ""
         let group = value["group"] as? String ?? ""
-        if (passwordTextField.text == password && group == "Tasker") {
+        if (passwordTextField.text == password && group == "tasker") {
             performSegue(withIdentifier: "Login to Tasker Home", sender: self)
-        } else if (passwordTextField.text == password && group == "Taskee") {
+        } else if (passwordTextField.text == password && group == "taskee") {
             performSegue(withIdentifier: "Login to Taskee Home", sender: self)
         }
     }
