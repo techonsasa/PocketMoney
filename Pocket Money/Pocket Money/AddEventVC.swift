@@ -14,9 +14,9 @@ class AddEventViewController: UIViewController {
     
     var ref: DatabaseReference?
     
-    
     @IBOutlet var jobName: UITextField!
     @IBOutlet var jobDescription: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,19 +27,32 @@ class AddEventViewController: UIViewController {
     
 //    @IBOutlet var jobDate: UIDatePicker!
     
-    @IBAction func addEvent(_ sender: Any) {
+    @IBAction func addEventPressed(_ sender: Any) {
         let vjobName = jobName.text
         let vjobDescription = jobDescription.text
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy"
+        let result = formatter.string(from: date)
         
+        print("Success!")
         let data =
             [vjobName:
                 ["jobName" : vjobName,
-                 "jobDescription" : vjobDescription
+                 "jobDescription" : vjobDescription,
+                    "taskerName" : "hello",
+                    "jobDate" : "1/2/2019",
+                    "jobTime" : "1200 pm",
+                    "createDate" : result
                 ]
-        
+                
         ]
         
         ref?.child("tasks").updateChildValues(data)
-        
     }
+    
+    
+
+    
+
 }

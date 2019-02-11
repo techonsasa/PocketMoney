@@ -97,6 +97,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signInButton:" destination="TvF-Gt-FXq" eventType="touchUpInside" id="EbW-Uw-MJn"/>
+                                    <segue destination="YmR-Ab-RZ4" kind="show" identifier="Login to Tasker Home" id="mcn-2O-9Jo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -107,7 +108,6 @@
                         <outlet property="passwordTextField" destination="Qnf-Lg-7rG" id="P6h-cA-VtE"/>
                         <outlet property="usernameTextField" destination="0A8-py-j4n" id="ZUP-pa-eQA"/>
                         <segue destination="FSP-5R-hT5" kind="show" identifier="Login to Taskee Home" id="LTf-Hp-ui4"/>
-                        <segue destination="ASZ-xi-A16" kind="show" identifier="Login to Tasker Home" id="hm4-Um-y9v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1uT-1l-Xd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1262,7 +1262,7 @@
         <!--B3 Tasker Add an Event-->
         <scene sceneID="DW5-FW-qIo">
             <objects>
-                <viewController title="B3 Tasker Add an Event" id="YmR-Ab-RZ4" sceneMemberID="viewController">
+                <viewController title="B3 Tasker Add an Event" id="YmR-Ab-RZ4" customClass="AddEventViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nLa-JU-FAA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1324,6 +1324,9 @@
                                 <rect key="frame" x="133" y="364" width="83" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Event"/>
+                                <connections>
+                                    <action selector="addEventPressed:" destination="YmR-Ab-RZ4" eventType="touchUpInside" id="6yo-ac-41y"/>
+                                </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="yrG-Gh-vyx">
                                 <rect key="frame" x="10" y="265" width="365" height="91"/>
@@ -1336,6 +1339,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xVG-n8-LZJ"/>
                     </view>
+                    <connections>
+                        <outlet property="jobDescription" destination="J8G-9u-Qyp" id="72T-I4-Dfc"/>
+                        <outlet property="jobName" destination="Xdk-Ng-MWb" id="8PC-ft-n2r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhV-pb-fGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1841,11 +1848,10 @@
         <image name="Logo 2" width="832" height="688"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QA8-Uj-bbJ"/>
-        <segue reference="hm4-Um-y9v"/>
+        <segue reference="vTn-nF-zfg"/>
         <segue reference="GOp-U7-dzy"/>
         <segue reference="h7C-o7-JUf"/>
-        <segue reference="KWY-4H-Zm7"/>
+        <segue reference="LTf-Hp-ui4"/>
         <segue reference="aMS-yr-QV2"/>
         <segue reference="RUZ-zc-IMo"/>
         <segue reference="nu7-eZ-lfr"/>
