@@ -8,22 +8,22 @@
 
 import UIKit
 
-class TaskerHomeScreenVC : UIViewController, UITableViewDelegate, UITableViewDataSource{
-    
-    @IBOutlet weak var jobTableView2: UITableView!
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
-    
-    
-}
-    
+//class TaskerHomeScreenVC : UIViewController, UITableViewDelegate, UITableViewDataSource{
+//
+//    @IBOutlet weak var jobTableView2: UITableView!
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        <#code#>
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
+//
+//
+//
+//}
+
     
     
     
