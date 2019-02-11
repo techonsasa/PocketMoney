@@ -13,6 +13,7 @@ import Firebase
 class AddEventViewController: UIViewController {
     
     var ref: DatabaseReference?
+    var data1: String
     
     @IBOutlet var jobName: UITextField!
     @IBOutlet var jobDescription: UITextField!
@@ -45,14 +46,8 @@ class AddEventViewController: UIViewController {
                     "jobTime" : "1200 pm",
                     "createDate" : result
                 ]
-                
-        ]
+            ]
         
         ref?.child("tasks").updateChildValues(data)
     }
-    
-    
-
-    
-
 }

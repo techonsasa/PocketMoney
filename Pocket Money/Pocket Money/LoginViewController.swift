@@ -42,10 +42,15 @@ class LoginViewController: UIViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "Login to Tasker Home"){
-//            var vc = segue.destination as! ViewController
-//            vc.data =
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let data1 = usernameTextField.text
+//        if let destinationViewController = segue.destination as? AddEventViewController {
+//            destinationViewController.data1 = data1!
+//
+////        if (segue.identifier == "Login to Tasker Home"){
+//////            var vc = segue.destination as! JobPostingCell
+//////            vc = data
+////        }
+//    }
+//}
 }
