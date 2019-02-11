@@ -52,15 +52,7 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
 //        jobPostingTableView.rowHeight = UITableView.automaticDimension
 //    }
 
-//    let job = {}
-    
-//    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        <#code#>
-//    }
-//
-//    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//
-//    }
+
 
 
     override func viewDidLoad() {
