@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FSP-5R-hT5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1072,7 +1072,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="jobPostingCell" rowHeight="169" id="NUz-SK-MjO" customClass="JobPostingCell" customModule="Pocket_Money" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="jobPostingCell" rowHeight="169" id="NUz-SK-MjO" customClass="TaskeeJobPostingCell" customModule="Pocket_Money" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="169"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NUz-SK-MjO" id="R6o-12-IO2">
@@ -1346,7 +1346,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhV-pb-fGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3468" y="-663.41829085457277"/>
+            <point key="canvasLocation" x="3481" y="-663"/>
         </scene>
         <!--B4 Tasker Applied -->
         <scene sceneID="LZo-FK-3SV">
@@ -1601,6 +1601,9 @@
                                 <rect key="frame" x="84" y="104" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add an event"/>
+                                <connections>
+                                    <segue destination="YmR-Ab-RZ4" kind="show" id="hMi-Kg-qQI"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j1o-Zw-vHW">
                                 <rect key="frame" x="16" y="90" width="60" height="59"/>
@@ -1611,7 +1614,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="jobPostingCell" rowHeight="169" id="wDQ-1w-fqn" customClass="JobPostingCell" customModule="Pocket_Money" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="jobPostingCell" rowHeight="169" id="wDQ-1w-fqn" customClass="TaskerJobPostingCell" customModule="Pocket_Money" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="169"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wDQ-1w-fqn" id="U2W-5V-KyK">
@@ -1681,9 +1684,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="nameOfTask" destination="Wo3-s3-RqF" id="IcI-3L-rZK"/>
-                                            <outlet property="nameOfTasker" destination="E2G-kg-kaN" id="3mr-Y8-N1z"/>
-                                            <outlet property="timeOfTask" destination="9TF-O3-Z1z" id="oKh-GO-8OH"/>
+                                            <outlet property="nameOfTask" destination="E2G-kg-kaN" id="ziF-Ec-AaM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1693,9 +1694,6 @@
                         <viewLayoutGuide key="safeArea" id="lbS-nu-GTh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="8Zx-pR-wtm"/>
-                    <connections>
-                        <outlet property="jobTableView" destination="aXz-cs-gd5" id="rMk-wu-8Ff"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="paT-Cs-Jg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1851,6 +1849,7 @@
         <segue reference="vTn-nF-zfg"/>
         <segue reference="GOp-U7-dzy"/>
         <segue reference="h7C-o7-JUf"/>
+        <segue reference="hMi-Kg-qQI"/>
         <segue reference="LTf-Hp-ui4"/>
         <segue reference="aMS-yr-QV2"/>
         <segue reference="RUZ-zc-IMo"/>

@@ -13,7 +13,7 @@ import Firebase
 class AddEventViewController: UIViewController {
     
     var ref: DatabaseReference?
-    var data1: String
+//    var data1: String
     
     @IBOutlet var jobName: UITextField!
     @IBOutlet var jobDescription: UITextField!

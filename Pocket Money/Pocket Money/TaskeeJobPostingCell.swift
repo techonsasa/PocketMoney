@@ -8,9 +8,7 @@
 
 import UIKit
 
-class JobPostingCell: UITableViewCell{
-    
-   
+class TaskeeJobPostingCell: UITableViewCell{
     @IBOutlet weak var nameOfTask: UILabel!
     @IBOutlet weak var nameOfTasker: UILabel!
     @IBOutlet weak var timeOfTask: UILabel!
