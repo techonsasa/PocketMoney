@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FSP-5R-hT5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1846,6 +1846,7 @@
         <image name="Logo 2" width="832" height="688"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="jt3-fk-0sk"/>
         <segue reference="vTn-nF-zfg"/>
         <segue reference="GOp-U7-dzy"/>
         <segue reference="h7C-o7-JUf"/>
@@ -1855,7 +1856,7 @@
         <segue reference="RUZ-zc-IMo"/>
         <segue reference="nu7-eZ-lfr"/>
         <segue reference="yK4-C7-NwV"/>
-        <segue reference="k9E-gs-bA2"/>
+        <segue reference="6C1-FM-q3i"/>
         <segue reference="skd-8t-LEx"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
