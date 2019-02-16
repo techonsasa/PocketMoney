@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ASZ-xi-A16">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -97,7 +97,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signInButton:" destination="TvF-Gt-FXq" eventType="touchUpInside" id="EbW-Uw-MJn"/>
-                                    <segue destination="YmR-Ab-RZ4" kind="show" identifier="Login to Tasker Home" id="mcn-2O-9Jo"/>
+                                    <segue destination="ASZ-xi-A16" kind="show" identifier="Login to Tasker Home" id="3fX-GU-Ylj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -851,7 +851,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3q-5H-NeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2655" y="1626"/>
+            <point key="canvasLocation" x="2734" y="1465"/>
         </scene>
         <!--A7 Taskee Transcation-->
         <scene sceneID="ykJ-BK-3wC">
@@ -1701,9 +1701,6 @@
                         <viewLayoutGuide key="safeArea" id="lbS-nu-GTh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="8Zx-pR-wtm"/>
-                    <connections>
-                        <outlet property="jobPostingTableView2" destination="aXz-cs-gd5" id="Lzw-q5-oeQ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="paT-Cs-Jg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1856,13 +1853,12 @@
         <image name="Logo 2" width="832" height="688"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vTn-nF-zfg"/>
+        <segue reference="3fX-GU-Ylj"/>
         <segue reference="GOp-U7-dzy"/>
         <segue reference="h7C-o7-JUf"/>
-        <segue reference="hMi-Kg-qQI"/>
         <segue reference="LTf-Hp-ui4"/>
         <segue reference="aMS-yr-QV2"/>
-        <segue reference="RUZ-zc-IMo"/>
+        <segue reference="K3G-tr-NQU"/>
         <segue reference="nu7-eZ-lfr"/>
         <segue reference="yK4-C7-NwV"/>
         <segue reference="6C1-FM-q3i"/>
