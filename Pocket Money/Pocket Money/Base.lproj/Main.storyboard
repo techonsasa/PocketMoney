@@ -1846,7 +1846,6 @@
         <image name="Logo 2" width="832" height="688"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jt3-fk-0sk"/>
         <segue reference="vTn-nF-zfg"/>
         <segue reference="GOp-U7-dzy"/>
         <segue reference="h7C-o7-JUf"/>
