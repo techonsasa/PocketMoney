@@ -64,6 +64,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C35DEC22217B73500376E1F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C3D331D21BCA41800E132DE /* LaunchScreen.storyboard */,
+				3C3D332021BCA41800E132DE /* Info.plist */,
+				3CC2A03A21BCD1D60058A151 /* GoogleService-Info.plist */,
+				3C3D331821BCA41600E132DE /* Pocket_Money.xcdatamodeld */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		3C3D330521BCA41600E132DE = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +96,7 @@
 		3C3D331021BCA41600E132DE /* Pocket Money */ = {
 			isa = PBXGroup;
 			children = (
+				3C35DEC22217B73500376E1F /* Controller */,
 				3C8A96DF22165DBC00DE2238 /* Taskee */,
 				3C8A96DE22165D7A00DE2238 /* Tasker */,
 				3C3D331121BCA41600E132DE /* AppDelegate.swift */,
@@ -93,10 +105,6 @@
 				3CE5832721CDB7F90022505E /* SignUpViewController.swift */,
 				3CE5832521CDB7410022505E /* LoginViewController.swift */,
 				3C3D331B21BCA41800E132DE /* Assets.xcassets */,
-				3C3D331D21BCA41800E132DE /* LaunchScreen.storyboard */,
-				3C3D332021BCA41800E132DE /* Info.plist */,
-				3CC2A03A21BCD1D60058A151 /* GoogleService-Info.plist */,
-				3C3D331821BCA41600E132DE /* Pocket_Money.xcdatamodeld */,
 			);
 			path = "Pocket Money";
 			sourceTree = "<group>";

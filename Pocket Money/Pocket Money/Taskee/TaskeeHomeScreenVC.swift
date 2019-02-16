@@ -39,25 +39,6 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var btnMessage: UIButton!
     
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "Identifier", for: indexPath) as! CustomTableViewCell
-//        cell.vwCard.sizeToFit()
-//        cell.vwCard.layoutIfNeeded()
-//        return cell
-//    }
-
-    
-//    jobPostingTableView.estimatedRowHeight = 100
-//    jobPostingTableView.rowHeight = UITableViewAutomaticDimension
-
-//        override func viewWillAppear(_ animated: Bool) {
-//        jobPostingTableView.estimatedRowHeight = 100
-//        jobPostingTableView.rowHeight = UITableView.automaticDimension
-//    }
-
-
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         jobPostingTableView.delegate = self

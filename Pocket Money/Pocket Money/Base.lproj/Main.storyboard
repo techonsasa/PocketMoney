@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ASZ-xi-A16">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -576,7 +576,7 @@
                                 </state>
                                 <connections>
                                     <action selector="donePressed:" destination="JHw-Pn-4Fu" eventType="touchUpInside" id="GKr-RP-l7L"/>
-                                    <segue destination="oaq-NZ-bly" kind="show" id="JqY-Yg-j0D"/>
+                                    <segue destination="oaq-NZ-bly" kind="show" id="pdi-JN-lWP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -945,8 +945,8 @@
         <!--A8 Taskee Profile-->
         <scene sceneID="O6C-EB-xy8">
             <objects>
-                <viewController title="A8 Taskee Profile" id="Nib-Cb-1vf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dfU-8S-4SD">
+                <viewController title="A8 Taskee Profile" id="Nib-Cb-1vf" customClass="TaskeeProfileVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dfU-8S-4SD" customClass="TaskeeProfileVC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1860,7 +1860,7 @@
         <segue reference="aMS-yr-QV2"/>
         <segue reference="K3G-tr-NQU"/>
         <segue reference="nu7-eZ-lfr"/>
-        <segue reference="yK4-C7-NwV"/>
+        <segue reference="7SH-ZA-eOu"/>
         <segue reference="6C1-FM-q3i"/>
         <segue reference="skd-8t-LEx"/>
     </inferredMetricsTieBreakers>
