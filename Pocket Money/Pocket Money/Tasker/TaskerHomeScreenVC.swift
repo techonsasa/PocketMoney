@@ -12,22 +12,23 @@ class TaskerHomeScreenVC : UIViewController, UITableViewDelegate, UITableViewDat
 
     
     var names = ["lorman", "sharra", "bill", "bob"]
-    
+
     var taskTime = ["11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM"]
-  
-    
+
+
+
     @IBOutlet weak var jobPostingTableView2: UITableView!
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return names.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let jobCell2 = tableView.dequeueReusableCell(withIdentifier: "jobPostingCell2", for: indexPath) as! JobPostingCell2
-        jobCell2.nameOfTask2.text = names[indexPath.row]
-        jobCell2.timeOfTask2.text = taskTime[indexPath.row]
+        let jobCell2 = tableView.dequeueReusableCell(withIdentifier: "jobPostingCell2", for: indexPath) as! TaskerJobPostingCell
+        jobCell2.taskerHomeNameOfTask.text = names[indexPath.row]
+        jobCell2.taskerHomeTimeOfTask.text = taskTime[indexPath.row]
         return jobCell2
-        
+
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

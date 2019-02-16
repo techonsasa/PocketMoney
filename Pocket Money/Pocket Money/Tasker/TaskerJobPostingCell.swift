@@ -10,6 +10,10 @@ import Foundation
 import UIKit
 
 class TaskerJobPostingCell : UITableViewCell {
+    @IBOutlet weak var taskerHomeNameOfTask: UILabel!
     
+    @IBOutlet weak var taskerHomeNameOfTasker: UILabel!
+    @IBOutlet weak var taskerHomeTimeOfTask: UILabel!
+    @IBOutlet weak var TaskerHomeDateOfTask: UILabel!
 }
 
