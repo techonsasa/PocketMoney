@@ -26,7 +26,7 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let jobCell = tableView.dequeueReusableCell(withIdentifier: "jobPostingCell", for: indexPath) as! TaskeeJobPostingCell
-//        jobCell.nameInputText.text = names[indexPath.row]
+//        jobCell.nameInputText.text = names[indexPath.row][""]
         jobCell.nameOfTask.text = data[indexPath.row]["jobName"] as! String
 //        jobCell.timeOfTask.text = data[indexPath.row]
         return jobCell
@@ -63,7 +63,7 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
         ref.child("tasks").observeSingleEvent(of: .value, with: { (snapshot) in
             let spvalue = snapshot.value as? NSDictionary
             for (key, value) in spvalue! {
-//                print ("Value : \(value) for key: \(key)")
+                print ("Value : \(value) for key: \(key)")
                 self.data.append(value as! NSDictionary)
             }
             

@@ -68,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				3C3D331D21BCA41800E132DE /* LaunchScreen.storyboard */,
-				3C3D332021BCA41800E132DE /* Info.plist */,
 				3CC2A03A21BCD1D60058A151 /* GoogleService-Info.plist */,
 				3C3D331821BCA41600E132DE /* Pocket_Money.xcdatamodeld */,
 			);
@@ -105,6 +104,7 @@
 				3CE5832721CDB7F90022505E /* SignUpViewController.swift */,
 				3CE5832521CDB7410022505E /* LoginViewController.swift */,
 				3C3D331B21BCA41800E132DE /* Assets.xcassets */,
+				3C3D332021BCA41800E132DE /* Info.plist */,
 			);
 			path = "Pocket Money";
 			sourceTree = "<group>";
@@ -428,7 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FJG7GCLHSX;
+				DEVELOPMENT_TEAM = GUW8DFVVA6;
 				INFOPLIST_FILE = "Pocket Money/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,7 +449,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FJG7GCLHSX;
+				DEVELOPMENT_TEAM = GUW8DFVVA6;
 				INFOPLIST_FILE = "Pocket Money/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

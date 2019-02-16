@@ -1692,7 +1692,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRy-vF-hlc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3448.8000000000002" y="-1337.1814092953525"/>
+            <point key="canvasLocation" x="3481" y="-1337"/>
         </scene>
         <!--B2 Tasker Home-->
         <scene sceneID="K53-da-aQX">
@@ -1964,7 +1964,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yDG-vc-B8t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3481" y="751"/>
+            <point key="canvasLocation" x="3422" y="751"/>
         </scene>
     </scenes>
     <resources>
@@ -1973,7 +1973,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="vTn-nF-zfg"/>
         <segue reference="GOp-U7-dzy"/>
-        <segue reference="D4s-VD-kw9"/>
+        <segue reference="h7C-o7-JUf"/>
         <segue reference="83r-cX-38u"/>
         <segue reference="aMS-yr-QV2"/>
         <segue reference="K3G-tr-NQU"/>
