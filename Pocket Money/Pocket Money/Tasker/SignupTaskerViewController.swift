@@ -32,6 +32,7 @@ class SignupTaskerViewController: UIViewController {
         genderPicker.delegate = self
         
         ref = Database.database().reference()
+        
     }
     
     override func didReceiveMemoryWarning() {
