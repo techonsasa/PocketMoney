@@ -25,13 +25,7 @@
 		5839D8D7220CF4C400661A0C /* TaskeeJobPostingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5839D8D6220CF4C400661A0C /* TaskeeJobPostingCell.swift */; };
 		58F6D21321FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6D21221FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift */; };
 		999051E0BFDE6E1240972B54 /* Pods_Pocket_Money.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F90C15EC08360057D399BF /* Pods_Pocket_Money.framework */; };
-		C9F99625221B6DEA004BCF9D /* icons8-plus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9F99624221B6DEA004BCF9D /* icons8-plus.jpg */; };
 		C9F99627221B6E2E004BCF9D /* plusicon_1904677.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F99626221B6E2E004BCF9D /* plusicon_1904677.png */; };
-		C9F9962D221B6F55004BCF9D /* icons8-ledger-50.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F99628221B6F54004BCF9D /* icons8-ledger-50.png */; };
-		C9F9962E221B6F55004BCF9D /* icons8-outline-of-a-face-50.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F99629221B6F54004BCF9D /* icons8-outline-of-a-face-50.png */; };
-		C9F9962F221B6F55004BCF9D /* icons8-home-50.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F9962A221B6F54004BCF9D /* icons8-home-50.png */; };
-		C9F99630221B6F55004BCF9D /* icons8-plus.svg in Resources */ = {isa = PBXBuildFile; fileRef = C9F9962B221B6F55004BCF9D /* icons8-plus.svg */; };
-		C9F99631221B6F55004BCF9D /* icons8-true-false-50.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F9962C221B6F55004BCF9D /* icons8-true-false-50.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,13 +51,7 @@
 		58F6D21221FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeHomeScreenVC.swift; sourceTree = "<group>"; };
 		6D81F94DBB5589A19F8A8025 /* Pods-Pocket Money.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket Money.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket Money/Pods-Pocket Money.release.xcconfig"; sourceTree = "<group>"; };
 		B6F90C15EC08360057D399BF /* Pods_Pocket_Money.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pocket_Money.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9F99624221B6DEA004BCF9D /* icons8-plus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "icons8-plus.jpg"; path = "../../../../../Desktop/Icons/icons8-plus.jpg"; sourceTree = "<group>"; };
 		C9F99626221B6E2E004BCF9D /* plusicon_1904677.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plusicon_1904677.png; path = ../../../../../Desktop/Icons/plusicon_1904677.png; sourceTree = "<group>"; };
-		C9F99628221B6F54004BCF9D /* icons8-ledger-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-ledger-50.png"; path = "../../../../../Desktop/Icons/icons8-ledger-50.png"; sourceTree = "<group>"; };
-		C9F99629221B6F54004BCF9D /* icons8-outline-of-a-face-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-outline-of-a-face-50.png"; path = "../../../../../Desktop/Icons/icons8-outline-of-a-face-50.png"; sourceTree = "<group>"; };
-		C9F9962A221B6F54004BCF9D /* icons8-home-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-home-50.png"; path = "../../../../../Desktop/Icons/icons8-home-50.png"; sourceTree = "<group>"; };
-		C9F9962B221B6F55004BCF9D /* icons8-plus.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "icons8-plus.svg"; path = "../../../../../Desktop/Icons/icons8-plus.svg"; sourceTree = "<group>"; };
-		C9F9962C221B6F55004BCF9D /* icons8-true-false-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-true-false-50.png"; path = "../../../../../Desktop/Icons/icons8-true-false-50.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +97,6 @@
 		3C3D331021BCA41600E132DE /* Pocket Money */ = {
 			isa = PBXGroup;
 			children = (
-				C9F9962A221B6F54004BCF9D /* icons8-home-50.png */,
-				C9F99628221B6F54004BCF9D /* icons8-ledger-50.png */,
-				C9F99629221B6F54004BCF9D /* icons8-outline-of-a-face-50.png */,
-				C9F9962B221B6F55004BCF9D /* icons8-plus.svg */,
-				C9F9962C221B6F55004BCF9D /* icons8-true-false-50.png */,
-				C9F99624221B6DEA004BCF9D /* icons8-plus.jpg */,
 				3C35DEC22217B73500376E1F /* Controller */,
 				3C8A96DF22165DBC00DE2238 /* Taskee */,
 				3C8A96DE22165D7A00DE2238 /* Tasker */,
@@ -229,17 +211,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9F99625221B6DEA004BCF9D /* icons8-plus.jpg in Resources */,
-				C9F9962F221B6F55004BCF9D /* icons8-home-50.png in Resources */,
-				C9F99630221B6F55004BCF9D /* icons8-plus.svg in Resources */,
-				C9F9962E221B6F55004BCF9D /* icons8-outline-of-a-face-50.png in Resources */,
 				3C3D331F21BCA41800E132DE /* LaunchScreen.storyboard in Resources */,
 				3CC2A03B21BCD1D60058A151 /* GoogleService-Info.plist in Resources */,
-				C9F99631221B6F55004BCF9D /* icons8-true-false-50.png in Resources */,
 				3C3D331C21BCA41800E132DE /* Assets.xcassets in Resources */,
 				3C3D331721BCA41600E132DE /* Main.storyboard in Resources */,
 				C9F99627221B6E2E004BCF9D /* plusicon_1904677.png in Resources */,
-				C9F9962D221B6F55004BCF9D /* icons8-ledger-50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

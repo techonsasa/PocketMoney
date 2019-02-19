@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../../../Desktop/home-512.png">
-   </FileRef>
-   <FileRef
       location = "group:Pocket Money.xcodeproj">
    </FileRef>
    <FileRef

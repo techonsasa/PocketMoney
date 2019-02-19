@@ -11,7 +11,7 @@ import Firebase
 
 class SignupTaskerViewController: UIViewController {
     var genders: [String] = ["Male", "Female"]
-    var ages: [String] = ["13", "14", "15", "16", "17", "18"]
+    var ages: [String] = ["19-21", "22-30","30-45","45-60","65+"]
     var ref: DatabaseReference?
     
 // IBOutlets

@@ -12,7 +12,7 @@ import Firebase
 
 class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var names = ["lorman", "sharra", "bill", "bob"]
+    var names = ["Mohan Goyal", "Seth Kutty", "Mike Russo", "Christina James"]
     var taskTime = ["11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM"]
     
     var data = [NSDictionary]()
@@ -47,6 +47,10 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
         ref = Database.database().reference()
         getDataFromFirebase()
  
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        jobPostingTableView.estimatedRowHeight = 100
     }
     
     override func didReceiveMemoryWarning() {
