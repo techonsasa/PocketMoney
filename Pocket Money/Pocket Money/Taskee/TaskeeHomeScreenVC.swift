@@ -12,7 +12,7 @@ import Firebase
 
 class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var names = ["lorman", "sharra", "bill", "bob"]
+    var names = ["Mohan Goyal", "Seth Kutty", "Mike Russo", "Christina James"]
     var taskTime = ["11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM"]
     
     var data = [NSDictionary]()
@@ -27,8 +27,14 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let jobCell = tableView.dequeueReusableCell(withIdentifier: "jobPostingCell", for: indexPath) as! TaskeeJobPostingCell
 //        jobCell.nameInputText.text = names[indexPath.row][""]
-        jobCell.nameOfTask.text = data[indexPath.row]["jobName"] as! String
-//        jobCell.timeOfTask.text = data[indexPath.row]
+        jobCell.nameOfTask?.text = data[indexPath.row]["jobName"] as! String
+        jobCell.nameOfTasker.text? = data[indexPath.row]["jobDescription"] as! String
+        //jobCell.dateOfTask.text? = data[indexPath.row]["jobDate"] as! String
+        print (data[indexPath.row]["jobDate"])
+        // Thread 1: Fatal error: Unexpectedly found nil while unwrapping an Optional value
+        // jobCell.dateOfTask.text? = (data[indexPath.row]["jobDate"] as! String)
+        //        jobCell.timeOfTask.text = data[indexPath.row]
+
         return jobCell
         
     }
@@ -47,6 +53,10 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
         ref = Database.database().reference()
         getDataFromFirebase()
  
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        jobPostingTableView.estimatedRowHeight = 100
     }
     
     override func didReceiveMemoryWarning() {
