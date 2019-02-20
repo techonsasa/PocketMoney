@@ -26,6 +26,8 @@
 		999051E0BFDE6E1240972B54 /* Pods_Pocket_Money.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F90C15EC08360057D399BF /* Pods_Pocket_Money.framework */; };
 		C95F4800221BD2DC005F5032 /* TaskerTXNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95F47FF221BD2DC005F5032 /* TaskerTXNViewController.swift */; };
 		C95F4802221BD6EC005F5032 /* appglobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95F4801221BD6EC005F5032 /* appglobal.swift */; };
+		C96F9820221CF7BC00517AD3 /* TaskerAppliedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96F981F221CF7BC00517AD3 /* TaskerAppliedViewController.swift */; };
+		C96F9822221CF7D700517AD3 /* TaskerAcceptedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96F9821221CF7D700517AD3 /* TaskerAcceptedViewController.swift */; };
 		C9766A33221BDD57004CFC44 /* TaskeeAppliedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9766A32221BDD57004CFC44 /* TaskeeAppliedViewController.swift */; };
 		C9766A37221BE6D4004CFC44 /* TaskeeAcceptedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9766A36221BE6D4004CFC44 /* TaskeeAcceptedViewController.swift */; };
 		C9766A39221BF0D3004CFC44 /* TaskerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9766A38221BF0D3004CFC44 /* TaskerHomeViewController.swift */; };
@@ -56,6 +58,8 @@
 		B6F90C15EC08360057D399BF /* Pods_Pocket_Money.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pocket_Money.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95F47FF221BD2DC005F5032 /* TaskerTXNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerTXNViewController.swift; sourceTree = "<group>"; };
 		C95F4801221BD6EC005F5032 /* appglobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appglobal.swift; sourceTree = "<group>"; };
+		C96F981F221CF7BC00517AD3 /* TaskerAppliedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerAppliedViewController.swift; sourceTree = "<group>"; };
+		C96F9821221CF7D700517AD3 /* TaskerAcceptedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerAcceptedViewController.swift; sourceTree = "<group>"; };
 		C9766A32221BDD57004CFC44 /* TaskeeAppliedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeAppliedViewController.swift; sourceTree = "<group>"; };
 		C9766A36221BE6D4004CFC44 /* TaskeeAcceptedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeAcceptedViewController.swift; sourceTree = "<group>"; };
 		C9766A38221BF0D3004CFC44 /* TaskerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerHomeViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 				3C9B6E6322111A0D00ABCAF3 /* AddEventVC.swift */,
 				C95F47FF221BD2DC005F5032 /* TaskerTXNViewController.swift */,
 				C9766A38221BF0D3004CFC44 /* TaskerHomeViewController.swift */,
+				C96F981F221CF7BC00517AD3 /* TaskerAppliedViewController.swift */,
+				C96F9821221CF7D700517AD3 /* TaskerAcceptedViewController.swift */,
 			);
 			path = Tasker;
 			sourceTree = "<group>";
@@ -284,10 +290,12 @@
 			files = (
 				3CE5832621CDB7410022505E /* LoginViewController.swift in Sources */,
 				C9766A39221BF0D3004CFC44 /* TaskerHomeViewController.swift in Sources */,
+				C96F9820221CF7BC00517AD3 /* TaskerAppliedViewController.swift in Sources */,
 				3C3D331421BCA41600E132DE /* ViewController.swift in Sources */,
 				5839D8D7220CF4C400661A0C /* TaskeeJobPostingCell.swift in Sources */,
 				58F6D21321FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift in Sources */,
 				3CE5832A21CDC2AE0022505E /* SignupTaskeeViewController.swift in Sources */,
+				C96F9822221CF7D700517AD3 /* TaskerAcceptedViewController.swift in Sources */,
 				C9A7AE55221BA01000913599 /* TaskeeTXNViewController.swift in Sources */,
 				3C9B6E6422111A0D00ABCAF3 /* AddEventVC.swift in Sources */,
 				C9766A37221BE6D4004CFC44 /* TaskeeAcceptedViewController.swift in Sources */,
