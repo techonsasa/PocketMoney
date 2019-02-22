@@ -996,10 +996,21 @@
                                 <rect key="frame" x="67" y="220" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Auq-4L-Ryv">
+                                <rect key="frame" x="140" y="444" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Open Camera"/>
+                                <connections>
+                                    <action selector="openCamera:" destination="AjN-At-gA2" eventType="touchUpInside" id="m7J-KG-mHg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2sh-Cu-ebi"/>
                     </view>
+                    <connections>
+                        <outlet property="preveiwPFP" destination="fVN-YD-xAz" id="f4M-jh-3Gh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HVh-CW-9UR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1238,13 +1249,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diT-HM-sFy">
-                                                    <rect key="frame" x="141" y="23" width="43" height="21"/>
+                                                    <rect key="frame" x="141" y="23" width="43" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ind-IF-hwh">
-                                                    <rect key="frame" x="199" y="23" width="93" height="21"/>
+                                                    <rect key="frame" x="199" y="23" width="93" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -2540,7 +2551,7 @@
         <segue reference="SXe-iS-vs9"/>
         <segue reference="wgP-l9-UVk"/>
         <segue reference="6C1-FM-q3i"/>
-        <segue reference="L2U-Qx-3eZ"/>
+        <segue reference="jt3-fk-0sk"/>
         <segue reference="eMC-p0-Pfa"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
