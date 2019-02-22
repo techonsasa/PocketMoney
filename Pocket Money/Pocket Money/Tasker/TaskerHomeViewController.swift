@@ -12,6 +12,7 @@ import Firebase
 class TaskerHomeViewController: UIViewController {
 
     @IBOutlet weak var tableView4: UITableView!
+    var user : String?
   
 //    var ref: DatabaseReference!
 
@@ -48,7 +49,13 @@ class TaskerHomeViewController: UIViewController {
             print(self.data)
             self.tableView4.reloadData()
         })
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "go to add event") {
+            let vc = segue.destination as! AddEventViewController
+            vc.user = user
+        }
     }
 }
 

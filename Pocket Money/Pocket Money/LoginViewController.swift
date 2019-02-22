@@ -21,12 +21,10 @@ class LoginViewController: UIViewController {
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBAction func signInButton(_ sender: Any) {
-        
         if let username = usernameTextField.text {
             ref.child("users").child(username).observeSingleEvent(of: .value, with: { (snapshot) in
                 self.data = snapshot.value as? NSDictionary ?? [:]
                 print(self.data)
-             
                 self.loginCheck(value: self.data!)
                 })
         }
@@ -42,15 +40,14 @@ class LoginViewController: UIViewController {
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let data1 = usernameTextField.text
-//        if let destinationViewController = segue.destination as? AddEventViewController {
-//            destinationViewController.data1 = data1!
-//
-////        if (segue.identifier == "Login to Tasker Home"){
-//////            var vc = segue.destination as! JobPostingCell
-//////            vc = data
-////        }
-//    }
-//}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let firstName = data?["firstName"] as? String
+        let lastName = data?["lastName"] as? String
+        let name = (firstName ?? "Hello") + " " + (lastName ?? "World")
+        if (segue.identifier == "Login to Tasker Home"){
+            let vc = segue.destination as! TaskerHomeViewController
+            vc.user = name
+        }
+    }
 }
+

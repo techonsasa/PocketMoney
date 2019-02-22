@@ -13,7 +13,7 @@ import Firebase
 class AddEventViewController: UIViewController {
     
     var ref: DatabaseReference?
-//    var data1: String
+    var user: String?
     
     @IBOutlet var jobName: UITextField!
     @IBOutlet var jobDescription: UITextField!
@@ -41,7 +41,7 @@ class AddEventViewController: UIViewController {
             [vjobName:
                 ["jobName" : vjobName,
                  "jobDescription" : vjobDescription,
-                    "taskerName" : "hello",
+                    "taskerName" : user!,
                     "jobDate" : "1/2/2019",
                     "jobTime" : "1200 pm",
                     "createDate" : result

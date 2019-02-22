@@ -18,4 +18,3 @@ class TaskeeJobPostingCell: UITableViewCell{
 class TestTaskeeJobPostingCell1: UITableViewCell{
 //
 }
-
