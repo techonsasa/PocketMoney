@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E6A7902222267730033CB6C /* TaskerProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A7901222267730033CB6C /* TaskerProfilePage.swift */; };
 		3C35DEC12217B1B100376E1F /* TaskeeProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35DEC02217B1B100376E1F /* TaskeeProfile.swift */; };
 		3C3D331221BCA41600E132DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D331121BCA41600E132DE /* AppDelegate.swift */; };
 		3C3D331421BCA41600E132DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D331321BCA41600E132DE /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		0BBD5C152A6B4CEA7FD9A89E /* Pods-Pocket Money.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket Money.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket Money/Pods-Pocket Money.debug.xcconfig"; sourceTree = "<group>"; };
+		2E6A7901222267730033CB6C /* TaskerProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerProfilePage.swift; sourceTree = "<group>"; };
 		3C35DEC02217B1B100376E1F /* TaskeeProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeProfile.swift; sourceTree = "<group>"; };
 		3C3D330E21BCA41600E132DE /* Pocket Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Money.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3D331121BCA41600E132DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		3C8A96DE22165D7A00DE2238 /* Tasker */ = {
 			isa = PBXGroup;
 			children = (
+				2E6A7901222267730033CB6C /* TaskerProfilePage.swift */,
 				3C8A96DC221636BD00DE2238 /* TaskerJobPostingCell.swift */,
 				3CE5832B21CDC2F10022505E /* SignupTaskerViewController.swift */,
 				3C9B6E6322111A0D00ABCAF3 /* AddEventVC.swift */,
@@ -292,6 +295,7 @@
 				C9766A39221BF0D3004CFC44 /* TaskerHomeViewController.swift in Sources */,
 				C96F9820221CF7BC00517AD3 /* TaskerAppliedViewController.swift in Sources */,
 				3C3D331421BCA41600E132DE /* ViewController.swift in Sources */,
+				2E6A7902222267730033CB6C /* TaskerProfilePage.swift in Sources */,
 				5839D8D7220CF4C400661A0C /* TaskeeJobPostingCell.swift in Sources */,
 				58F6D21321FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift in Sources */,
 				3CE5832A21CDC2AE0022505E /* SignupTaskeeViewController.swift in Sources */,
