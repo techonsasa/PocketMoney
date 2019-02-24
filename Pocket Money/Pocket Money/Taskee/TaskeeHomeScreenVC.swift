@@ -12,8 +12,8 @@ import Firebase
 
 class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var names = ["Mohan Goyal", "Seth Kutty", "Mike Russo", "Christina James"]
-    var taskTime = ["11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM"]
+//    var names = ["Mohan Goyal", "Seth Kutty", "Mike Russo", "Christina James"]
+//    var taskTime = ["11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM"]
     
     var data = [NSDictionary]()
     var ref : DatabaseReference!
@@ -71,12 +71,8 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
                 print ("Value : \(value) for key: \(key)")
                 self.data.append(value as! NSDictionary)
             }
-            
             print(self.data)
             self.jobPostingTableView.reloadData()
         })
-        
     }
-    
-    
 }

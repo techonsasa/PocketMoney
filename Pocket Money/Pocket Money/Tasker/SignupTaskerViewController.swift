@@ -40,7 +40,6 @@ class SignupTaskerViewController: UIViewController {
     }
     
 //Saving to Firebase
-    
     @IBAction func donePressed(_ sender: AnyObject) {
         let username = usernameTextField.text
         let password = passwordTextField.text
@@ -51,11 +50,8 @@ class SignupTaskerViewController: UIViewController {
         let phoneNumber = phoneTextField.text
         let age = ages[agePicker.selectedRow(inComponent: 0)]
         let gender = genders[genderPicker.selectedRow(inComponent: 0)]
-        
-//        if (password != checkpass) {
-//            return print("did not go through")
-//        }
-//
+
+//What Saves to Database
         let data =
             [username:
                 ["username" : username,
@@ -71,12 +67,10 @@ class SignupTaskerViewController: UIViewController {
             ]
         
         ref?.child("users").updateChildValues(data)
-        
     }
 }
 
 //Picker Views
-
 extension SignupTaskerViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

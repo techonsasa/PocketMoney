@@ -11,14 +11,16 @@ import Firebase
 
 class TaskerHomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var txns = [(task:"Petsitting - Denny Garney", taskdate:"4/15/2019"),
-                (task:"Coding - Verla Veasley", taskdate:"4/21/2019"),
-                (task: "Tuition - Jaymie Ruck", taskdate:"4/22/2019"),
-                (task: "Lawnmowing - Porsha Alfrey", taskdate:"4/23/2019"),
-                ]
+//    var txns = [(task:"Petsitting - Denny Garney", taskdate:"4/15/2019"),
+//                (task:"Coding - Verla Veasley", taskdate:"4/21/2019"),
+//                (task: "Tuition - Jaymie Ruck", taskdate:"4/22/2019"),
+//                (task: "Lawnmowing - Porsha Alfrey", taskdate:"4/23/2019"),
+//                ]
     
+    var userName : String?
     var data = [NSDictionary]()
     var ref : DatabaseReference!
+    
 
     @IBOutlet weak var tableView4: UITableView!
     
@@ -31,7 +33,7 @@ class TaskerHomeViewController: UIViewController, UITableViewDelegate, UITableVi
     //reference for database
     
 
-    
+//Table View Populating
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
@@ -66,14 +68,12 @@ class TaskerHomeViewController: UIViewController, UITableViewDelegate, UITableVi
                 print ("Value : \(value) for key: \(key)")
                 self.data.append(value as! NSDictionary)
             }
-
             print(self.data)
             self.tableView4.reloadData()
         })
     }
     
-    
-    
+//Passing Name Variable
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "go to add event") {
             let vc = segue.destination as! AddEventViewController
