@@ -9,6 +9,9 @@
 import UIKit
 import Firebase
 
+struct GlobalVariables {
+    static var username = ""
+}
 
 class LoginViewController: UIViewController {
     var data: NSDictionary?
@@ -26,6 +29,7 @@ class LoginViewController: UIViewController {
                 self.data = snapshot.value as? NSDictionary ?? [:]
                 print(self.data)
                 self.loginCheck(value: self.data!)
+//                GlobalVariables.username = usernameTextField.text ?? nil
                 })
         }
     }
@@ -44,9 +48,11 @@ class LoginViewController: UIViewController {
         let firstName = data?["firstName"] as? String
         let lastName = data?["lastName"] as? String
         let name = (firstName ?? "Hello") + " " + (lastName ?? "World")
+        let username = data?["username"] as? String
         if (segue.identifier == "Login to Tasker Home"){
             let vc = segue.destination as! TaskerHomeViewController
             vc.user = name
+            vc.userName = username
         }
     }
 }
