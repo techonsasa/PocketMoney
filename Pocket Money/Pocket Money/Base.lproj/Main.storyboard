@@ -2562,7 +2562,7 @@
                                             <color key="titleColor" red="0.98820193519999999" green="0.67082905910000001" blue="0.71580642179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="UXB-HC-y36" kind="show" id="T0m-Jw-gQG"/>
+                                            <segue destination="UXB-HC-y36" kind="show" id="bcG-22-UTP"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -2743,7 +2743,7 @@
                                             <color key="titleColor" red="0.98820193519999999" green="0.67082905910000001" blue="0.71580642179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="hdB-lY-Sse" kind="show" id="5Ly-do-16X"/>
+                                            <segue destination="hdB-lY-Sse" kind="show" id="Wl6-Nh-6wU"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wo-3g-WNV">
@@ -2762,7 +2762,7 @@
                                             <color key="titleColor" red="0.98820193519999999" green="0.67082905910000001" blue="0.71580642179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="hdB-lY-Sse" kind="show" id="rsM-gQ-l04"/>
+                                            <segue destination="hdB-lY-Sse" kind="show" id="mgd-BV-Kh7"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -2900,6 +2900,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="3q6-Pc-3vy"/>
                     </view>
+                    <connections>
+                        <outlet property="taskerPreviewPFP" destination="hBH-tP-v8c" id="A0K-KZ-j4b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RSe-8Y-8aj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2919,7 +2922,7 @@
         <image name="icons8-true-false-30" width="22.5" height="22.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rsM-gQ-l04"/>
+        <segue reference="mgd-BV-Kh7"/>
         <segue reference="6Ge-QH-6v6"/>
         <segue reference="IDz-1P-gXt"/>
         <segue reference="h7C-o7-JUf"/>
