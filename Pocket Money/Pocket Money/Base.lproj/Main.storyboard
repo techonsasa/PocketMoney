@@ -2006,8 +2006,11 @@
                         <viewLayoutGuide key="safeArea" id="xVG-n8-LZJ"/>
                     </view>
                     <connections>
+                        <outlet property="additionalDates" destination="UCQ-yD-cWg" id="wOV-6J-mRK"/>
+                        <outlet property="hourlyRate" destination="2fp-mw-Blr" id="uXt-9B-Knz"/>
                         <outlet property="jobDescription" destination="J8G-9u-Qyp" id="72T-I4-Dfc"/>
                         <outlet property="jobName" destination="Xdk-Ng-MWb" id="8PC-ft-n2r"/>
+                        <outlet property="taskDatePicker" destination="yrG-Gh-vyx" id="oUU-6d-tCZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhV-pb-fGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2543,7 +2546,7 @@
         <segue reference="6Ge-QH-6v6"/>
         <segue reference="IDz-1P-gXt"/>
         <segue reference="h7C-o7-JUf"/>
-        <segue reference="zT0-Yi-fIy"/>
+        <segue reference="5Wk-6t-iwt"/>
         <segue reference="NYt-QV-SZe"/>
         <segue reference="K2p-CW-Jll"/>
         <segue reference="LTf-Hp-ui4"/>
