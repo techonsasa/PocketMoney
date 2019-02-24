@@ -31,39 +31,48 @@ class TaskerHomeViewController: UIViewController, UITableViewDelegate, UITableVi
     //reference for database
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-//        tableView4.dataSource = self
-   }
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let jobCell = tableView.dequeueReusableCell(withIdentifier: "TaskerHomeTableCell", for: indexPath) as! TaskeeJobPostingCell
+        let jobCell = tableView.dequeueReusableCell(withIdentifier: "TaskerHomeTableCell", for: indexPath) as! TaskerJobPostingCell
         //        jobCell.nameInputText.text = names[indexPath.row][""]
-        jobCell.nameOfTask?.text = data[indexPath.row]["jobName"] as? String
-        jobCell.nameOfTasker?.text = data[indexPath.row]["taskerName"] as? String
-        jobCell.dateOfTask?.text = data[indexPath.row]["jobDate"] as? String
-        jobCell.timeOfTask?.text = data[indexPath.row]["jobTime"] as? String
+        jobCell.NameOfTask?.text = data[indexPath.row]["jobName"] as? String
+        jobCell.Date?.text = data[indexPath.row]["jobDate"] as? String
+        jobCell.Time?.text = data[indexPath.row]["jobTime"] as? String
         return jobCell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(data[indexPath.row])
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView4.delegate = self
+        tableView4.dataSource = self
+        ref = Database.database().reference()
+        getDataFromFirebase()
+        
+        //        tableView4.dataSource = self
+    }
 
-//    func getDataFromFirebase () {
-//        ref.child("tasks").observeSingleEvent(of: .value, with: { (snapshot) in
-//            let spvalue = snapshot.value as? NSDictionary
-//            for (key, value) in spvalue! {
-//                print ("Value : \(value) for key: \(key)")
-//                self.data.append(value as! NSDictionary)
-//            }
-//
-//            print(self.data)
-//            self.tableView4.reloadData()
-//        })
-//    }
+    func getDataFromFirebase () {
+        ref.child("tasks").observeSingleEvent(of: .value, with: { (snapshot) in
+            let spvalue = snapshot.value as? NSDictionary
+            for (key, value) in spvalue! {
+                print ("Value : \(value) for key: \(key)")
+                self.data.append(value as! NSDictionary)
+            }
+
+            print(self.data)
+            self.tableView4.reloadData()
+        })
+    }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "go to add event") {

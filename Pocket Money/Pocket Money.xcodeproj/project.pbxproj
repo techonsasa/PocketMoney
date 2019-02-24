@@ -14,7 +14,7 @@
 		3C3D331A21BCA41600E132DE /* Pocket_Money.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D331821BCA41600E132DE /* Pocket_Money.xcdatamodeld */; };
 		3C3D331C21BCA41800E132DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C3D331B21BCA41800E132DE /* Assets.xcassets */; };
 		3C3D331F21BCA41800E132DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3D331D21BCA41800E132DE /* LaunchScreen.storyboard */; };
-		3C709693221F7F5200005736 /* TaskerProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C709692221F7F5200005736 /* TaskerProfilePage.swift */; };
+		3C709693221F7F5200005736 /* TaskeeProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C709692221F7F5200005736 /* TaskeeProfilePage.swift */; };
 		3C8A96DD221636BD00DE2238 /* TaskerJobPostingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A96DC221636BD00DE2238 /* TaskerJobPostingCell.swift */; };
 		3C9B6E6422111A0D00ABCAF3 /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B6E6322111A0D00ABCAF3 /* AddEventVC.swift */; };
 		3CC2A03B21BCD1D60058A151 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CC2A03A21BCD1D60058A151 /* GoogleService-Info.plist */; };
@@ -45,7 +45,7 @@
 		3C3D331B21BCA41800E132DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C3D331E21BCA41800E132DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C3D332021BCA41800E132DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C709692221F7F5200005736 /* TaskerProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerProfilePage.swift; sourceTree = "<group>"; };
+		3C709692221F7F5200005736 /* TaskeeProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeProfilePage.swift; sourceTree = "<group>"; };
 		3C8A96DC221636BD00DE2238 /* TaskerJobPostingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerJobPostingCell.swift; sourceTree = "<group>"; };
 		3C9B6E6322111A0D00ABCAF3 /* AddEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
 		3CC2A03A21BCD1D60058A151 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -127,7 +127,6 @@
 		3C8A96DE22165D7A00DE2238 /* Tasker */ = {
 			isa = PBXGroup;
 			children = (
-				3C709692221F7F5200005736 /* TaskerProfilePage.swift */,
 				3C8A96DC221636BD00DE2238 /* TaskerJobPostingCell.swift */,
 				3CE5832B21CDC2F10022505E /* SignupTaskerViewController.swift */,
 				3C9B6E6322111A0D00ABCAF3 /* AddEventVC.swift */,
@@ -148,6 +147,7 @@
 				3C35DEC02217B1B100376E1F /* TaskeeProfile.swift */,
 				C9766A32221BDD57004CFC44 /* TaskeeAppliedViewController.swift */,
 				C9766A36221BE6D4004CFC44 /* TaskeeAcceptedViewController.swift */,
+				3C709692221F7F5200005736 /* TaskeeProfilePage.swift */,
 			);
 			path = Taskee;
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 				C96F9822221CF7D700517AD3 /* TaskerAcceptedViewController.swift in Sources */,
 				3C9B6E6422111A0D00ABCAF3 /* AddEventVC.swift in Sources */,
 				C9766A37221BE6D4004CFC44 /* TaskeeAcceptedViewController.swift in Sources */,
-				3C709693221F7F5200005736 /* TaskerProfilePage.swift in Sources */,
+				3C709693221F7F5200005736 /* TaskeeProfilePage.swift in Sources */,
 				C9766A33221BDD57004CFC44 /* TaskeeAppliedViewController.swift in Sources */,
 				3C3D331A21BCA41600E132DE /* Pocket_Money.xcdatamodeld in Sources */,
 				3CE5832C21CDC2F10022505E /* SignupTaskerViewController.swift in Sources */,
