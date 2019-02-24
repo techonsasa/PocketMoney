@@ -17,7 +17,9 @@ class AddEventViewController: UIViewController {
     
     @IBOutlet var jobName: UITextField!
     @IBOutlet var jobDescription: UITextField!
-    
+    @IBOutlet var additionalDates: UITextField!
+    @IBOutlet var hourlyRate: UITextField!
+    @IBOutlet var taskDatePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,23 +33,30 @@ class AddEventViewController: UIViewController {
     @IBAction func addEventPressed(_ sender: Any) {
         let vjobName = jobName.text
         let vjobDescription = jobDescription.text
-        let date = Date()
+//Create Date
+        let createDate = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "MM/dd/yyyy"
-        let result = formatter.string(from: date)
+        let result = formatter.string(from: createDate)
+        let taskDate = additionalDates.text
+        let taskRate = hourlyRate.text
         
         print("Success!")
         let data =
             [vjobName:
                 ["jobName" : vjobName,
                  "jobDescription" : vjobDescription,
-                    "taskerName" : user!,
-                    "jobDate" : "1/2/2019",
-                    "jobTime" : "1200 pm",
-                    "createDate" : result
+                 "taskerName" : user!,
+                 "jobDate" : "1/2/2019",
+                 "jobTime" : "1200 pm",
+                 "createDate" : result,
+                 "taskeDate" : taskDate,
+                 "taskRate" : taskRate
                 ]
             ]
         
         ref?.child("tasks").updateChildValues(data)
     }
 }
+
+//Date Picker View
