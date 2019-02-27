@@ -15,7 +15,7 @@ class TaskerEditVC : UIViewController, UINavigationControllerDelegate {
     @IBAction func openCamera(_ sender: Any) {
         if (UIImagePickerController.isSourceTypeAvailable(.camera)) {
             taskerImagePicker = UIImagePickerController()
-            taskerImagePicker?.delegate = self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
+            taskerImagePicker?.delegate = self
             taskerImagePicker?.sourceType = .camera
             taskerImagePicker?.allowsEditing = false
             self.present(taskerImagePicker!, animated: true, completion: nil)
@@ -24,7 +24,7 @@ class TaskerEditVC : UIViewController, UINavigationControllerDelegate {
 }
 
 extension TaskerEditVC: UIImagePickerControllerDelegate {
-    func taskerImagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         taskerPreviewPFP.image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         picker.dismiss(animated: true, completion: nil)
     }
