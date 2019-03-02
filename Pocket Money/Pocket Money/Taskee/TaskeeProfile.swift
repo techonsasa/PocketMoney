@@ -11,6 +11,12 @@ import Firebase
 
 class TaskeeProfileVC: UIViewController {
     
-    //IBOutlets
+//IBOutlets
+    @IBOutlet var taskeeName: UILabel!
+    @IBOutlet var taskeeUsername: UILabel!
+    @IBOutlet var taskeeGender: UILabel!
+    @IBOutlet var taskeeEmail: UILabel!
+    @IBOutlet var taskeePhoneNumber: UILabel!
     
+
 }
