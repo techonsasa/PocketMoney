@@ -473,6 +473,7 @@
                     </view>
                     <connections>
                         <outlet property="agePicker" destination="BOU-zK-I8k" id="kfe-Ls-7bq"/>
+                        <outlet property="bioTextField" destination="MMY-e5-KNd" id="3GX-um-Hsp"/>
                         <outlet property="emailTextField" destination="w48-b0-HI1" id="qm2-Cy-N94"/>
                         <outlet property="firstNameTextField" destination="gfh-2Y-kti" id="lPR-3f-OnI"/>
                         <outlet property="genderPicker" destination="tKL-yG-oMe" id="U3H-O9-6do"/>
@@ -2962,7 +2963,6 @@
         <image name="icons8-true-false-30" width="22.5" height="22.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QYP-93-szq"/>
         <segue reference="mgd-BV-Kh7"/>
         <segue reference="6Ge-QH-6v6"/>
         <segue reference="IDz-1P-gXt"/>
