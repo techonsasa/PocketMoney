@@ -25,6 +25,7 @@ class SignupTaskerViewController: UIViewController {
     @IBOutlet var phoneTextField: UITextField!
     @IBOutlet var agePicker: UIPickerView!
     @IBOutlet var genderPicker: UIPickerView!
+    @IBOutlet var bioTextField: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +51,7 @@ class SignupTaskerViewController: UIViewController {
         let phoneNumber = phoneTextField.text
         let age = ages[agePicker.selectedRow(inComponent: 0)]
         let gender = genders[genderPicker.selectedRow(inComponent: 0)]
+        let bio = bioTextField.text
 
 //What Saves to Database
         let data =
@@ -62,7 +64,8 @@ class SignupTaskerViewController: UIViewController {
                 "phoneNumber" : phoneNumber,
                 "age" : age,
                 "gender" : gender,
-                "group" : "tasker"
+                "group" : "tasker",
+                "bio" : bio
                 ]
             ]
         
