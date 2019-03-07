@@ -56,22 +56,24 @@ class TaskerHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView4.delegate = self
         tableView4.dataSource = self
         ref = Database.database().reference()
-        getDataFromFirebase()
-        
-        //        tableView4.dataSource = self
+//        getDataFromFirebase()
     }
 
-    func getDataFromFirebase () {
-        ref.child("tasks").observeSingleEvent(of: .value, with: { (snapshot) in
-            let spvalue = snapshot.value as? NSDictionary
-            for (key, value) in spvalue! {
-                print ("Value : \(value) for key: \(key)")
-                self.data.append(value as! NSDictionary)
-            }
-            print(self.data)
-            self.tableView4.reloadData()
-        })
-    }
+//    func getDataFromFirebase () {
+//        print(user)
+//        let query = ref.child("tasks").queryEqual(toValue: user, childKey: "taskerName")
+//        query.observeSingleEvent(of: .value, with: { (snapshot) in
+//            print(snapshot)
+//            let spvalue = snapshot.value as? NSDictionary
+//            print(spvalue)
+////            for (key, value) in spvalue! {
+////                print ("Value : \(value) for key: \(key)")
+////                self.data.append(value as! NSDictionary)
+////            }
+////            print(self.data)
+////            self.tableView4.reloadData()
+//        })
+//    }
     
 //Passing Name Variable
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -12,6 +12,7 @@ import Firebase
 
 class AddEventViewController: UIViewController {
     
+    var datePickerValue: String = DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .none)
     var ref: DatabaseReference?
     var user: String?
     
@@ -20,10 +21,11 @@ class AddEventViewController: UIViewController {
     @IBOutlet var additionalDates: UITextField!
     @IBOutlet var hourlyRate: UITextField!
     @IBOutlet var taskDatePicker: UIDatePicker!
+    @IBOutlet var time: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         ref = Database.database().reference()
     }
     
@@ -33,13 +35,15 @@ class AddEventViewController: UIViewController {
     @IBAction func addEventPressed(_ sender: Any) {
         let vjobName = jobName.text
         let vjobDescription = jobDescription.text
+
 //Create Date
         let createDate = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "MM/dd/yyyy"
         let result = formatter.string(from: createDate)
-        let taskDate = additionalDates.text
+        let additionalTaskDate = additionalDates.text
         let taskRate = hourlyRate.text
+        let taskTime = time.text
         
         print("Success!")
         let data =
@@ -47,16 +51,20 @@ class AddEventViewController: UIViewController {
                 ["jobName" : vjobName,
                  "jobDescription" : vjobDescription,
                  "taskerName" : user!,
-                 "jobDate" : "1/2/2019",
+                 "jobDate" : datePickerValue,
                  "jobTime" : "1200 pm",
                  "createDate" : result,
-                 "taskeDate" : taskDate,
-                 "taskRate" : taskRate
+                 "additionalTaskDate" : additionalTaskDate,
+                 "taskRate" : taskRate,
+                 "taskTime" : taskTime
                 ]
             ]
         
         ref?.child("tasks").updateChildValues(data)
     }
+    @IBAction func finishDatePicking(_ sender: UIDatePicker) {
+        datePickerValue = DateFormatter.localizedString(from: sender.date, dateStyle: .short
+            , timeStyle: .none)
+    }
 }
 
-//Date Picker View
