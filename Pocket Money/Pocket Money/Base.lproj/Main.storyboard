@@ -1246,7 +1246,7 @@
         <!--A8 Taskee Profile-->
         <scene sceneID="O6C-EB-xy8">
             <objects>
-                <viewController title="A8 Taskee Profile" id="Nib-Cb-1vf" sceneMemberID="viewController">
+                <viewController title="A8 Taskee Profile" id="Nib-Cb-1vf" customClass="TaskeeProfileVC" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dfU-8S-4SD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

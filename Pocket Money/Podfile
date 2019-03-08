@@ -10,5 +10,6 @@ target 'Pocket Money' do
 pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
+pod 'FirebaseUI/Database'
 
 end
