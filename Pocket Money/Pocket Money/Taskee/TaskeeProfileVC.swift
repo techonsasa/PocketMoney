@@ -10,9 +10,7 @@ import UIKit
 import Firebase
 
 class TaskeeProfileVC: UIViewController {
-    
-    var ref: DatabaseReference!
-    var data: NSDictionary?
+    var userdata: NSDictionary?
     
 //IBOutlets
     @IBOutlet var taskeeName: UILabel!
@@ -23,15 +21,13 @@ class TaskeeProfileVC: UIViewController {
     
 
     override func viewDidLoad() {
-        ref = Database.database().reference()
-        getProfile(username: "purple")
+        print ("ProfileVC: \(userdata)")
     }
     
-    func getProfile(username: String) {
-        ref.child("users").queryEqual(toValue: username)
-        .observeSingleEvent(of: .value) { (snapshot) in
-            self.data = snapshot as? NSDictionary
-            print("Profile: \(self.data)")
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "Edit Taskee Segue") {
+            let vc = segue.destination as! TaskeeEditVC
+            vc.userdata = self.userdata
         }
     }
 }

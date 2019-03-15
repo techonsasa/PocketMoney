@@ -9,10 +9,6 @@
 import UIKit
 import Firebase
 
-struct GlobalVariables {
-    static var username = ""
-}
-
 class LoginViewController: UIViewController {
     var data: NSDictionary?
     var ref = Database.database().reference()
@@ -27,7 +23,7 @@ class LoginViewController: UIViewController {
         if let username = usernameTextField.text {
             ref.child("users").child(username).observeSingleEvent(of: .value, with: { (snapshot) in
                 self.data = snapshot.value as? NSDictionary ?? [:]
-                print(self.data)
+//                print(self.data)
                 self.loginCheck(value: self.data!)
 //                GlobalVariables.username = usernameTextField.text ?? nil
                 })
@@ -50,9 +46,17 @@ class LoginViewController: UIViewController {
         let name = (firstName ?? "Hello") + " " + (lastName ?? "World")
         let username = data?["username"] as? String
         if (segue.identifier == "Login to Tasker Home"){
-            let vc = segue.destination as! TaskerHomeViewController
-            vc.user = name
-            vc.userName = username
+            let tabvc = segue.destination as! UITabBarController
+            let vc = tabvc.viewControllers?[0] as? TaskerHomeViewController
+            vc?.user = name
+            vc?.userName = username
+        }
+        if (segue.identifier == "Login to Taskee Home"){
+            let tabvc = segue.destination as! UITabBarController
+            let vc = tabvc.viewControllers?[0] as? TaskeeHomeScreenVC
+            vc?.userdata = self.data
+            let profilevc = tabvc.viewControllers?[3] as? TaskeeProfileVC
+            profilevc?.userdata = self.data
         }
     }
 }
