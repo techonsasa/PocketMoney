@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class TaskerEditVC : UIViewController, UINavigationControllerDelegate {
     var taskerImagePicker: UIImagePickerController?
     var userdata: NSDictionary?
+    var ref = Database.database().reference()
     
 //IBOutlets
     @IBOutlet var taskerName: UITextField!
@@ -47,8 +49,35 @@ class TaskerEditVC : UIViewController, UINavigationControllerDelegate {
         taskerBio.text = userdata!["bio"] as! String
     }
 
+    @IBAction func saveButton(_ sender: Any) {
+        let fullName = taskerName.text?.components(separatedBy: " ")
+        let firstName = fullName?[0]
+        let lastName = fullName?[1]
+        let gender = taskerGender.text
+        let email = taskerEmail.text
+        let phoneNumber = taskerNumber.text
+        let bio = taskerBio.text
+        let age = taskerAge.text
+        
+        let data =
+            ["firstName" : firstName,
+             "lastName" : lastName,
+             "email" : email,
+             "phoneNumber" : phoneNumber,
+             "age" : age,
+             "gender" : gender,
+             "bio" : bio
+        ]
+        let username = userdata!["username"] as? String
+        print (username)
+        ref.child("users").child(username!).updateChildValues(data)
+        self.dismiss(animated: true, completion: nil)
+    }
 
-
+    @IBAction func cancelButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 extension TaskerEditVC: UIImagePickerControllerDelegate {
