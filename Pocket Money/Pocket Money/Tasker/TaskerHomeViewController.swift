@@ -14,6 +14,7 @@ class TaskerHomeViewController: UIViewController, UITableViewDelegate, UITableVi
     var userName : String?
     var data = [NSDictionary]()
     var ref : DatabaseReference!
+    var userdata: NSDictionary?
 
     @IBOutlet weak var tableView4: UITableView!
     
