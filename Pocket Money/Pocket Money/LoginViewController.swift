@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
         if let username = usernameTextField.text {
             ref.child("users").child(username).observeSingleEvent(of: .value, with: { (snapshot) in
                 self.data = snapshot.value as? NSDictionary ?? [:]
-//                print(self.data)
+                print(self.data)
                 self.loginCheck(value: self.data!)
 //                GlobalVariables.username = usernameTextField.text ?? nil
                 })

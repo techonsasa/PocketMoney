@@ -13,14 +13,19 @@ class TaskeeEditVC : UIViewController, UINavigationControllerDelegate {
     var userdata : NSDictionary?
     var imagePicker: UIImagePickerController?
     var ref = Database.database().reference()
-    
+
+//IBOulets
     @IBOutlet var taskeeNameTF: UITextField!
     @IBOutlet var taskeeGenderTF: UITextField!
     @IBOutlet var taskeeEmailTF: UITextField!
     @IBOutlet var taskeePhoneTF: UITextField!
     @IBOutlet var taskeeBioTV: UITextView!
     @IBOutlet var taskeeAgeTF: UITextField!
+    @IBOutlet var taskeeUsername: UITextField!
     
+    
+    
+//Camera
     @IBOutlet var preveiwPFP: UIImageView!
     @IBAction func openCamera(_ sender: Any) {
         if (UIImagePickerController.isSourceTypeAvailable(.camera)) {
@@ -33,11 +38,18 @@ class TaskeeEditVC : UIViewController, UINavigationControllerDelegate {
     }
     
     override func viewDidLoad() {
+//Initial Population of Data
         let firstName = userdata!["firstName"] as! String
         let lastName = userdata!["lastName"] as! String
         let fullname = firstName + " " + lastName
         taskeeNameTF.text = fullname
+        taskeeUsername.text = userdata!["username"] as! String
+        taskeeGenderTF.text = userdata!["gender"] as! String
+        taskeeAgeTF.text = userdata!["age"] as! String
+        taskeeEmailTF.text = userdata!["email"] as! String
+        taskeePhoneTF.text = userdata!["phoneNumber"] as! String
         taskeeBioTV.text = userdata!["bio"] as! String
+        
     }
     
     @IBAction func saveButton(_ sender: Any) {

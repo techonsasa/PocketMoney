@@ -1228,6 +1228,7 @@
                         <outlet property="taskeeGenderTF" destination="ncx-dC-quX" id="5Tk-7s-2SB"/>
                         <outlet property="taskeeNameTF" destination="pfr-tI-NJn" id="Xue-6m-Tdh"/>
                         <outlet property="taskeePhoneTF" destination="XSx-34-0vJ" id="bCU-eD-cMR"/>
+                        <outlet property="taskeeUsername" destination="hGf-Gf-FlX" id="aOw-xj-KDs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HVh-CW-9UR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1433,6 +1434,15 @@
                         <viewLayoutGuide key="safeArea" id="ASd-iF-0j7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="icons8-outline-of-a-face-30" selectedImage="icons8-outline-of-a-face-30" id="09f-4h-hE5"/>
+                    <connections>
+                        <outlet property="taskeeAge" destination="aOA-o2-a2I" id="b6U-JK-UH5"/>
+                        <outlet property="taskeeBio" destination="y4e-8c-pFo" id="ObU-9P-RqK"/>
+                        <outlet property="taskeeEmail" destination="dME-Z3-j08" id="7HZ-rf-ZPt"/>
+                        <outlet property="taskeeGender" destination="9bV-xC-lHS" id="Qug-v2-7sV"/>
+                        <outlet property="taskeeName" destination="MKr-wA-SQq" id="kXi-44-FGX"/>
+                        <outlet property="taskeePhoneNumber" destination="kTG-AB-B5g" id="IT1-hh-t7x"/>
+                        <outlet property="taskeeUsername" destination="aLb-U8-60k" id="LbK-Hf-YZk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAx-Zn-r5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
