@@ -22,7 +22,6 @@ class TaskeeProfileVC: UIViewController {
     @IBOutlet var taskeeAge: UILabel!
 
     override func viewDidLoad() {
-        print(userdata?["username"])
         let firstName = userdata!["firstName"] as! String
         let lastName = userdata!["lastName"] as! String
         let fullname = firstName + " " + lastName

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1235,21 +1235,6 @@
             </objects>
             <point key="canvasLocation" x="1260" y="1451"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="DVH-ny-xB2">
-            <objects>
-                <viewController id="nbL-1m-Lxz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ig6-0k-IcI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="EMB-uS-GFI"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1bc-By-TW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1990" y="-2012"/>
-        </scene>
         <!--A8 Taskee Profile-->
         <scene sceneID="O6C-EB-xy8">
             <objects>
@@ -2280,7 +2265,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhV-pb-fGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3480.8000000000002" y="-663.41829085457277"/>
+            <point key="canvasLocation" x="3449" y="-663"/>
         </scene>
         <!--B4 Tasker Applied -->
         <scene sceneID="LZo-FK-3SV">
@@ -2650,7 +2635,7 @@
         <!--B8 Tasker Profile-->
         <scene sceneID="Zpp-XX-Ekr">
             <objects>
-                <viewController title="B8 Tasker Profile" id="hdB-lY-Sse" sceneMemberID="viewController">
+                <viewController title="B8 Tasker Profile" id="hdB-lY-Sse" customClass="TaskerProfileVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Qe-5B-s75">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2675,7 +2660,7 @@
                                             <color key="titleColor" red="0.98820193519999999" green="0.67082905910000001" blue="0.71580642179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="UXB-HC-y36" kind="show" id="bcG-22-UTP"/>
+                                            <segue destination="UXB-HC-y36" kind="show" identifier="Edit Tasker Segue" id="bcG-22-UTP"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -2831,6 +2816,15 @@
                         <viewLayoutGuide key="safeArea" id="FeR-Tu-s54"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="icons8-outline-of-a-face-30" selectedImage="icons8-outline-of-a-face-30" id="eQh-rg-p0O"/>
+                    <connections>
+                        <outlet property="taskerAge" destination="nVC-6u-cON" id="A2i-XF-Tb1"/>
+                        <outlet property="taskerBio" destination="Uha-4l-ETl" id="Ix2-E7-I8J"/>
+                        <outlet property="taskerEmail" destination="CW7-VP-iqa" id="PFE-oB-7Og"/>
+                        <outlet property="taskerGender" destination="hPl-xV-M4u" id="sZ2-sN-8fA"/>
+                        <outlet property="taskerName" destination="WqO-Sm-avS" id="32m-1s-5Tb"/>
+                        <outlet property="taskerPhone" destination="rIM-eG-Jfa" id="JNe-7a-Pdl"/>
+                        <outlet property="taskerUsername" destination="CeC-Uf-XAu" id="bO6-Pt-h9F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HN3-Yp-sHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3020,7 +3014,14 @@
                         <viewLayoutGuide key="safeArea" id="3q6-Pc-3vy"/>
                     </view>
                     <connections>
+                        <outlet property="taskerAge" destination="vzI-x8-Qhj" id="gaa-KT-TWh"/>
+                        <outlet property="taskerBio" destination="vtL-sl-aaz" id="oVh-4k-YWL"/>
+                        <outlet property="taskerEmail" destination="XfV-sa-94r" id="mmy-Mq-Ekz"/>
+                        <outlet property="taskerGender" destination="aPS-xf-IdC" id="d8J-yc-8Is"/>
+                        <outlet property="taskerName" destination="h3g-J1-naN" id="bUO-GK-1xb"/>
+                        <outlet property="taskerNumber" destination="eY4-aK-wdW" id="AHZ-hu-Rsi"/>
                         <outlet property="taskerPreviewPFP" destination="hBH-tP-v8c" id="A0K-KZ-j4b"/>
+                        <outlet property="taskerUsername" destination="ZMu-kh-0aR" id="CH5-sh-RPD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RSe-8Y-8aj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3041,10 +3042,10 @@
         <image name="icons8-true-false-30" width="22.5" height="22.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mgd-BV-Kh7"/>
+        <segue reference="Wl6-Nh-6wU"/>
         <segue reference="IDz-1P-gXt"/>
         <segue reference="D4s-VD-kw9"/>
-        <segue reference="Jj5-kn-a2s"/>
+        <segue reference="5Wk-6t-iwt"/>
         <segue reference="wkZ-Jc-KlH"/>
         <segue reference="K2p-CW-Jll"/>
         <segue reference="RUZ-zc-IMo"/>
@@ -3052,7 +3053,7 @@
         <segue reference="yK4-C7-NwV"/>
         <segue reference="6C1-FM-q3i"/>
         <segue reference="jt3-fk-0sk"/>
-        <segue reference="6Zv-dp-Vrx"/>
+        <segue reference="uSa-tf-VPU"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

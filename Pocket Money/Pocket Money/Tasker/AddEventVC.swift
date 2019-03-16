@@ -61,7 +61,9 @@ class AddEventViewController: UIViewController {
             ]
         
         ref?.child("tasks").updateChildValues(data)
+        self.dismiss(animated: true, completion: nil)
     }
+    
     @IBAction func finishDatePicking(_ sender: UIDatePicker) {
         datePickerValue = DateFormatter.localizedString(from: sender.date, dateStyle: .short
             , timeStyle: .none)

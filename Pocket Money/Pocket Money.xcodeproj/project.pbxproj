@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E6A7902222267730033CB6C /* TaskerProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A7901222267730033CB6C /* TaskerProfilePage.swift */; };
+		2E6A7902222267730033CB6C /* TaskerEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A7901222267730033CB6C /* TaskerEditVC.swift */; };
 		3C35DEC12217B1B100376E1F /* TaskeeProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35DEC02217B1B100376E1F /* TaskeeProfileVC.swift */; };
 		3C3D331221BCA41600E132DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D331121BCA41600E132DE /* AppDelegate.swift */; };
 		3C3D331421BCA41600E132DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D331321BCA41600E132DE /* ViewController.swift */; };
@@ -23,6 +23,7 @@
 		3CE5832821CDB7F90022505E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5832721CDB7F90022505E /* SignUpViewController.swift */; };
 		3CE5832A21CDC2AE0022505E /* SignupTaskeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5832921CDC2AE0022505E /* SignupTaskeeViewController.swift */; };
 		3CE5832C21CDC2F10022505E /* SignupTaskerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5832B21CDC2F10022505E /* SignupTaskerViewController.swift */; };
+		3CFBCA4F223C88C20080F102 /* TaskerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFBCA4E223C88C20080F102 /* TaskerProfileVC.swift */; };
 		5839D8D7220CF4C400661A0C /* TaskeeJobPostingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5839D8D6220CF4C400661A0C /* TaskeeJobPostingCell.swift */; };
 		58F6D21321FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6D21221FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift */; };
 		999051E0BFDE6E1240972B54 /* Pods_Pocket_Money.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F90C15EC08360057D399BF /* Pods_Pocket_Money.framework */; };
@@ -37,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0BBD5C152A6B4CEA7FD9A89E /* Pods-Pocket Money.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket Money.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket Money/Pods-Pocket Money.debug.xcconfig"; sourceTree = "<group>"; };
-		2E6A7901222267730033CB6C /* TaskerProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerProfilePage.swift; sourceTree = "<group>"; };
+		2E6A7901222267730033CB6C /* TaskerEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerEditVC.swift; sourceTree = "<group>"; };
 		3C35DEC02217B1B100376E1F /* TaskeeProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeProfileVC.swift; sourceTree = "<group>"; };
 		3C3D330E21BCA41600E132DE /* Pocket Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Money.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3D331121BCA41600E132DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		3CE5832721CDB7F90022505E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3CE5832921CDC2AE0022505E /* SignupTaskeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTaskeeViewController.swift; sourceTree = "<group>"; };
 		3CE5832B21CDC2F10022505E /* SignupTaskerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTaskerViewController.swift; sourceTree = "<group>"; };
+		3CFBCA4E223C88C20080F102 /* TaskerProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerProfileVC.swift; sourceTree = "<group>"; };
 		5839D8D6220CF4C400661A0C /* TaskeeJobPostingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeJobPostingCell.swift; sourceTree = "<group>"; };
 		58F6D21221FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeHomeScreenVC.swift; sourceTree = "<group>"; };
 		6D81F94DBB5589A19F8A8025 /* Pods-Pocket Money.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket Money.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket Money/Pods-Pocket Money.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,7 +131,7 @@
 		3C8A96DE22165D7A00DE2238 /* Tasker */ = {
 			isa = PBXGroup;
 			children = (
-				2E6A7901222267730033CB6C /* TaskerProfilePage.swift */,
+				2E6A7901222267730033CB6C /* TaskerEditVC.swift */,
 				3C8A96DC221636BD00DE2238 /* TaskerJobPostingCell.swift */,
 				3CE5832B21CDC2F10022505E /* SignupTaskerViewController.swift */,
 				3C9B6E6322111A0D00ABCAF3 /* AddEventVC.swift */,
@@ -137,6 +139,7 @@
 				C9766A38221BF0D3004CFC44 /* TaskerHomeViewController.swift */,
 				C96F981F221CF7BC00517AD3 /* TaskerAppliedViewController.swift */,
 				C96F9821221CF7D700517AD3 /* TaskerAcceptedViewController.swift */,
+				3CFBCA4E223C88C20080F102 /* TaskerProfileVC.swift */,
 			);
 			path = Tasker;
 			sourceTree = "<group>";
@@ -295,7 +298,7 @@
 				C9766A39221BF0D3004CFC44 /* TaskerHomeViewController.swift in Sources */,
 				C96F9820221CF7BC00517AD3 /* TaskerAppliedViewController.swift in Sources */,
 				3C3D331421BCA41600E132DE /* ViewController.swift in Sources */,
-				2E6A7902222267730033CB6C /* TaskerProfilePage.swift in Sources */,
+				2E6A7902222267730033CB6C /* TaskerEditVC.swift in Sources */,
 				5839D8D7220CF4C400661A0C /* TaskeeJobPostingCell.swift in Sources */,
 				58F6D21321FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift in Sources */,
 				3CE5832A21CDC2AE0022505E /* SignupTaskeeViewController.swift in Sources */,
@@ -311,6 +314,7 @@
 				C95F4802221BD6EC005F5032 /* appglobal.swift in Sources */,
 				3C3D331221BCA41600E132DE /* AppDelegate.swift in Sources */,
 				3C8A96DD221636BD00DE2238 /* TaskerJobPostingCell.swift in Sources */,
+				3CFBCA4F223C88C20080F102 /* TaskerProfileVC.swift in Sources */,
 				3CE5832821CDB7F90022505E /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

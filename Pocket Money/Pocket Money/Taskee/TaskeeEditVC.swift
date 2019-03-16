@@ -23,8 +23,6 @@ class TaskeeEditVC : UIViewController, UINavigationControllerDelegate {
     @IBOutlet var taskeeAgeTF: UITextField!
     @IBOutlet var taskeeUsername: UITextField!
     
-    
-    
 //Camera
     @IBOutlet var preveiwPFP: UIImageView!
     @IBAction func openCamera(_ sender: Any) {
@@ -49,7 +47,6 @@ class TaskeeEditVC : UIViewController, UINavigationControllerDelegate {
         taskeeEmailTF.text = userdata!["email"] as! String
         taskeePhoneTF.text = userdata!["phoneNumber"] as! String
         taskeeBioTV.text = userdata!["bio"] as! String
-        
     }
     
     @IBAction func saveButton(_ sender: Any) {
@@ -80,8 +77,6 @@ class TaskeeEditVC : UIViewController, UINavigationControllerDelegate {
     @IBAction func cancelButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    
 }
 
 extension TaskeeEditVC: UIImagePickerControllerDelegate {
