@@ -2644,8 +2644,8 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tasker Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4K-By-Sox">
-                                        <rect key="frame" x="105" y="4" width="165" height="39"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4K-By-Sox">
+                                        <rect key="frame" x="148" y="4" width="79" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
@@ -2849,10 +2849,6 @@
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" red="0.98820193519999999" green="0.67082905910000001" blue="0.71580642179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="cancelButton:" destination="UXB-HC-y36" eventType="touchUpInside" id="Xy0-yT-Xux"/>
-                                            <segue destination="hdB-lY-Sse" kind="show" id="Wl6-Nh-6wU"/>
-                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wo-3g-WNV">
                                         <rect key="frame" x="119" y="4" width="137" height="39"/>
@@ -2869,10 +2865,6 @@
                                         <state key="normal" title="Save">
                                             <color key="titleColor" red="0.98820193519999999" green="0.67082905910000001" blue="0.71580642179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="saveButton:" destination="UXB-HC-y36" eventType="touchUpInside" id="a6i-52-jQa"/>
-                                            <segue destination="hdB-lY-Sse" kind="show" id="mgd-BV-Kh7"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3044,18 +3036,18 @@
         <image name="icons8-true-false-30" width="22.5" height="22.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Zyb-BN-jQ6"/>
+        <segue reference="hMi-Kg-qQI"/>
         <segue reference="IDz-1P-gXt"/>
         <segue reference="D4s-VD-kw9"/>
         <segue reference="5Wk-6t-iwt"/>
-        <segue reference="wkZ-Jc-KlH"/>
+        <segue reference="EzZ-q7-BWl"/>
         <segue reference="K2p-CW-Jll"/>
-        <segue reference="RUZ-zc-IMo"/>
+        <segue reference="uEc-Ay-At8"/>
         <segue reference="SXe-iS-vs9"/>
         <segue reference="yK4-C7-NwV"/>
         <segue reference="6C1-FM-q3i"/>
         <segue reference="jt3-fk-0sk"/>
-        <segue reference="6Zv-dp-Vrx"/>
+        <segue reference="uSa-tf-VPU"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
