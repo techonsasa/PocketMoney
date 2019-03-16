@@ -24,6 +24,8 @@ class SignupTaskeeViewController: UIViewController {
     @IBOutlet var phoneNumberTextField: UITextField!
     @IBOutlet var agePicker: UIPickerView!
     @IBOutlet var genderPicker: UIPickerView!
+    @IBOutlet var bioTextField: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         agePicker.delegate = self
@@ -43,6 +45,7 @@ class SignupTaskeeViewController: UIViewController {
         let phoneNumber = phoneNumberTextField.text
         let age = ages[agePicker.selectedRow(inComponent: 0)]
         let gender = genders[genderPicker.selectedRow(inComponent: 0)]
+        let bio = bioTextField.text
         
         let data =
             [username:
@@ -54,7 +57,8 @@ class SignupTaskeeViewController: UIViewController {
                  "phoneNumber" : phoneNumber,
                  "age" : age,
                  "gender" : gender,
-                 "group" : "taskee"
+                 "group" : "taskee",
+                 "bio" : bio
                 ]
         ]
         

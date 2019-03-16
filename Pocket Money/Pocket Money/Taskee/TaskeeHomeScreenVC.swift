@@ -17,6 +17,7 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
     
     var data = [NSDictionary]()
     var ref : DatabaseReference!
+    var userdata : NSDictionary?
     
     @IBOutlet weak var jobPostingTableView: UITableView!
     
@@ -47,6 +48,7 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
         self.applyRoundCorners(btnMessage)
         ref = Database.database().reference()
         getDataFromFirebase()
+//        print (userdata)
  
     }
     
@@ -68,10 +70,10 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
         ref.child("tasks").observeSingleEvent(of: .value, with: { (snapshot) in
             let spvalue = snapshot.value as? NSDictionary
             for (key, value) in spvalue! {
-                print ("Value : \(value) for key: \(key)")
+//                print ("Value : \(value) for key: \(key)")
                 self.data.append(value as! NSDictionary)
             }
-            print(self.data)
+//            print(self.data)
             self.jobPostingTableView.reloadData()
         })
     }
