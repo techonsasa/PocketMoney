@@ -11,7 +11,7 @@ import Firebase
 
 class TaskeeProfileVC: UIViewController {
     var userdata: NSDictionary?
-    
+
 //IBOutlets
     @IBOutlet var taskeeName: UILabel!
     @IBOutlet var taskeeUsername: UILabel!
@@ -22,6 +22,7 @@ class TaskeeProfileVC: UIViewController {
     @IBOutlet var taskeeAge: UILabel!
 
     override func viewDidLoad() {
+        print(userdata)
         let firstName = userdata!["firstName"] as! String
         let lastName = userdata!["lastName"] as! String
         let fullname = firstName + " " + lastName
@@ -33,7 +34,7 @@ class TaskeeProfileVC: UIViewController {
         taskeePhoneNumber.text = userdata!["phoneNumber"] as! String
         taskeeBio.text = userdata!["bio"] as! String
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "Edit Taskee Segue") {
             let vc = segue.destination as! TaskeeEditVC

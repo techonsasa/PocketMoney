@@ -39,6 +39,7 @@ class TaskerHomeViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     override func viewDidLoad() {
+        print(data)
         super.viewDidLoad()
         tableView4.delegate = self
         tableView4.dataSource = self

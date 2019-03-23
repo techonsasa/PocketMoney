@@ -20,8 +20,9 @@ class TaskerProfileVC: UIViewController {
     @IBOutlet var taskerEmail: UILabel!
     @IBOutlet var taskerPhone: UILabel!
     @IBOutlet var taskerBio: UITextView!
-    
+
     override func viewDidLoad() {
+        print(userdata)
         let firstName = userdata!["firstName"] as! String
         let lastName = userdata!["lastName"] as! String
         let fullname = firstName + " " + lastName
@@ -36,7 +37,7 @@ class TaskerProfileVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "Edit Tasker Segue") {
-            let vc = segue.destination as! TaskeeEditVC
+            let vc = segue.destination as! TaskerEditVC
             vc.userdata = self.userdata
         }
     }
