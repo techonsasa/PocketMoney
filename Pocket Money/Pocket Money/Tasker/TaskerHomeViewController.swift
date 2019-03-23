@@ -49,8 +49,11 @@ class TaskerHomeViewController: UIViewController, UITableViewDelegate, UITableVi
     func getDataFromFirebase () {
         let query = ref.child("tasks").queryOrdered(byChild: "taskerName").queryEqual(toValue: user)
         query.observeSingleEvent(of: .value) { (snapshot) in
-            let sp = snapshot.value as? NSDictionary
-            for (_, value) in sp! {
+            var sp = snapshot.value as? NSDictionary
+            if (sp == nil) {
+                sp = [:]
+            }
+            for (_, value) in sp!  {
                 self.data.append(value as! NSDictionary)
             }
             self.tableView4.reloadData()

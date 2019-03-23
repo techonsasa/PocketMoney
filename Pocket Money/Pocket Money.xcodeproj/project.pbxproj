@@ -18,6 +18,9 @@
 		3C709693221F7F5200005736 /* TaskeeEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C709692221F7F5200005736 /* TaskeeEditVC.swift */; };
 		3C8A96DD221636BD00DE2238 /* TaskerJobPostingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A96DC221636BD00DE2238 /* TaskerJobPostingCell.swift */; };
 		3C9B6E6422111A0D00ABCAF3 /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B6E6322111A0D00ABCAF3 /* AddEventVC.swift */; };
+		3CB4FDB62244539900B237B6 /* TaskerInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB4FDB52244539900B237B6 /* TaskerInformation.swift */; };
+		3CB73ED02245A03700B982ED /* TaskeeInformationConfirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73ECF2245A03700B982ED /* TaskeeInformationConfirm.swift */; };
+		3CB73ED22245B24C00B982ED /* TaskeeConfirmed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73ED12245B24C00B982ED /* TaskeeConfirmed.swift */; };
 		3CC2A03B21BCD1D60058A151 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CC2A03A21BCD1D60058A151 /* GoogleService-Info.plist */; };
 		3CE5832621CDB7410022505E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5832521CDB7410022505E /* LoginViewController.swift */; };
 		3CE5832821CDB7F90022505E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5832721CDB7F90022505E /* SignUpViewController.swift */; };
@@ -51,6 +54,9 @@
 		3C709692221F7F5200005736 /* TaskeeEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeEditVC.swift; sourceTree = "<group>"; };
 		3C8A96DC221636BD00DE2238 /* TaskerJobPostingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerJobPostingCell.swift; sourceTree = "<group>"; };
 		3C9B6E6322111A0D00ABCAF3 /* AddEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
+		3CB4FDB52244539900B237B6 /* TaskerInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerInformation.swift; sourceTree = "<group>"; };
+		3CB73ECF2245A03700B982ED /* TaskeeInformationConfirm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeInformationConfirm.swift; sourceTree = "<group>"; };
+		3CB73ED12245B24C00B982ED /* TaskeeConfirmed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeConfirmed.swift; sourceTree = "<group>"; };
 		3CC2A03A21BCD1D60058A151 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3CE5832521CDB7410022505E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3CE5832721CDB7F90022505E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -148,12 +154,15 @@
 			isa = PBXGroup;
 			children = (
 				5839D8D6220CF4C400661A0C /* TaskeeJobPostingCell.swift */,
-				58F6D21221FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift */,
 				3CE5832921CDC2AE0022505E /* SignupTaskeeViewController.swift */,
 				3C35DEC02217B1B100376E1F /* TaskeeProfileVC.swift */,
 				C9766A32221BDD57004CFC44 /* TaskeeAppliedViewController.swift */,
 				C9766A36221BE6D4004CFC44 /* TaskeeAcceptedViewController.swift */,
 				3C709692221F7F5200005736 /* TaskeeEditVC.swift */,
+				58F6D21221FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift */,
+				3CB4FDB52244539900B237B6 /* TaskerInformation.swift */,
+				3CB73ECF2245A03700B982ED /* TaskeeInformationConfirm.swift */,
+				3CB73ED12245B24C00B982ED /* TaskeeConfirmed.swift */,
 			);
 			path = Taskee;
 			sourceTree = "<group>";
@@ -300,10 +309,13 @@
 				3C3D331421BCA41600E132DE /* ViewController.swift in Sources */,
 				2E6A7902222267730033CB6C /* TaskerEditVC.swift in Sources */,
 				5839D8D7220CF4C400661A0C /* TaskeeJobPostingCell.swift in Sources */,
+				3CB73ED22245B24C00B982ED /* TaskeeConfirmed.swift in Sources */,
 				58F6D21321FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift in Sources */,
 				3CE5832A21CDC2AE0022505E /* SignupTaskeeViewController.swift in Sources */,
 				C96F9822221CF7D700517AD3 /* TaskerAcceptedViewController.swift in Sources */,
 				3C9B6E6422111A0D00ABCAF3 /* AddEventVC.swift in Sources */,
+				3CB73ED02245A03700B982ED /* TaskeeInformationConfirm.swift in Sources */,
+				3CB4FDB62244539900B237B6 /* TaskerInformation.swift in Sources */,
 				C9766A37221BE6D4004CFC44 /* TaskeeAcceptedViewController.swift in Sources */,
 				3C709693221F7F5200005736 /* TaskeeEditVC.swift in Sources */,
 				C9766A33221BDD57004CFC44 /* TaskeeAppliedViewController.swift in Sources */,

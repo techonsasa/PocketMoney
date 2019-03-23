@@ -14,7 +14,3 @@ class TaskeeJobPostingCell: UITableViewCell{
     @IBOutlet weak var timeOfTask: UILabel!
     @IBOutlet weak var dateOfTask: UILabel!
 }
-
-class TestTaskeeJobPostingCell1: UITableViewCell{
-//
-}

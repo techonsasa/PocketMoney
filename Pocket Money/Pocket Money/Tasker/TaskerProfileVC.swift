@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class TaskerProfileVC: UIViewController {
     var userdata: NSDictionary?
@@ -19,7 +20,7 @@ class TaskerProfileVC: UIViewController {
     @IBOutlet var taskerEmail: UILabel!
     @IBOutlet var taskerPhone: UILabel!
     @IBOutlet var taskerBio: UITextView!
-
+    
     override func viewDidLoad() {
         let firstName = userdata!["firstName"] as! String
         let lastName = userdata!["lastName"] as! String

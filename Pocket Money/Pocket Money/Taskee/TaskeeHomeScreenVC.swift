@@ -6,7 +6,6 @@
 //  Copyright © 2019 Ayeeshi Poosarla. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import Firebase
 
@@ -15,11 +14,20 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
 //    var names = ["Mohan Goyal", "Seth Kutty", "Mike Russo", "Christina James"]
 //    var taskTime = ["11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM"]
     
+    var selectedData : NSDictionary?
     var data = [NSDictionary]()
     var ref : DatabaseReference!
     var userdata : NSDictionary?
     
     @IBOutlet weak var jobPostingTableView: UITableView!
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
@@ -36,7 +44,9 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(data[indexPath.row])
+        selectedData = data[indexPath.row]
+//        print (data[indexPath.row])
+        performSegue(withIdentifier: "Taskee to Task Segue", sender: self)
     }
     
     @IBOutlet weak var btnMessage: UIButton!
@@ -45,25 +55,14 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         jobPostingTableView.delegate = self
         jobPostingTableView.dataSource = self
-        self.applyRoundCorners(btnMessage)
         ref = Database.database().reference()
         getDataFromFirebase()
 //        print (userdata)
  
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        jobPostingTableView.estimatedRowHeight = 100
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-
-    func applyRoundCorners(_ object:AnyObject )  {
-        
-        object.layer.cornerRadius = object.frame.size.width / 2
-        object.layer.masksToBounds = true
     }
     
     func getDataFromFirebase () {
@@ -76,5 +75,13 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
 //            print(self.data)
             self.jobPostingTableView.reloadData()
         })
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "Taskee to Task Segue") {
+            let vc = segue.destination as! TaskerInformation
+            vc.data = selectedData
+            vc.userdata = userdata
+        }
     }
 }
