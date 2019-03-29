@@ -62,7 +62,7 @@ class LoginViewController: UIViewController {
             let tabvc = segue.destination as! UITabBarController
             let vc = tabvc.viewControllers?[0] as? TaskerHomeViewController
             vc?.userdata = self.data
-            let profilevc = tabvc.viewControllers?[3] as? TaskerProfileVC
+            let profilevc = tabvc.viewControllers?[2] as? TaskerProfileVC
             profilevc?.userdata = self.data
         }
     }

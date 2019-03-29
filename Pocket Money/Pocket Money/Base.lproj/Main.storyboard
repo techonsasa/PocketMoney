@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -781,7 +781,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OaV-bh-39E">
-                                                    <rect key="frame" x="53" y="17" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="60" y="17" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -795,7 +795,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="icons8-hourglass-30" id="W4b-Q6-JVl">
-                                                    <rect key="frame" x="15" y="15" width="23" height="23"/>
+                                                    <rect key="frame" x="15" y="11" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -1605,7 +1605,7 @@
                                             <color key="titleColor" red="0.98823529409999999" green="0.6705882353" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BVN-oO-tBp" kind="show" id="KPV-tM-V7y"/>
+                                            <action selector="backButton:" destination="Y0f-8h-7r9" eventType="touchUpInside" id="eDF-bc-E8H"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1738,7 +1738,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PqL-Dy-e5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3421.5999999999999" y="53.523238380809602"/>
+            <point key="canvasLocation" x="3449" y="54"/>
         </scene>
         <!--Taskee Information Confirm-->
         <scene sceneID="oOh-WZ-B09">
@@ -1760,7 +1760,7 @@
                                             <color key="titleColor" red="0.98823529409999999" green="0.6705882353" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Y0f-8h-7r9" kind="show" id="fPv-5T-0KQ"/>
+                                            <action selector="backButton:" destination="xNR-sA-PYg" eventType="touchUpInside" id="NdQ-Eb-p0p"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirm Application" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6II-t2-3Rd">
@@ -1847,6 +1847,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="confirmButton:" destination="xNR-sA-PYg" eventType="touchUpInside" id="Zwg-6U-djG"/>
                                             <segue destination="EZJ-L8-Vdw" kind="show" identifier="Applicant Info to Confirm" id="j5H-Nd-rC2"/>
                                         </connections>
                                     </button>
@@ -1990,7 +1991,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BVN-oO-tBp" kind="show" id="o21-mL-YSk"/>
+                                    <segue destination="BVN-oO-tBp" kind="show" identifier="Back to Home" id="o21-mL-YSk"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkMarkPic" translatesAutoresizingMaskIntoConstraints="NO" id="QVF-Bt-tCT">
@@ -2104,7 +2105,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="ASZ-xi-A16" kind="relationship" relationship="viewControllers" id="urI-CD-0di"/>
-                        <segue destination="fcf-Cy-ZNA" kind="relationship" relationship="viewControllers" id="D4s-VD-kw9"/>
                         <segue destination="UqM-jR-CVn" kind="relationship" relationship="viewControllers" id="6es-Er-uqR"/>
                         <segue destination="hdB-lY-Sse" kind="relationship" relationship="viewControllers" id="Zyb-BN-jQ6"/>
                     </connections>
@@ -2461,7 +2461,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vhW-sH-h3Q">
-                                                    <rect key="frame" x="53" y="13" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="60" y="13" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2475,7 +2475,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="icons8-hourglass-30" id="bJ8-Bw-xjA">
-                                                    <rect key="frame" x="15" y="11" width="23" height="23"/>
+                                                    <rect key="frame" x="15" y="8" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -2487,7 +2487,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9j7-AS-yTX"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Applied/Accepted" image="icons8-true-false-30" selectedImage="icons8-true-false-30" id="QG7-Qt-Pha"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView5" destination="0fe-r3-l2c" id="0ad-Nz-awe"/>
@@ -2591,7 +2590,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="icons8-home-30" selectedImage="icons8-home-30" id="8Zx-pR-wtm"/>
                     <connections>
                         <outlet property="tableView4" destination="aXz-cs-gd5" id="85O-0I-JfJ"/>
-                        <segue destination="aiG-zz-kRL" kind="show" id="M7l-QN-nD5"/>
+                        <segue destination="aiG-zz-kRL" kind="show" identifier="Tasker Home to Task Info" id="M7l-QN-nD5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="paT-Cs-Jg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3043,17 +3042,16 @@
         <image name="DadPFP" width="769" height="717"/>
         <image name="Logo 2" width="832" height="688"/>
         <image name="checkMarkPic" width="512" height="512"/>
-        <image name="icons8-home-30" width="22.5" height="22.5"/>
-        <image name="icons8-hourglass-30" width="22.5" height="22.5"/>
-        <image name="icons8-ledger-30" width="22.5" height="22.5"/>
-        <image name="icons8-outline-of-a-face-30" width="22.5" height="22.5"/>
-        <image name="icons8-plus" width="37.544975280761719" height="37.544975280761719"/>
-        <image name="icons8-true-false-30" width="22.5" height="22.5"/>
+        <image name="icons8-home-30" width="30" height="30"/>
+        <image name="icons8-hourglass-30" width="30" height="30"/>
+        <image name="icons8-ledger-30" width="30" height="30"/>
+        <image name="icons8-outline-of-a-face-30" width="30" height="30"/>
+        <image name="icons8-plus" width="600" height="600"/>
+        <image name="icons8-true-false-30" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="JqY-Yg-j0D"/>
-        <segue reference="KPV-tM-V7y"/>
-        <segue reference="owJ-sw-VAO"/>
+        <segue reference="o21-mL-YSk"/>
         <segue reference="uEc-Ay-At8"/>
         <segue reference="SXe-iS-vs9"/>
         <segue reference="yK4-C7-NwV"/>

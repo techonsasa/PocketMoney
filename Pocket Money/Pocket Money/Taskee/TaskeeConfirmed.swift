@@ -7,21 +7,23 @@
 //
 
 import UIKit
-//import Firebase
+import Firebase
 
 class TaskeeConfirmed : UIViewController {
     var data: NSDictionary?
     var userdata: NSDictionary?
+    var ref = Database.database().reference()
     
     override func viewDidLoad() {
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "Applicant Info to Confirm") {
-            let vc = segue.destination as! TaskeeInformationConfirm
-            vc.data = data
-            vc.userdata = userdata
+        if (segue.identifier == "Back to Home") {
+            let tabvc = segue.destination as! UITabBarController
+            let vc = tabvc.viewControllers?[0] as? TaskeeHomeScreenVC
+            vc?.userdata = userdata
+            let profilevc = tabvc.viewControllers?[3] as? TaskeeProfileVC
+            profilevc?.userdata = userdata
         }
     }
 }

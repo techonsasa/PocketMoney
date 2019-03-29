@@ -31,6 +31,11 @@ class TaskerInformation: UIViewController {
         taskDescription.text = data!["jobDescription"] as! String
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "Tasker Details to Confirm") {
             let vc = segue.destination as! TaskeeInformationConfirm

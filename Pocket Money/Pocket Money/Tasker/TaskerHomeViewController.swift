@@ -27,7 +27,6 @@ class TaskerHomeViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let jobCell = tableView.dequeueReusableCell(withIdentifier: "TaskerHomeTableCell", for: indexPath) as! TaskerJobPostingCell
-        //        jobCell.nameInputText.text = names[indexPath.row][""]
         jobCell.NameOfTask?.text = data[indexPath.row]["jobName"] as? String
         jobCell.Date?.text = data[indexPath.row]["jobDate"] as? String
         jobCell.Time?.text = data[indexPath.row]["jobTime"] as? String
