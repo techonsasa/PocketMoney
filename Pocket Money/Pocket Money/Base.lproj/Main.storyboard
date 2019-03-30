@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -781,7 +781,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OaV-bh-39E">
-                                                    <rect key="frame" x="53" y="15" width="33" height="23.5"/>
+                                                    <rect key="frame" x="60" y="15" width="33" height="23.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -795,7 +795,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="icons8-hourglass-30" id="W4b-Q6-JVl">
-                                                    <rect key="frame" x="15" y="15" width="23" height="23"/>
+                                                    <rect key="frame" x="15" y="11" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -964,7 +964,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3q-5H-NeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2734" y="1442"/>
+            <point key="canvasLocation" x="3449" y="751"/>
         </scene>
         <!--A7 Taskee Transaction-->
         <scene sceneID="ykJ-BK-3wC">
@@ -1233,7 +1233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HVh-CW-9UR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="1451"/>
+            <point key="canvasLocation" x="510" y="751"/>
         </scene>
         <!--A8 Taskee Profile-->
         <scene sceneID="O6C-EB-xy8">
@@ -2461,7 +2461,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vhW-sH-h3Q">
-                                                    <rect key="frame" x="53" y="12" width="33" height="23.5"/>
+                                                    <rect key="frame" x="60" y="12" width="33" height="23.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -2475,7 +2475,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="icons8-hourglass-30" id="bJ8-Bw-xjA">
-                                                    <rect key="frame" x="15" y="11" width="23" height="23"/>
+                                                    <rect key="frame" x="15" y="8" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -2591,6 +2591,7 @@
                     <connections>
                         <outlet property="tableView4" destination="aXz-cs-gd5" id="85O-0I-JfJ"/>
                         <segue destination="aiG-zz-kRL" kind="show" identifier="Tasker Home to Task Info" id="M7l-QN-nD5"/>
+                        <segue destination="fcf-Cy-ZNA" kind="show" identifier="Tasker Home to Applied" id="vGB-EQ-dA0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="paT-Cs-Jg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3034,7 +3035,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RSe-8Y-8aj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="-2011.8440779610196"/>
+            <point key="canvasLocation" x="510" y="-1337"/>
         </scene>
     </scenes>
     <resources>
@@ -3042,17 +3043,16 @@
         <image name="DadPFP" width="769" height="717"/>
         <image name="Logo 2" width="832" height="688"/>
         <image name="checkMarkPic" width="512" height="512"/>
-        <image name="icons8-home-30" width="22.5" height="22.5"/>
-        <image name="icons8-hourglass-30" width="22.5" height="22.5"/>
-        <image name="icons8-ledger-30" width="22.5" height="22.5"/>
-        <image name="icons8-outline-of-a-face-30" width="22.5" height="22.5"/>
-        <image name="icons8-plus" width="37.544975280761719" height="37.544975280761719"/>
-        <image name="icons8-true-false-30" width="22.5" height="22.5"/>
+        <image name="icons8-home-30" width="30" height="30"/>
+        <image name="icons8-hourglass-30" width="30" height="30"/>
+        <image name="icons8-ledger-30" width="30" height="30"/>
+        <image name="icons8-outline-of-a-face-30" width="30" height="30"/>
+        <image name="icons8-plus" width="600" height="600"/>
+        <image name="icons8-true-false-30" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YcX-bw-bKZ"/>
         <segue reference="JqY-Yg-j0D"/>
-        <segue reference="EzZ-q7-BWl"/>
+        <segue reference="17v-p0-EAP"/>
         <segue reference="uEc-Ay-At8"/>
         <segue reference="SXe-iS-vs9"/>
         <segue reference="yK4-C7-NwV"/>
