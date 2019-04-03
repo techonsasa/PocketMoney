@@ -473,6 +473,7 @@
                     </view>
                     <connections>
                         <outlet property="agePicker" destination="BOU-zK-I8k" id="kfe-Ls-7bq"/>
+                        <outlet property="bioTextField" destination="MMY-e5-KNd" id="gus-8N-Gsr"/>
                         <outlet property="emailTextField" destination="w48-b0-HI1" id="qm2-Cy-N94"/>
                         <outlet property="firstNameTextField" destination="gfh-2Y-kti" id="lPR-3f-OnI"/>
                         <outlet property="genderPicker" destination="tKL-yG-oMe" id="U3H-O9-6do"/>
@@ -681,6 +682,7 @@
                     </view>
                     <connections>
                         <outlet property="agePicker" destination="H2f-oo-kNc" id="ULv-kp-6zD"/>
+                        <outlet property="bioTextField" destination="PIB-KD-fu2" id="SsE-8D-gKG"/>
                         <outlet property="emailTextField" destination="9Mc-N0-IRP" id="8n5-bR-p56"/>
                         <outlet property="firstNameTextField" destination="IeY-c8-fIr" id="tcG-D8-ame"/>
                         <outlet property="genderPicker" destination="fVw-ck-HUB" id="aC4-Xt-YyV"/>
@@ -773,7 +775,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="taskeeAppliedCell" textLabel="OaV-bh-39E" detailTextLabel="4E1-uT-TXq" imageView="W4b-Q6-JVl" rowHeight="54" style="IBUITableViewCellStyleValue1" id="ReD-C1-T64">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="taskeeAppliedCell" textLabel="OaV-bh-39E" detailTextLabel="4E1-uT-TXq" imageView="W4b-Q6-JVl" rowHeight="54" style="IBUITableViewCellStyleValue1" id="ReD-C1-T64" customClass="TaskeeAppliedJobCell" customModule="Pocket_Money" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ReD-C1-T64" id="bnn-ML-r5b">
@@ -800,6 +802,10 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="taskName" destination="OaV-bh-39E" id="PWL-pd-CHJ"/>
+                                            <outlet property="taskerName" destination="4E1-uT-TXq" id="VxV-Ff-7js"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -856,7 +862,7 @@
                     <tabBarItem key="tabBarItem" title="Applied/Accepted" image="icons8-true-false-30" selectedImage="icons8-true-false-30" id="DZx-Tg-dr0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView2" destination="oSz-6s-aeM" id="HsC-wl-vvT"/>
+                        <outlet property="tableView" destination="oSz-6s-aeM" id="Vcw-nY-Kun"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6V-Gg-Xbv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -889,7 +895,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="taskeeAcceptedCell" textLabel="HD0-Xn-ma9" detailTextLabel="Grr-LK-jCy" imageView="wgf-pl-oy1" rowHeight="55" style="IBUITableViewCellStyleValue1" id="woL-sf-p7b">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="taskeeAcceptedCell" textLabel="HD0-Xn-ma9" detailTextLabel="Grr-LK-jCy" imageView="wgf-pl-oy1" rowHeight="55" style="IBUITableViewCellStyleValue1" id="woL-sf-p7b" customClass="TaskeeAcceptedJobCell" customModule="Pocket_Money" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="woL-sf-p7b" id="CEi-gb-oCZ">
@@ -916,6 +922,10 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="jobName" destination="HD0-Xn-ma9" id="det-Ek-Yca"/>
+                                            <outlet property="taskerName" destination="Grr-LK-jCy" id="xpi-C7-ngd"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -959,7 +969,7 @@
                     <tabBarItem key="tabBarItem" title="Applied/Accepted" image="icons8-true-false-30" selectedImage="icons8-true-false-30" id="yIH-ZI-sAo"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView3" destination="69P-iR-Fvh" id="0Fe-dF-aV7"/>
+                        <outlet property="tableView" destination="69P-iR-Fvh" id="REs-eW-Gex"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3q-5H-NeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2488,9 +2498,6 @@
                         <viewLayoutGuide key="safeArea" id="9j7-AS-yTX"/>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="tableView5" destination="0fe-r3-l2c" id="0ad-Nz-awe"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLq-83-J58" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2601,7 +2608,7 @@
         <!--B7 Tasker Transaction-->
         <scene sceneID="DjM-MB-d4v">
             <objects>
-                <viewController title="B7 Tasker Transaction" id="UqM-jR-CVn" customClass="TaskerTXNViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="B7 Tasker Transaction" id="UqM-jR-CVn" customClass="TaskerTransactionViewController" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BC5-Zp-FLz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3057,7 +3064,7 @@
         <segue reference="SXe-iS-vs9"/>
         <segue reference="yK4-C7-NwV"/>
         <segue reference="1xd-mr-VnX"/>
-        <segue reference="jt3-fk-0sk"/>
+        <segue reference="Q9o-JB-a9p"/>
         <segue reference="uSa-tf-VPU"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
