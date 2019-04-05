@@ -9,8 +9,9 @@
 import UIKit
 import Firebase
 
-class TaskerHomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TaskerHomeViewController: UIViewController, UITableViewDataSource {
     
+    var selectedTask : NSDictionary?
     var userName : String?
     var data = [NSDictionary]()
     var ref : DatabaseReference!
@@ -31,10 +32,6 @@ class TaskerHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         jobCell.Date?.text = data[indexPath.row]["jobDate"] as? String
         jobCell.Time?.text = data[indexPath.row]["jobTime"] as? String
         return jobCell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(data[indexPath.row])
     }
     
     override func viewDidLoad() {
@@ -65,6 +62,22 @@ class TaskerHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         if (segue.identifier == "go to add event") {
             let vc = segue.destination as! AddEventViewController
             vc.user = user
+        } else if (segue.identifier == "Tasker Home to Task Info") {
+            //pass data to task info page
+        } else if (segue.identifier == "Tasker Home to Applied") {
+            let vc = segue.destination as! TaskerAppliedViewController
+            vc.taskData = selectedTask
+        }
+    }
+}
+
+extension TaskerHomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedTask = data[indexPath.row]
+        if (selectedTask?["accepted"] != nil) {
+            performSegue(withIdentifier: "Tasker Home to Task Info", sender: self)
+        } else {
+            performSegue(withIdentifier: "Tasker Home to Applied", sender: self)
         }
     }
 }

@@ -7,27 +7,26 @@
 //
 
 import UIKit
+import Firebase
 
 class TaskerAppliedViewController: UIViewController {
 
+    var selectedUser : NSDictionary?
+    var taskData : NSDictionary?
+    var ref = Database.database().reference()
+    
     @IBOutlet weak var tableView5: UITableView!
 
-    
-    var txns = [(tasker: "Patience Stromberg", amount:"$20"),
-                (tasker: "Vonnie Heintzelman", amount:"$30"),
-                (tasker: "Audria Yount", amount:"$100"),
-                (tasker: "David Mcneely", amount:"$50"),
-                (tasker: "Teisha Kanne", amount:"$20"),
-                (tasker: "Jay Mccloy", amount:"$30"),
-                (tasker: "Mark Russo", amount:"$10"),
-                (tasker: "Carmelita Focht", amount:"$40"),
-                ]
+    var txns = [NSDictionary] ()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         tableView5.dataSource = self
-        
+        let applicants = taskData!["applied"] as? NSDictionary
+        for (_, value) in applicants! {
+            txns.append(value as! NSDictionary)
+            print(value)
+        }
     }
 //TaskerAppliedCell    
 }
@@ -35,12 +34,10 @@ class TaskerAppliedViewController: UIViewController {
 extension TaskerAppliedViewController: UITableViewDataSource
 {
     
-    func numberOfSections(in tableView5: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // return tasks.count
-        //  return apps.count
+    func tableView(_ tableView5: UITableView, numberOfRowsInSection section: Int) -> Int {
         return txns.count
     }
     
@@ -49,8 +46,8 @@ extension TaskerAppliedViewController: UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskerAppliedCell")!
         
         let app = txns[indexPath.row]
-        cell.textLabel?.text=app.tasker
-        cell.detailTextLabel?.text=app.amount
+        cell.textLabel?.text = app["fullName"] as? String
+//        cell.detailTextLabel?.text=app.amount
         
         
         //        let app = tasks[indexPath.row]
@@ -64,5 +61,16 @@ extension TaskerAppliedViewController: UITableViewDataSource
         
         return cell
         
+    }
+}
+
+extension TaskerAppliedViewController : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let userName = txns[indexPath.row]["username"] as! String
+        let query = ref.child("users").child(userName)
+        query.observeSingleEvent(of: .value) { (snapshot) in
+            self.selectedUser = snapshot.value as? NSDictionary
+            self.performSegue(withIdentifier: "Taskee Info", sender: self)
+        }
     }
 }
