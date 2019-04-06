@@ -21,9 +21,16 @@ class TaskerAppliedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView5.dataSource = self
+        tableView5.delegate = self
         let applicants = taskData!["applied"] as? NSDictionary
         for (_, value) in applicants! {
             appliedTaskees.append(value as! NSDictionary)
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "Taskee Info") {
+            let vc = segue.destination as! TaskeeInformation
+            vc.userdata = selectedUser
         }
     }
 }
@@ -43,12 +50,6 @@ extension TaskerAppliedViewController: UITableViewDataSource
         cell.textLabel?.text = app["fullName"] as? String
         return cell
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "Taskee Info") {
-            let vc = segue.destination as! TaskeeInformation
-            vc.userdata = selectedUser
-        }
-    }
 }
 
 extension TaskerAppliedViewController : UITableViewDelegate {
@@ -57,6 +58,7 @@ extension TaskerAppliedViewController : UITableViewDelegate {
         let query = ref.child("users").child(userName)
         query.observeSingleEvent(of: .value) { (snapshot) in
             self.selectedUser = snapshot.value as? NSDictionary
+            print("This is from applied page: \(self.selectedUser)")
             self.performSegue(withIdentifier: "Taskee Info", sender: self)
         }
     }

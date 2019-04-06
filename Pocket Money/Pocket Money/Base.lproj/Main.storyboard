@@ -3204,7 +3204,6 @@
                         <outlet property="taskeeGender" destination="yDq-lQ-dIV" id="Zyn-7R-Rjs"/>
                         <outlet property="taskeeName" destination="noV-ef-aws" id="XJH-X7-LOR"/>
                         <outlet property="taskeeNumber" destination="KFD-Js-Rbj" id="TMa-wS-uBv"/>
-                        <outlet property="taskeePhoneNumber" destination="KFD-Js-Rbj" id="Gt5-CI-l9G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="acT-wb-qRi" userLabel="First Responder" sceneMemberID="firstResponder"/>

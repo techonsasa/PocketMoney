@@ -7,14 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
 class TaskeeInformation : UIViewController {
     
     var userdata : NSDictionary?
-    
-    override func viewDidLoad() {
-        print(userdata)
-    }
     
     @IBOutlet var taskeeName: UILabel!
     @IBOutlet var taskeeGender: UILabel!
@@ -22,6 +19,20 @@ class TaskeeInformation : UIViewController {
     @IBOutlet var taskeeEmail: UILabel!
     @IBOutlet var taskeeNumber: UILabel!
     @IBOutlet var taskeeBio: UITextView!
+    
+    override func viewDidLoad() {
+        let firstName = userdata!["firstName"] as? String
+        let lastName = userdata!["lastName"] as? String
+        let fullName = firstName! + " " + lastName!
+        taskeeName.text = fullName
+        taskeeGender.text = userdata!["gender"] as? String
+        taskeeAge.text = userdata!["age"] as? String
+        taskeeEmail.text = userdata!["email"] as? String
+        taskeeNumber.text = userdata!["phoneNumber"] as? String
+        taskeeBio.text = userdata!["bio"] as? String
+    }
+
     @IBAction func acceptPressed(_ sender: Any) {
+        
     }
 }
