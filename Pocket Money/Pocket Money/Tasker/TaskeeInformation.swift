@@ -36,5 +36,6 @@ class TaskeeInformation : UIViewController {
     }
 
     @IBAction func acceptPressed(_ sender: Any) {
+//        dismiss(animated: true, completion: nil)
     }
 }

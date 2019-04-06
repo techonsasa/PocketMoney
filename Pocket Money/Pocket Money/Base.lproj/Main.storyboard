@@ -2658,9 +2658,6 @@
                         <viewLayoutGuide key="safeArea" id="Ibm-fp-sew"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Transaction" image="icons8-ledger-30" selectedImage="icons8-ledger-30" id="aej-uF-53l"/>
-                    <connections>
-                        <outlet property="tableView1" destination="7hc-8F-Vqd" id="ZMY-je-KWq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZ6-uu-9jj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3224,7 +3221,7 @@
         <image name="icons8-true-false-30" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JqY-Yg-j0D"/>
+        <segue reference="zT0-Yi-fIy"/>
         <segue reference="17v-p0-EAP"/>
         <segue reference="uEc-Ay-At8"/>
         <segue reference="SXe-iS-vs9"/>

@@ -34,7 +34,6 @@
 		5839D8D7220CF4C400661A0C /* TaskeeJobPostingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5839D8D6220CF4C400661A0C /* TaskeeJobPostingCell.swift */; };
 		58F6D21321FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6D21221FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift */; };
 		999051E0BFDE6E1240972B54 /* Pods_Pocket_Money.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F90C15EC08360057D399BF /* Pods_Pocket_Money.framework */; };
-		C95F4800221BD2DC005F5032 /* TaskerTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95F47FF221BD2DC005F5032 /* TaskerTransactionViewController.swift */; };
 		C95F4802221BD6EC005F5032 /* appglobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95F4801221BD6EC005F5032 /* appglobal.swift */; };
 		C96F9820221CF7BC00517AD3 /* TaskerAppliedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96F981F221CF7BC00517AD3 /* TaskerAppliedViewController.swift */; };
 		C9766A33221BDD57004CFC44 /* TaskeeAppliedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9766A32221BDD57004CFC44 /* TaskeeAppliedViewController.swift */; };
@@ -74,7 +73,6 @@
 		58F6D21221FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeHomeScreenVC.swift; sourceTree = "<group>"; };
 		6D81F94DBB5589A19F8A8025 /* Pods-Pocket Money.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket Money.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket Money/Pods-Pocket Money.release.xcconfig"; sourceTree = "<group>"; };
 		B6F90C15EC08360057D399BF /* Pods_Pocket_Money.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pocket_Money.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C95F47FF221BD2DC005F5032 /* TaskerTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerTransactionViewController.swift; sourceTree = "<group>"; };
 		C95F4801221BD6EC005F5032 /* appglobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appglobal.swift; sourceTree = "<group>"; };
 		C96F981F221CF7BC00517AD3 /* TaskerAppliedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerAppliedViewController.swift; sourceTree = "<group>"; };
 		C9766A32221BDD57004CFC44 /* TaskeeAppliedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeAppliedViewController.swift; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 				3C8A96DC221636BD00DE2238 /* TaskerJobPostingCell.swift */,
 				C96F981F221CF7BC00517AD3 /* TaskerAppliedViewController.swift */,
 				3C697A7D2256D9E0003E33A7 /* TaskeeInformation.swift */,
-				C95F47FF221BD2DC005F5032 /* TaskerTransactionViewController.swift */,
 				3CEFAEF62258404A0059BBB8 /* TaskInfo.swift */,
 			);
 			path = Tasker;
@@ -333,7 +330,6 @@
 				C9766A33221BDD57004CFC44 /* TaskeeAppliedViewController.swift in Sources */,
 				3C3D331A21BCA41600E132DE /* Pocket_Money.xcdatamodeld in Sources */,
 				3CE5832C21CDC2F10022505E /* SignupTaskerViewController.swift in Sources */,
-				C95F4800221BD2DC005F5032 /* TaskerTransactionViewController.swift in Sources */,
 				3C35DEC12217B1B100376E1F /* TaskeeProfileVC.swift in Sources */,
 				C95F4802221BD6EC005F5032 /* appglobal.swift in Sources */,
 				3C3D331221BCA41600E132DE /* AppDelegate.swift in Sources */,
