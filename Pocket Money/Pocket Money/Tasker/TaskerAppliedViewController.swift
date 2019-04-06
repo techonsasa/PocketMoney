@@ -28,39 +28,22 @@ class TaskerAppliedViewController: UIViewController {
             print(value)
         }
     }
-//TaskerAppliedCell    
 }
 
 extension TaskerAppliedViewController: UITableViewDataSource
 {
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView5: UITableView, numberOfRowsInSection section: Int) -> Int {
         return txns.count
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskerAppliedCell")!
-        
         let app = txns[indexPath.row]
         cell.textLabel?.text = app["fullName"] as? String
-//        cell.detailTextLabel?.text=app.amount
-        
-        
-        //        let app = tasks[indexPath.row]
-        //        let amt = amounts[indexPath.row]
-        //        cell.textLabel?.text=app
-        //        cell.detailTextLabel?.text=amt
-        
-        //        let app=apps[indexPath.row]
-        //        print (app)
-        //        cell.textLabel?.text=app.name
-        
         return cell
-        
     }
 }
 
@@ -71,6 +54,12 @@ extension TaskerAppliedViewController : UITableViewDelegate {
         query.observeSingleEvent(of: .value) { (snapshot) in
             self.selectedUser = snapshot.value as? NSDictionary
             self.performSegue(withIdentifier: "Taskee Info", sender: self)
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "Taskee Info") {
+            let vc = segue.destination as! TaskeeInformation
+            vc.userdata = selectedUser
         }
     }
 }

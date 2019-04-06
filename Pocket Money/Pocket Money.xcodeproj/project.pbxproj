@@ -17,6 +17,7 @@
 		3C3D331F21BCA41800E132DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3D331D21BCA41800E132DE /* LaunchScreen.storyboard */; };
 		3C4C4E4422545FC1003FD595 /* TaskeeAppliedJobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C4E4322545FC1003FD595 /* TaskeeAppliedJobCell.swift */; };
 		3C4C4E46225462CE003FD595 /* TaskeeAcceptedJobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C4E45225462CE003FD595 /* TaskeeAcceptedJobCell.swift */; };
+		3C697A7E2256D9E0003E33A7 /* TaskeeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C697A7D2256D9E0003E33A7 /* TaskeeInformation.swift */; };
 		3C709693221F7F5200005736 /* TaskeeEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C709692221F7F5200005736 /* TaskeeEditVC.swift */; };
 		3C8A96DD221636BD00DE2238 /* TaskerJobPostingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A96DC221636BD00DE2238 /* TaskerJobPostingCell.swift */; };
 		3C9B6E6422111A0D00ABCAF3 /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B6E6322111A0D00ABCAF3 /* AddEventVC.swift */; };
@@ -28,6 +29,7 @@
 		3CE5832821CDB7F90022505E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5832721CDB7F90022505E /* SignUpViewController.swift */; };
 		3CE5832A21CDC2AE0022505E /* SignupTaskeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5832921CDC2AE0022505E /* SignupTaskeeViewController.swift */; };
 		3CE5832C21CDC2F10022505E /* SignupTaskerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5832B21CDC2F10022505E /* SignupTaskerViewController.swift */; };
+		3CEFAEF72258404A0059BBB8 /* TaskInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFAEF62258404A0059BBB8 /* TaskInfo.swift */; };
 		3CFBCA4F223C88C20080F102 /* TaskerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFBCA4E223C88C20080F102 /* TaskerProfileVC.swift */; };
 		5839D8D7220CF4C400661A0C /* TaskeeJobPostingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5839D8D6220CF4C400661A0C /* TaskeeJobPostingCell.swift */; };
 		58F6D21321FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6D21221FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift */; };
@@ -35,7 +37,6 @@
 		C95F4800221BD2DC005F5032 /* TaskerTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95F47FF221BD2DC005F5032 /* TaskerTransactionViewController.swift */; };
 		C95F4802221BD6EC005F5032 /* appglobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95F4801221BD6EC005F5032 /* appglobal.swift */; };
 		C96F9820221CF7BC00517AD3 /* TaskerAppliedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96F981F221CF7BC00517AD3 /* TaskerAppliedViewController.swift */; };
-		C96F9822221CF7D700517AD3 /* TaskerAcceptedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96F9821221CF7D700517AD3 /* TaskerAcceptedViewController.swift */; };
 		C9766A33221BDD57004CFC44 /* TaskeeAppliedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9766A32221BDD57004CFC44 /* TaskeeAppliedViewController.swift */; };
 		C9766A37221BE6D4004CFC44 /* TaskeeAcceptedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9766A36221BE6D4004CFC44 /* TaskeeAcceptedViewController.swift */; };
 		C9766A39221BF0D3004CFC44 /* TaskerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9766A38221BF0D3004CFC44 /* TaskerHomeViewController.swift */; };
@@ -55,6 +56,7 @@
 		3C3D332021BCA41800E132DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C4C4E4322545FC1003FD595 /* TaskeeAppliedJobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeAppliedJobCell.swift; sourceTree = "<group>"; };
 		3C4C4E45225462CE003FD595 /* TaskeeAcceptedJobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeAcceptedJobCell.swift; sourceTree = "<group>"; };
+		3C697A7D2256D9E0003E33A7 /* TaskeeInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeInformation.swift; sourceTree = "<group>"; };
 		3C709692221F7F5200005736 /* TaskeeEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeEditVC.swift; sourceTree = "<group>"; };
 		3C8A96DC221636BD00DE2238 /* TaskerJobPostingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerJobPostingCell.swift; sourceTree = "<group>"; };
 		3C9B6E6322111A0D00ABCAF3 /* AddEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		3CE5832721CDB7F90022505E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3CE5832921CDC2AE0022505E /* SignupTaskeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTaskeeViewController.swift; sourceTree = "<group>"; };
 		3CE5832B21CDC2F10022505E /* SignupTaskerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTaskerViewController.swift; sourceTree = "<group>"; };
+		3CEFAEF62258404A0059BBB8 /* TaskInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInfo.swift; sourceTree = "<group>"; };
 		3CFBCA4E223C88C20080F102 /* TaskerProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerProfileVC.swift; sourceTree = "<group>"; };
 		5839D8D6220CF4C400661A0C /* TaskeeJobPostingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeJobPostingCell.swift; sourceTree = "<group>"; };
 		58F6D21221FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeHomeScreenVC.swift; sourceTree = "<group>"; };
@@ -74,7 +77,6 @@
 		C95F47FF221BD2DC005F5032 /* TaskerTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerTransactionViewController.swift; sourceTree = "<group>"; };
 		C95F4801221BD6EC005F5032 /* appglobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appglobal.swift; sourceTree = "<group>"; };
 		C96F981F221CF7BC00517AD3 /* TaskerAppliedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerAppliedViewController.swift; sourceTree = "<group>"; };
-		C96F9821221CF7D700517AD3 /* TaskerAcceptedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerAcceptedViewController.swift; sourceTree = "<group>"; };
 		C9766A32221BDD57004CFC44 /* TaskeeAppliedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeAppliedViewController.swift; sourceTree = "<group>"; };
 		C9766A36221BE6D4004CFC44 /* TaskeeAcceptedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeAcceptedViewController.swift; sourceTree = "<group>"; };
 		C9766A38221BF0D3004CFC44 /* TaskerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerHomeViewController.swift; sourceTree = "<group>"; };
@@ -144,12 +146,13 @@
 				3CE5832B21CDC2F10022505E /* SignupTaskerViewController.swift */,
 				3CFBCA4E223C88C20080F102 /* TaskerProfileVC.swift */,
 				2E6A7901222267730033CB6C /* TaskerEditVC.swift */,
-				C96F981F221CF7BC00517AD3 /* TaskerAppliedViewController.swift */,
-				C96F9821221CF7D700517AD3 /* TaskerAcceptedViewController.swift */,
 				C9766A38221BF0D3004CFC44 /* TaskerHomeViewController.swift */,
-				3C8A96DC221636BD00DE2238 /* TaskerJobPostingCell.swift */,
 				3C9B6E6322111A0D00ABCAF3 /* AddEventVC.swift */,
+				3C8A96DC221636BD00DE2238 /* TaskerJobPostingCell.swift */,
+				C96F981F221CF7BC00517AD3 /* TaskerAppliedViewController.swift */,
+				3C697A7D2256D9E0003E33A7 /* TaskeeInformation.swift */,
 				C95F47FF221BD2DC005F5032 /* TaskerTransactionViewController.swift */,
+				3CEFAEF62258404A0059BBB8 /* TaskInfo.swift */,
 			);
 			path = Tasker;
 			sourceTree = "<group>";
@@ -320,11 +323,12 @@
 				58F6D21321FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift in Sources */,
 				3C4C4E4422545FC1003FD595 /* TaskeeAppliedJobCell.swift in Sources */,
 				3CE5832A21CDC2AE0022505E /* SignupTaskeeViewController.swift in Sources */,
-				C96F9822221CF7D700517AD3 /* TaskerAcceptedViewController.swift in Sources */,
 				3C9B6E6422111A0D00ABCAF3 /* AddEventVC.swift in Sources */,
 				3CB73ED02245A03700B982ED /* TaskeeInformationConfirm.swift in Sources */,
 				3CB4FDB62244539900B237B6 /* TaskerInformation.swift in Sources */,
+				3C697A7E2256D9E0003E33A7 /* TaskeeInformation.swift in Sources */,
 				C9766A37221BE6D4004CFC44 /* TaskeeAcceptedViewController.swift in Sources */,
+				3CEFAEF72258404A0059BBB8 /* TaskInfo.swift in Sources */,
 				3C709693221F7F5200005736 /* TaskeeEditVC.swift in Sources */,
 				C9766A33221BDD57004CFC44 /* TaskeeAppliedViewController.swift in Sources */,
 				3C3D331A21BCA41600E132DE /* Pocket_Money.xcdatamodeld in Sources */,

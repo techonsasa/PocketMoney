@@ -63,7 +63,8 @@ class TaskerHomeViewController: UIViewController, UITableViewDataSource {
             let vc = segue.destination as! AddEventViewController
             vc.user = user
         } else if (segue.identifier == "Tasker Home to Task Info") {
-            //pass data to task info page
+            let vc = segue.destination as! TaskInfo
+            vc.taskData = selectedTask
         } else if (segue.identifier == "Tasker Home to Applied") {
             let vc = segue.destination as! TaskerAppliedViewController
             vc.taskData = selectedTask
