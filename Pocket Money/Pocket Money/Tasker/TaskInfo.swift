@@ -28,4 +28,9 @@ class TaskInfo : UIViewController {
         taskTime.text = taskData!["jobTime"] as? String
         taskDescription.text = taskData!["jobDescription"] as? String
     }
+    
+    @IBAction func okayButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

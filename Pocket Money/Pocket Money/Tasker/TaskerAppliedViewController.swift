@@ -14,18 +14,16 @@ class TaskerAppliedViewController: UIViewController {
     var selectedUser : NSDictionary?
     var taskData : NSDictionary?
     var ref = Database.database().reference()
+    var appliedTaskees = [NSDictionary] ()
     
     @IBOutlet weak var tableView5: UITableView!
 
-    var txns = [NSDictionary] ()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView5.dataSource = self
         let applicants = taskData!["applied"] as? NSDictionary
         for (_, value) in applicants! {
-            txns.append(value as! NSDictionary)
-            print(value)
+            appliedTaskees.append(value as! NSDictionary)
         }
     }
 }
@@ -36,30 +34,30 @@ extension TaskerAppliedViewController: UITableViewDataSource
         return 1
     }
     func tableView(_ tableView5: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return txns.count
+        return appliedTaskees.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskerAppliedCell")!
-        let app = txns[indexPath.row]
+        let app = appliedTaskees[indexPath.row]
         cell.textLabel?.text = app["fullName"] as? String
         return cell
-    }
-}
-
-extension TaskerAppliedViewController : UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let userName = txns[indexPath.row]["username"] as! String
-        let query = ref.child("users").child(userName)
-        query.observeSingleEvent(of: .value) { (snapshot) in
-            self.selectedUser = snapshot.value as? NSDictionary
-            self.performSegue(withIdentifier: "Taskee Info", sender: self)
-        }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "Taskee Info") {
             let vc = segue.destination as! TaskeeInformation
             vc.userdata = selectedUser
+        }
+    }
+}
+
+extension TaskerAppliedViewController : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let userName = appliedTaskees[indexPath.row]["username"] as! String
+        let query = ref.child("users").child(userName)
+        query.observeSingleEvent(of: .value) { (snapshot) in
+            self.selectedUser = snapshot.value as? NSDictionary
+            self.performSegue(withIdentifier: "Taskee Info", sender: self)
         }
     }
 }

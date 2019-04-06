@@ -42,7 +42,6 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedData = data[indexPath.row]
-//        print (data[indexPath.row])
         performSegue(withIdentifier: "Taskee to Task Segue", sender: self)
     }
     
@@ -54,7 +53,6 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
         jobPostingTableView.dataSource = self
         ref = Database.database().reference()
         getDataFromFirebase()
-//        print (userdata)
  
     }
     
@@ -66,10 +64,8 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
         ref.child("tasks").observeSingleEvent(of: .value, with: { (snapshot) in
             let spvalue = snapshot.value as? NSDictionary
             for (key, value) in spvalue! {
-//                print ("Value : \(value) for key: \(key)")
                 self.data.append(value as! NSDictionary)
             }
-//            print(self.data)
             self.jobPostingTableView.reloadData()
         })
     }
