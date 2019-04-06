@@ -31,7 +31,6 @@ class SignupTaskerViewController: UIViewController {
         super.viewDidLoad()
         agePicker.delegate = self
         genderPicker.delegate = self
-        
         ref = Database.database().reference()
         
     }
