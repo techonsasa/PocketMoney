@@ -57,6 +57,8 @@ class LoginViewController: UIViewController {
             vc?.userdata = self.data
             let profilevc = tabvc.viewControllers?[3] as? TaskeeProfileVC
             profilevc?.userdata = self.data
+            let appliedvc = tabvc.viewControllers?[1] as? TaskeeAppliedViewController
+            appliedvc?.userdata = self.data
         }
         if (segue.identifier == "Login to Tasker Home"){
             let tabvc = segue.destination as! UITabBarController

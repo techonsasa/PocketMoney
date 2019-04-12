@@ -12,15 +12,14 @@ import Firebase
 class TaskerHomeViewController: UIViewController, UITableViewDataSource {
     
     var selectedTask : NSDictionary?
-    var userName : String?
     var data = [NSDictionary]()
+    var user : String?
+    var userName : String?
     var ref : DatabaseReference!
     var userdata: NSDictionary?
 
     @IBOutlet weak var tableView4: UITableView!
     
-    var user : String?
-  
 //Table View Populating
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
@@ -41,6 +40,8 @@ class TaskerHomeViewController: UIViewController, UITableViewDataSource {
         tableView4.dataSource = self
         ref = Database.database().reference()
         getDataFromFirebase()
+        print (userName)
+        print (user)
     }
 
     func getDataFromFirebase () {

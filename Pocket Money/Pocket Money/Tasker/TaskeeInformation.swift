@@ -11,6 +11,8 @@ import Firebase
 
 class TaskeeInformation : UIViewController {
     
+    var taskdata : NSDictionary?
+    var taskerFullname : String?
     var userdata : NSDictionary?
     var fullName : String?
     var ref: DatabaseReference?
@@ -34,8 +36,41 @@ class TaskeeInformation : UIViewController {
         taskeeBio.text = userdata!["bio"] as? String
         ref = Database.database().reference()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "TaskeeAcceptedToHome") {
+            let tabvc = segue.destination as! UITabBarController
+            let vc = tabvc.viewControllers?[0] as! TaskerHomeViewController
+            let pvc = tabvc.viewControllers?[2] as! TaskerProfileVC
+            vc.userdata = userdata
+            pvc.userdata = userdata
+            vc.user = taskerFullname
+        }
+    }
 
     @IBAction func acceptPressed(_ sender: Any) {
-//        dismiss(animated: true, completion: nil)
+        let taskName = taskdata!["jobName"] as! String
+        let userName = userdata!["username"] as! String
+        let userref = ref?.child("users").child(userName).child("accepted")
+        let key = userref?.childByAutoId().key as! String
+        let data = [
+            "fullName" : fullName,
+            "userName" : userName
+                ]
+        ref?.child("tasks").child(taskName).child("accepted").updateChildValues(data)
+    ref?.child("users").child(userName).child("accepted").child(key).updateChildValues(["taskName": taskName])
+        let deletekey = lookupKeyValue(taskName: taskName)
+        ref?.child("users").child(userName).child("applied").child(deletekey).removeValue()
+    }
+    
+    func lookupKeyValue(taskName: String) -> String {
+        let list = userdata!["applied"] as? NSDictionary
+        for (key, value) in list! {
+            let taskname = value as! String
+            if (taskname == taskName) {
+                return key as! String
+            }
+        }
+        return ""
     }
 }

@@ -10,17 +10,10 @@ import UIKit
 import Firebase
 
 class TaskeeAppliedViewController: UIViewController {
-//,UITableViewDelegate, UITableViewDataSource {
-    
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 1
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        return
-//    }
+    var userdata : NSDictionary?
     
     @IBOutlet weak var tableView: UITableView!
+    var txns = [String]()
     
 //    var txns = [(task: "Gift Wrapping", taskdate:"2/1/2019"),
 //                (task: "Petsitting", taskdate:"2/2/2019"),
@@ -31,46 +24,42 @@ class TaskeeAppliedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tableView.delegate = self
-//        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
+        getData()
+        print(userdata)
+    }
+    
+    func getData() {
+        let taskNames = userdata?["applied"] as? NSDictionary
+        if let tasknames = taskNames {
+            for (_, value) in tasknames {
+                txns.append(value as! String)
+            }
+        }
     }
 
 }
 
-//extension TaskeeAppliedViewController: UITableViewDataSource
-//{
-//
-//    func numberOfSections(in tableView2: UITableView) -> Int {
-//        return 1
-//    }
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        // return tasks.count
-//        //  return apps.count
-//        return txns.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-//    {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "taskeeAppliedCell")!
-//
-//        let app = txns[indexPath.row]
-//     cell.textLabel?.text=app.task
-//cell.detailTextLabel?.text=app.taskdate
-//       // cell.label
-////        taskername.text=app.tasker
-////        taskdate.text=app.amount
-//
-//
-//        //        let app = tasks[indexPath.row]
-//        //        let amt = amounts[indexPath.row]
-//        //        cell.textLabel?.text=app
-//        //        cell.detailTextLabel?.text=amt
-//
-//        //        let app=apps[indexPath.row]
-//        //        print (app)
-//        //        cell.textLabel?.text=app.name
-//
-//        return cell
-//
-//    }
-//}
+extension TaskeeAppliedViewController: UITableViewDelegate {
+    
+}
+
+extension TaskeeAppliedViewController: UITableViewDataSource {
+    func numberOfSections(in tableView2: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return txns.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "taskeeAppliedCell")!
+
+        let app = txns[indexPath.row]
+        cell.textLabel?.text = app
+
+        return cell
+    }
+}

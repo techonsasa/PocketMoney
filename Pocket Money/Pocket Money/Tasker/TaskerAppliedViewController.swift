@@ -31,6 +31,8 @@ class TaskerAppliedViewController: UIViewController {
         if (segue.identifier == "Taskee Info") {
             let vc = segue.destination as! TaskeeInformation
             vc.userdata = selectedUser
+            vc.taskerFullname = taskData!["taskerName"] as! String
+            vc.taskdata = taskData
         }
     }
 }
