@@ -49,8 +49,10 @@ class TaskeeInformation : UIViewController {
     }
 
     @IBAction func acceptPressed(_ sender: Any) {
+//Variables for Passing Info to Database
         let taskName = taskdata!["jobName"] as! String
         let userName = userdata!["username"] as! String
+//Updating Info of Task
         let userref = ref?.child("users").child(userName).child("accepted")
         let key = userref?.childByAutoId().key as! String
         let data = [
@@ -58,12 +60,21 @@ class TaskeeInformation : UIViewController {
             "userName" : userName
                 ]
         ref?.child("tasks").child(taskName).child("accepted").updateChildValues(data)
-    ref?.child("users").child(userName).child("accepted").child(key).updateChildValues(["taskName": taskName])
-        let deletekey = lookupKeyValue(taskName: taskName)
+//Updating Info of User
+        let updateref = ref?.child("users").child(userName).child("accepted")
+        let userkey = updateref!.childByAutoId().key
+        let updateData = ["\(userkey)": taskName]
+        updateref!.updateChildValues(updateData)
+//Deleting Info from User
+        let deletekey = lookupTaskeeKeyValue(taskName: taskName)
         ref?.child("users").child(userName).child("applied").child(deletekey).removeValue()
+//Deleting Info from Task
+        //let deleteTaskee = lookupTaskerKeyValue(taskeeName: fullName!)
+        //        ref?.child("tasks").child(taskName).child("applied").child(deleteTaskee).removeValue()
+        
     }
     
-    func lookupKeyValue(taskName: String) -> String {
+    func lookupTaskeeKeyValue(taskName: String) -> String {
         let list = userdata!["applied"] as? NSDictionary
         for (key, value) in list! {
             let taskname = value as! String
@@ -73,4 +84,15 @@ class TaskeeInformation : UIViewController {
         }
         return ""
     }
+    
+//    func lookupTaskerKeyValue(taskeeName : String) -> String {
+//        let list = taskdata!["applied"] as? NSDictionary
+//        for (key, value) in list! {
+//            let taskeeName = value as! String
+//            if (taskeeName == fullName) {
+//                return key as! String
+//            }
+//        }
+//        return ""
+//    }
 }

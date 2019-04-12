@@ -10,17 +10,11 @@ import UIKit
 import Firebase
 
 class TaskeeAppliedViewController: UIViewController {
-    var userdata : NSDictionary?
     
-    @IBOutlet weak var tableView: UITableView!
+    var userdata : NSDictionary?
     var txns = [String]()
     
-//    var txns = [(task: "Gift Wrapping", taskdate:"2/1/2019"),
-//                (task: "Petsitting", taskdate:"2/2/2019"),
-//                (task: "Coding", taskdate:"2/4/2019"),
-//                (task: "PC Support", taskdate:"2/7/2019"),
-//                (task: "Flower Arrangement", taskdate:"2/10/2019"),
-//                ]
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +32,13 @@ class TaskeeAppliedViewController: UIViewController {
             }
         }
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "Applied to Accepted") {
+            let vc = segue.destination as! TaskeeAcceptedViewController
+            vc.userdata = userdata
+        }
+    }
 }
 
 extension TaskeeAppliedViewController: UITableViewDelegate {

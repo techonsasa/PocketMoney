@@ -10,5 +10,4 @@ import UIKit
 
 class TaskeeAppliedJobCell : UITableViewCell {
     @IBOutlet var taskName: UILabel!
-    @IBOutlet var taskerName: UILabel!
 }
