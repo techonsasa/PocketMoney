@@ -13,20 +13,19 @@ class TaskeeAcceptedViewController: UIViewController {
 
     var userdata : NSDictionary?
     var txns = [String]()
+    var ref : DatabaseReference!
+    var taskData : NSDictionary?
+    var spvalue : NSDictionary?
+    var selectedData : String?
     
     @IBOutlet weak var tableView: UITableView!
-    
-//    var txns = [(task: "PC Support", taskdate:"1/1/2019"),
-//                (task: "Petsitting", taskdate:"1/12/2019"),
-//                (task: "Gift Wrapping", taskdate:"1/14/2019"),
-//                (task: "Flower Arrangement", taskdate:"1/26/2019"),
-//                (task: "Coding", taskdate:"1/30/2019"),
-//                ]
 
     override func viewDidLoad() {
         tableView.dataSource = self
         tableView.delegate = self
+        ref = Database.database().reference()
         getData()
+        getDataFromFirebase()
     }
     
     func getData() {
@@ -37,8 +36,24 @@ class TaskeeAcceptedViewController: UIViewController {
             }
         }
     }
+    
+    func getDataFromFirebase () {
+        ref.child("tasks").observeSingleEvent(of: .value, with: { (snapshot) in
+            self.spvalue = snapshot.value as! NSDictionary
+        })
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "Accepted to Applied") {
+            let vc = segue.destination as! TaskeeAppliedViewController
+            vc.userdata = userdata
+        }
+        if (segue.identifier == "Accepted to Task Info") {
+            let vc = segue.destination as! TaskeeAcceptedTaskInfo
+            vc.taskData = spvalue![selectedData] as! NSDictionary
+        }
+    }
 }
-
 
 extension TaskeeAcceptedViewController: UITableViewDataSource
 {
@@ -63,5 +78,8 @@ extension TaskeeAcceptedViewController: UITableViewDataSource
 }
 
 extension TaskeeAcceptedViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedData = txns[indexPath.row]
+        performSegue(withIdentifier: "Accepted to Task Info", sender: self)
+    }
 }

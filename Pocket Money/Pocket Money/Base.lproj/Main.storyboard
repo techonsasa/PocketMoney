@@ -1107,7 +1107,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="69P-iR-Fvh" id="REs-eW-Gex"/>
-                        <segue destination="HvD-Ag-J1a" kind="show" id="duV-oI-9Y9"/>
+                        <segue destination="HvD-Ag-J1a" kind="show" identifier="Accepted to Task Info" id="duV-oI-9Y9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3q-5H-NeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3303,10 +3303,10 @@
             </objects>
             <point key="canvasLocation" x="2733.5999999999999" y="-2021.7391304347827"/>
         </scene>
-        <!--View Controller-->
+        <!--Taskee Accepted Task Info-->
         <scene sceneID="hRp-vU-oIt">
             <objects>
-                <viewController id="HvD-Ag-J1a" sceneMemberID="viewController">
+                <viewController id="HvD-Ag-J1a" customClass="TaskeeAcceptedTaskInfo" customModule="Pocket_Money" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p5P-au-LG0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3377,6 +3377,9 @@
                                         <state key="normal" title="Okay!">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="okayPressed:" destination="HvD-Ag-J1a" eventType="touchUpInside" id="4fg-gU-Ydb"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cm6-om-aLI">
                                         <rect key="frame" x="4" y="283" width="108" height="26"/>
@@ -3439,10 +3442,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zhZ-oP-3bF"/>
                     </view>
+                    <connections>
+                        <outlet property="taskDate" destination="iwa-d0-YTY" id="Kko-cN-225"/>
+                        <outlet property="taskDescription" destination="znb-xn-uEj" id="Q24-hb-RTA"/>
+                        <outlet property="taskName" destination="N6u-1a-x9g" id="aCH-xg-1AR"/>
+                        <outlet property="taskTime" destination="6st-5w-rVC" id="yhX-zU-3nB"/>
+                        <outlet property="taskWage" destination="qCy-m0-lOC" id="Cqp-1N-1Iv"/>
+                        <outlet property="taskerName" destination="HXS-IT-Cae" id="af7-x4-HJe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tGJ-HE-WRv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3465" y="1448"/>
+            <point key="canvasLocation" x="3481" y="1448"/>
         </scene>
     </scenes>
     <resources>
@@ -3459,8 +3470,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="JfF-Xj-Ai3"/>
-        <segue reference="EzZ-q7-BWl"/>
-        <segue reference="RUZ-zc-IMo"/>
+        <segue reference="17v-p0-EAP"/>
+        <segue reference="uEc-Ay-At8"/>
         <segue reference="SXe-iS-vs9"/>
         <segue reference="yK4-C7-NwV"/>
         <segue reference="1xd-mr-VnX"/>
