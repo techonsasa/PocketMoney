@@ -18,14 +18,6 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var jobPostingTableView: UITableView!
     
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
@@ -35,8 +27,8 @@ class TaskeeHomeScreenVC: UIViewController, UITableViewDelegate, UITableViewData
 //        jobCell.nameInputText.text = names[indexPath.row][""]
         jobCell.nameOfTask?.text = data[indexPath.row]["jobName"] as? String
         jobCell.nameOfTasker?.text = data[indexPath.row]["taskerName"] as? String
-        jobCell.dateOfTask?.text = data[indexPath.row]["jobDate"] as? String
-        jobCell.timeOfTask?.text = data[indexPath.row]["jobTime"] as? String
+//        jobCell.dateOfTask?.text = data[indexPath.row]["jobDate"] as? String
+//        jobCell.timeOfTask?.text = data[indexPath.row]["jobTime"] as? String
         return jobCell
     }
     

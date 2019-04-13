@@ -26,6 +26,7 @@ class TaskeeAcceptedViewController: UIViewController {
     override func viewDidLoad() {
         tableView.dataSource = self
         tableView.delegate = self
+        getData()
     }
     
     func getData() {

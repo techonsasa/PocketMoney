@@ -15,6 +15,7 @@
 		3C3D331A21BCA41600E132DE /* Pocket_Money.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D331821BCA41600E132DE /* Pocket_Money.xcdatamodeld */; };
 		3C3D331C21BCA41800E132DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C3D331B21BCA41800E132DE /* Assets.xcassets */; };
 		3C3D331F21BCA41800E132DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3D331D21BCA41800E132DE /* LaunchScreen.storyboard */; };
+		3C3EB263226239D400697B56 /* TaskeeAppliedTaskInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3EB262226239D400697B56 /* TaskeeAppliedTaskInfo.swift */; };
 		3C4C4E4422545FC1003FD595 /* TaskeeAppliedJobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C4E4322545FC1003FD595 /* TaskeeAppliedJobCell.swift */; };
 		3C4C4E46225462CE003FD595 /* TaskeeAcceptedJobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C4E45225462CE003FD595 /* TaskeeAcceptedJobCell.swift */; };
 		3C697A7E2256D9E0003E33A7 /* TaskeeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C697A7D2256D9E0003E33A7 /* TaskeeInformation.swift */; };
@@ -53,6 +54,7 @@
 		3C3D331B21BCA41800E132DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C3D331E21BCA41800E132DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C3D332021BCA41800E132DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C3EB262226239D400697B56 /* TaskeeAppliedTaskInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeAppliedTaskInfo.swift; sourceTree = "<group>"; };
 		3C4C4E4322545FC1003FD595 /* TaskeeAppliedJobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeAppliedJobCell.swift; sourceTree = "<group>"; };
 		3C4C4E45225462CE003FD595 /* TaskeeAcceptedJobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeAcceptedJobCell.swift; sourceTree = "<group>"; };
 		3C697A7D2256D9E0003E33A7 /* TaskeeInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeInformation.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				3C709692221F7F5200005736 /* TaskeeEditVC.swift */,
 				C9766A32221BDD57004CFC44 /* TaskeeAppliedViewController.swift */,
 				3C4C4E4322545FC1003FD595 /* TaskeeAppliedJobCell.swift */,
+				3C3EB262226239D400697B56 /* TaskeeAppliedTaskInfo.swift */,
 				C9766A36221BE6D4004CFC44 /* TaskeeAcceptedViewController.swift */,
 				3C4C4E45225462CE003FD595 /* TaskeeAcceptedJobCell.swift */,
 				58F6D21221FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift */,
@@ -314,6 +317,7 @@
 				C96F9820221CF7BC00517AD3 /* TaskerAppliedViewController.swift in Sources */,
 				3C4C4E46225462CE003FD595 /* TaskeeAcceptedJobCell.swift in Sources */,
 				3C3D331421BCA41600E132DE /* ViewController.swift in Sources */,
+				3C3EB263226239D400697B56 /* TaskeeAppliedTaskInfo.swift in Sources */,
 				2E6A7902222267730033CB6C /* TaskerEditVC.swift in Sources */,
 				5839D8D7220CF4C400661A0C /* TaskeeJobPostingCell.swift in Sources */,
 				3CB73ED22245B24C00B982ED /* TaskeeConfirmed.swift in Sources */,
