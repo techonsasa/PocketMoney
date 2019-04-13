@@ -11,5 +11,4 @@ import Firebase
 
 class TaskeeAcceptedJobCell: UITableViewCell {
     @IBOutlet var jobName: UILabel!
-    @IBOutlet var taskerName: UILabel!
 }
