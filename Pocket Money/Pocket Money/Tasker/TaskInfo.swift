@@ -31,6 +31,12 @@ class TaskInfo : UIViewController {
     }
     
     @IBAction func okayButton(_ sender: Any) {
+        
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func backToHome(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E6A7902222267730033CB6C /* TaskerEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A7901222267730033CB6C /* TaskerEditVC.swift */; };
 		3C1DCE4022624BC60075C65E /* TaskeeAcceptedTaskInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DCE3F22624BC60075C65E /* TaskeeAcceptedTaskInfo.swift */; };
+		3C2AABEC22694F7300B60F51 /* TaskeeTransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2AABEB22694F7300B60F51 /* TaskeeTransactionVC.swift */; };
 		3C35DEC12217B1B100376E1F /* TaskeeProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35DEC02217B1B100376E1F /* TaskeeProfileVC.swift */; };
 		3C3D331221BCA41600E132DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D331121BCA41600E132DE /* AppDelegate.swift */; };
 		3C3D331421BCA41600E132DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D331321BCA41600E132DE /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 		0BBD5C152A6B4CEA7FD9A89E /* Pods-Pocket Money.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket Money.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket Money/Pods-Pocket Money.debug.xcconfig"; sourceTree = "<group>"; };
 		2E6A7901222267730033CB6C /* TaskerEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerEditVC.swift; sourceTree = "<group>"; };
 		3C1DCE3F22624BC60075C65E /* TaskeeAcceptedTaskInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeAcceptedTaskInfo.swift; sourceTree = "<group>"; };
+		3C2AABEB22694F7300B60F51 /* TaskeeTransactionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeTransactionVC.swift; sourceTree = "<group>"; };
 		3C35DEC02217B1B100376E1F /* TaskeeProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeProfileVC.swift; sourceTree = "<group>"; };
 		3C3D330E21BCA41600E132DE /* Pocket Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Money.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3D331121BCA41600E132DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				3CB4FDB52244539900B237B6 /* TaskerInformation.swift */,
 				3CB73ECF2245A03700B982ED /* TaskeeInformationConfirm.swift */,
 				3CB73ED12245B24C00B982ED /* TaskeeConfirmed.swift */,
+				3C2AABEB22694F7300B60F51 /* TaskeeTransactionVC.swift */,
 			);
 			path = Taskee;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				58F6D21321FC03AE00F92EB0 /* TaskeeHomeScreenVC.swift in Sources */,
 				3C4C4E4422545FC1003FD595 /* TaskeeAppliedJobCell.swift in Sources */,
 				3C1DCE4022624BC60075C65E /* TaskeeAcceptedTaskInfo.swift in Sources */,
+				3C2AABEC22694F7300B60F51 /* TaskeeTransactionVC.swift in Sources */,
 				3CE5832A21CDC2AE0022505E /* SignupTaskeeViewController.swift in Sources */,
 				3C9B6E6422111A0D00ABCAF3 /* AddEventVC.swift in Sources */,
 				3CB73ED02245A03700B982ED /* TaskeeInformationConfirm.swift in Sources */,
