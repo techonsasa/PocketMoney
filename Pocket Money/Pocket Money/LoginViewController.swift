@@ -23,9 +23,7 @@ class LoginViewController: UIViewController {
         if let username = usernameTextField.text {
             ref.child("users").child(username).observeSingleEvent(of: .value, with: { (snapshot) in
                 self.data = snapshot.value as? NSDictionary ?? [:]
-//                print(self.data)
                 self.loginCheck(value: self.data!)
-//                GlobalVariables.username = usernameTextField.text ?? nil
                 })
         }
     }
@@ -66,6 +64,8 @@ class LoginViewController: UIViewController {
             vc?.userdata = self.data
             let profilevc = tabvc.viewControllers?[2] as? TaskerProfileVC
             profilevc?.userdata = self.data
+            let transactionvc = tabvc.viewControllers?[1] as? TaskerTransactionVC
+            transactionvc?.userdata = self.data
         }
     }
 }

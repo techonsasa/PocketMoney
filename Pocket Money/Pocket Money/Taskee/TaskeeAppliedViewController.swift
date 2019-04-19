@@ -19,7 +19,6 @@ class TaskeeAppliedViewController: UIViewController {
     var selectedData : String?
 
     @IBOutlet var appliedAccepted: UISegmentedControl!
-    
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
@@ -73,14 +72,10 @@ extension TaskeeAppliedViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return txns.count
     }
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskeeAppliedCell")!
-
         let app = txns[indexPath.row]
         cell.textLabel?.text = app
-
         return cell
     }
 }

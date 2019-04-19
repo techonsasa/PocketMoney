@@ -17,6 +17,7 @@ class TaskerHomeViewController: UIViewController, UITableViewDataSource {
     var userName : String?
     var ref : DatabaseReference!
     var userdata: NSDictionary?
+    var taskeeData : NSDictionary?
 
     @IBOutlet weak var tableView4: UITableView!
     
@@ -34,16 +35,18 @@ class TaskerHomeViewController: UIViewController, UITableViewDataSource {
     }
     
     override func viewDidLoad() {
+        tableView4.reloadData()
         super.viewDidLoad()
         tableView4.delegate = self
         tableView4.dataSource = self
         ref = Database.database().reference()
         getDataFromFirebase()
+        tableView4.reloadData()
+        print(userdata)
     }
 
     func getDataFromFirebase () {
         let query = ref.child("tasks").queryOrdered(byChild: "taskerName").queryEqual(toValue: user)
-                print("This is from getDataFromDatabase func \(user)")
         query.observeSingleEvent(of: .value) { (snapshot) in
             var sp = snapshot.value as? NSDictionary
             if (sp == nil) {
@@ -63,6 +66,7 @@ class TaskerHomeViewController: UIViewController, UITableViewDataSource {
             vc.user = user
         } else if (segue.identifier == "Tasker Home to Task Info") {
             let vc = segue.destination as! TaskInfo
+            vc.taskeeData = taskeeData
             vc.taskData = selectedTask
             vc.taskerData = userdata
         } else if (segue.identifier == "Tasker Home to Applied") {
@@ -76,7 +80,7 @@ extension TaskerHomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedTask = data[indexPath.row]
         if (selectedTask?["accepted"] != nil) {
-            performSegue(withIdentifier: "Tasker Home to Task Info", sender: self)
+            self.performSegue(withIdentifier: "Tasker Home to Task Info", sender: self)
         } else {
             performSegue(withIdentifier: "Tasker Home to Applied", sender: self)
         }
