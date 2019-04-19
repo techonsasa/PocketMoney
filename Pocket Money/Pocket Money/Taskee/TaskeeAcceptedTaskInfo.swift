@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 
 class TaskeeAcceptedTaskInfo: UIViewController {
+
     
     var taskData : NSDictionary?
     

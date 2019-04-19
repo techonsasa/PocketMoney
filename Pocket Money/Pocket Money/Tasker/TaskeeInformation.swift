@@ -69,11 +69,14 @@ class TaskeeInformation : UIViewController {
         let deletekey = lookupTaskeeKeyValue(taskName: taskName)
         ref?.child("users").child(userName).child("applied").child(deletekey).removeValue()
 //Deleting Info from Task
-        //let deleteTaskee = lookupTaskerKeyValue(taskeeName: fullName!)
-        //        ref?.child("tasks").child(taskName).child("applied").child(deleteTaskee).removeValue()
+        let deleteTaskee = lookupTaskKeyValue(taskeeName: fullName!)
+        ref?.child("tasks").child(taskName).child("applied").child(deleteTaskee).removeValue()
         
     }
     
+    @IBAction func chooseAnotherApplicant(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     func lookupTaskeeKeyValue(taskName: String) -> String {
         let list = userdata!["applied"] as? NSDictionary
         for (key, value) in list! {
@@ -85,14 +88,15 @@ class TaskeeInformation : UIViewController {
         return ""
     }
     
-//    func lookupTaskerKeyValue(taskeeName : String) -> String {
-//        let list = taskdata!["applied"] as? NSDictionary
-//        for (key, value) in list! {
-//            let taskeeName = value as! String
-//            if (taskeeName == fullName) {
-//                return key as! String
-//            }
-//        }
-//        return ""
-//    }
+    func lookupTaskKeyValue(taskeeName : String) -> String {
+        let list = taskdata!["applied"] as? NSDictionary
+        for (key, value) in list! {
+            let taskeeData = value as! NSDictionary
+            let taskeeName = taskeeData["fullName"] as! String
+            if (taskeeName == fullName) {
+                return key as! String
+            }
+        }
+        return ""
+    }
 }

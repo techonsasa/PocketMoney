@@ -843,6 +843,7 @@
                     <tabBarItem key="tabBarItem" title="Applied/Accepted" image="icons8-true-false-30" selectedImage="icons8-true-false-30" id="DZx-Tg-dr0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="appliedAccepted" destination="dsh-5f-oA8" id="D5C-vl-0dD"/>
                         <outlet property="tableView" destination="oSz-6s-aeM" id="Vcw-nY-Kun"/>
                         <segue destination="uKj-UI-fUn" kind="show" identifier="Applied to Task Info" id="EVN-oh-wiK"/>
                     </connections>
@@ -1021,7 +1022,7 @@
                                 </segments>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <segue destination="8eN-yK-5Pm" kind="show" identifier="Accepted to Applied" id="AB1-fn-Ufq"/>
+                                    <action selector="AppliedAccepted:" destination="J7x-2u-rkx" eventType="valueChanged" id="WnO-Z2-BuD"/>
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="69P-iR-Fvh">
@@ -1084,6 +1085,7 @@
                     <tabBarItem key="tabBarItem" title="Applied/Accepted" image="icons8-true-false-30" selectedImage="icons8-true-false-30" id="yIH-ZI-sAo"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="appliedtoaccepted" destination="5ja-p1-0Bp" id="80z-hM-Shq"/>
                         <outlet property="tableView" destination="69P-iR-Fvh" id="REs-eW-Gex"/>
                         <segue destination="HvD-Ag-J1a" kind="show" identifier="Accepted to Task Info" id="duV-oI-9Y9"/>
                     </connections>
@@ -3132,7 +3134,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WMN-aY-eAA">
-                                <rect key="frame" x="20" y="77" width="335" height="513"/>
+                                <rect key="frame" x="20" y="77" width="335" height="570"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AnirraPic" translatesAutoresizingMaskIntoConstraints="NO" id="Qhh-ea-Kon">
@@ -3260,6 +3262,19 @@
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hf1-EI-5SO">
+                                        <rect key="frame" x="0.0" y="503" width="335" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.98823529409999999" green="0.6705882353" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <state key="normal" title="Choose Another Applicant">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="acceptPressed:" destination="HQS-b0-ooS" eventType="touchUpInside" id="85L-me-X8N"/>
+                                            <action selector="chooseAnotherApplicant:" destination="HQS-b0-ooS" eventType="touchUpInside" id="EjK-Uy-SXk"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.95404359299999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -3449,7 +3464,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="JfF-Xj-Ai3"/>
         <segue reference="wkZ-Jc-KlH"/>
-        <segue reference="AB1-fn-Ufq"/>
         <segue reference="SXe-iS-vs9"/>
         <segue reference="yK4-C7-NwV"/>
         <segue reference="1xd-mr-VnX"/>

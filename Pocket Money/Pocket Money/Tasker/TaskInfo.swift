@@ -22,7 +22,8 @@ class TaskInfo : UIViewController {
     
     override func viewDidLoad() {
         taskName.text = taskData!["jobName"] as? String
-        taskeeName.text = taskData!["accepted"] as? String
+        let taskeeData = taskData!["accepted"] as? NSDictionary
+        taskeeName.text = taskeeData!["fullName"] as? String
         taskWage.text = taskData!["taskRate"] as? String
         taskDate.text = taskData!["taskeDate"] as? String
         taskTime.text = taskData!["jobTime"] as? String

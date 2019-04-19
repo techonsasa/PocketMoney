@@ -22,11 +22,23 @@ class TaskerAppliedViewController: UIViewController {
         super.viewDidLoad()
         tableView5.dataSource = self
         tableView5.delegate = self
-        let applicants = taskData!["applied"] as? NSDictionary
-        for (_, value) in applicants! {
-            appliedTaskees.append(value as! NSDictionary)
+        if let applicants = taskData!["applied"] as? NSDictionary {
+            for (_, value) in applicants {
+                appliedTaskees.append(value as! NSDictionary)
+            }
         }
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if (appliedTaskees.isEmpty) {
+            let alert = UIAlertController(title: "You have no Applicants", message: "Please continue to wait for Applicants", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: {
+                action in self.dismiss(animated: true, completion: nil)
+            }))
+            self.present(alert, animated: true)
+        }
+    }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "Taskee Info") {
             let vc = segue.destination as! TaskeeInformation

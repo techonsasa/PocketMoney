@@ -17,6 +17,8 @@ class TaskeeAppliedViewController: UIViewController {
     var taskData : NSDictionary?
     var spvalue : NSDictionary?
     var selectedData : String?
+
+    @IBOutlet var appliedAccepted: UISegmentedControl!
     
     @IBOutlet weak var tableView: UITableView!
 
@@ -48,6 +50,7 @@ class TaskeeAppliedViewController: UIViewController {
         if (segue.identifier == "Applied to Accepted") {
             let vc = segue.destination as! TaskeeAcceptedViewController
             vc.userdata = userdata
+            vc.delegate = self
         }
         if (segue.identifier == "Applied to Task Info") {
             let vc = segue.destination as! TaskeeAppliedTaskInfo
@@ -80,4 +83,14 @@ extension TaskeeAppliedViewController: UITableViewDataSource {
 
         return cell
     }
+}
+
+extension TaskeeAppliedViewController: SwitchingTabsDelegate {
+    func onSwitchBack() {
+        appliedAccepted.selectedSegmentIndex = 0
+    }
+}
+
+protocol SwitchingTabsDelegate {
+    func onSwitchBack()
 }

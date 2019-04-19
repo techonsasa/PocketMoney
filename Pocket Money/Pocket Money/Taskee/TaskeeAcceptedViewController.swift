@@ -17,15 +17,25 @@ class TaskeeAcceptedViewController: UIViewController {
     var taskData : NSDictionary?
     var spvalue : NSDictionary?
     var selectedData : String?
+    var delegate : SwitchingTabsDelegate?
     
     @IBOutlet weak var tableView: UITableView!
-
+    
+    @IBOutlet var appliedtoaccepted: UISegmentedControl!
+    
+    @IBAction func AppliedAccepted(_ sender: UISegmentedControl) {
+        print(sender.selectedSegmentIndex)
+        delegate?.onSwitchBack()
+        dismiss(animated: true)
+    }
+    
     override func viewDidLoad() {
         tableView.dataSource = self
         tableView.delegate = self
         ref = Database.database().reference()
         getData()
         getDataFromFirebase()
+        appliedtoaccepted.selectedSegmentIndex = 1
     }
     
     func getData() {
@@ -57,7 +67,6 @@ class TaskeeAcceptedViewController: UIViewController {
 
 extension TaskeeAcceptedViewController: UITableViewDataSource
 {
-
     func numberOfSections(in tableView3: UITableView) -> Int {
         return 1
     }
@@ -73,7 +82,6 @@ extension TaskeeAcceptedViewController: UITableViewDataSource
         cell.textLabel?.text = app
         
         return cell
-
     }
 }
 
@@ -83,3 +91,4 @@ extension TaskeeAcceptedViewController: UITableViewDelegate {
         performSegue(withIdentifier: "Accepted to Task Info", sender: self)
     }
 }
+
