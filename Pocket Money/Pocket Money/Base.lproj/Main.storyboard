@@ -2329,11 +2329,11 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.98823529409999999" green="0.6705882353" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                        <state key="normal" title="Task Is Complete">
+                                        <state key="normal" title="Back to Home">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="okayButton:" destination="aiG-zz-kRL" eventType="touchUpInside" id="7c5-ve-qE4"/>
+                                            <action selector="backToHome:" destination="aiG-zz-kRL" eventType="touchUpInside" id="fs2-f0-E6R"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZs-r4-7lP">
@@ -2341,12 +2341,11 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.98823529409999999" green="0.6705882353" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                        <state key="normal" title="Back to Home">
+                                        <state key="normal" title="Task is Complete">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="backToHome:" destination="aiG-zz-kRL" eventType="touchUpInside" id="bke-t4-IaR"/>
-                                            <action selector="okayButton:" destination="aiG-zz-kRL" eventType="touchUpInside" id="V9q-xN-Pf4"/>
+                                            <action selector="taskCompleteButton:" destination="aiG-zz-kRL" eventType="touchUpInside" id="n94-FM-ImN"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -3265,7 +3264,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="acceptPressed:" destination="HQS-b0-ooS" eventType="touchUpInside" id="zQg-Mu-0SE"/>
+                                            <action selector="acceptPressed:" destination="HQS-b0-ooS" eventType="touchUpInside" id="3Wh-dW-xCc"/>
                                             <segue destination="oaq-NZ-bly" kind="show" identifier="TaskeeAcceptedToHome" id="JfF-Xj-Ai3"/>
                                         </connections>
                                     </button>
@@ -3284,8 +3283,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="acceptPressed:" destination="HQS-b0-ooS" eventType="touchUpInside" id="85L-me-X8N"/>
-                                            <action selector="chooseAnotherApplicant:" destination="HQS-b0-ooS" eventType="touchUpInside" id="EjK-Uy-SXk"/>
+                                            <action selector="chooseAnotherApplicant:" destination="HQS-b0-ooS" eventType="touchUpInside" id="wF1-8X-eJ8"/>
                                         </connections>
                                     </button>
                                 </subviews>

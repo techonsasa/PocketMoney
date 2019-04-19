@@ -12,6 +12,9 @@ import Firebase
 class TaskInfo : UIViewController {
     
     var taskData : NSDictionary?
+    var taskerData: NSDictionary?
+    var taskeeData: NSDictionary?
+    var ref = Database.database().reference()
     
     @IBOutlet var taskName: UILabel!
     @IBOutlet var taskeeName: UILabel!
@@ -30,14 +33,60 @@ class TaskInfo : UIViewController {
         taskDescription.text = taskData!["jobDescription"] as? String
     }
     
-    @IBAction func okayButton(_ sender: Any) {
-        
-        
+    @IBAction func taskCompleteButton(_ sender: Any) {
+        let taskerName = taskerData!["username"] as! String
+        let jobName = taskData!["jobName"] as! String
+        let jobRate = taskData!["taskRate"] as! String
+        let taskAcceptedData = taskData!["accepted"] as? NSDictionary
+        let taskeeName = taskAcceptedData!["userName"] as! String
+//update tasker
+        let transactionref = self.ref.child("users").child(taskerName).child("transactions")
+        let key = transactionref.childByAutoId().key
+        let transactiondata = ["\(key)" : [
+            "taskName" : jobName,
+            "taskWage" : jobRate
+            ]]
+        transactionref.updateChildValues(transactiondata)
+//get taskee data
+        ref.child("users").child(taskeeName).observeSingleEvent(of: .value) { (snapshot) in
+            self.taskeeData
+        }
+//        query.observeSingleEvent(of: .value) { (snapshot) in
+//            self.taskeeData = snapshot.value as? NSDictionary
+//            }
+        print(taskeeData)
+//update taskee
+        let transref = self.ref.child("users").child(taskeeName).child("transactions")
+        let transkey = transref.childByAutoId().key
+        let data = ["\(transkey)" : [
+            "taskName" : jobName,
+            "taskWage" : jobRate
+            ]]
+        transref.updateChildValues(data)
+//delete task accepted
+        ref.child("tasks").child(jobName).child("accepted").removeValue()
+//delete task from taskee profile
+        let deletetask = lookupTaskeeKeyValue(taskName: jobName)
+        ref.child("users").child(taskeeName).child("accepted").child(deletetask).removeValue()
+//dismiss screen
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func backToHome(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func lookupTaskeeKeyValue(taskName: String) -> String {
+//        print("This is from the Task Info page: taskeeData: \(taskeeData)")
+        let list = taskeeData!["accepted"] as? NSDictionary
+        let jobName = taskData!["jobName"] as! String
+        for (key, value) in list! {
+            let taskname = value as! String
+            if (taskname == jobName){
+                return key as! String
+            }
+        }
+        return ""
     }
     
 }

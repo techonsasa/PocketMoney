@@ -34,18 +34,16 @@ class TaskerHomeViewController: UIViewController, UITableViewDataSource {
     }
     
     override func viewDidLoad() {
-        print(data)
         super.viewDidLoad()
         tableView4.delegate = self
         tableView4.dataSource = self
         ref = Database.database().reference()
         getDataFromFirebase()
-        print (userName)
-        print (user)
     }
 
     func getDataFromFirebase () {
         let query = ref.child("tasks").queryOrdered(byChild: "taskerName").queryEqual(toValue: user)
+                print("This is from getDataFromDatabase func \(user)")
         query.observeSingleEvent(of: .value) { (snapshot) in
             var sp = snapshot.value as? NSDictionary
             if (sp == nil) {
@@ -66,6 +64,7 @@ class TaskerHomeViewController: UIViewController, UITableViewDataSource {
         } else if (segue.identifier == "Tasker Home to Task Info") {
             let vc = segue.destination as! TaskInfo
             vc.taskData = selectedTask
+            vc.taskerData = userdata
         } else if (segue.identifier == "Tasker Home to Applied") {
             let vc = segue.destination as! TaskerAppliedViewController
             vc.taskData = selectedTask

@@ -77,6 +77,7 @@ class TaskeeInformation : UIViewController {
     @IBAction func chooseAnotherApplicant(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
     func lookupTaskeeKeyValue(taskName: String) -> String {
         let list = userdata!["applied"] as? NSDictionary
         for (key, value) in list! {

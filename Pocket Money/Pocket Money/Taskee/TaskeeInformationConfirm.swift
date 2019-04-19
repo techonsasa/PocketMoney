@@ -24,7 +24,6 @@ class TaskeeInformationConfirm: UIViewController {
     @IBOutlet var taskName: UILabel!
     
     override func viewDidLoad() {
-        print(userdata)
         let firstName = userdata!["firstName"] as! String
         let lastName = userdata!["lastName"] as! String
         let name = firstName + " " + lastName
@@ -55,10 +54,12 @@ class TaskeeInformationConfirm: UIViewController {
         let lastName = userdata!["lastName"] as! String
         let fullname = firstName + " " + lastName
         let taskName = data!["jobName"] as! String
+//update taskee
         let appliedref = self.ref.child("users").child(username).child("applied")
         let key = appliedref.childByAutoId().key
         let appliedata = ["\(key)": taskName]
         appliedref.updateChildValues(appliedata)
+//update task
         let tasksref = self.ref.child("tasks").child(taskName).child("applied")
         let taskKey = tasksref.childByAutoId().key
         let taskApplied = ["\(taskKey)": [

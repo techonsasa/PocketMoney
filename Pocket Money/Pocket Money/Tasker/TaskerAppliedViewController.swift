@@ -72,7 +72,6 @@ extension TaskerAppliedViewController : UITableViewDelegate {
         let query = ref.child("users").child(userName)
         query.observeSingleEvent(of: .value) { (snapshot) in
             self.selectedUser = snapshot.value as? NSDictionary
-            print("This is from applied page: \(self.selectedUser)")
             self.performSegue(withIdentifier: "Taskee Info", sender: self)
         }
     }
